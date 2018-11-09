@@ -93,6 +93,18 @@
                            <forum>https://forum.xda-developers.com/redmi-note-5/development/official-msm-xtended-9-0-pie-t3859327</forum>
                            <telegram>https://t.me/XtendedOfficial</telegram>
 		           </vince>
+		   <mido>
+                           <maintainer>Sagar Rokade</maintainer>
+                           <devicename>Redmi Note 4 (mido)</devicename>
+                           <filename>Xtended-mido-20181108-XP2.5-OFFICIAL-Release-v6</filename>
+                           <buildtype>Stable</buildtype>
+                           <download>https://androidfilehost.com/?fid=11410963190603842467</download>
+                           <changelog>https://androidfilehost.com/?fid=11410963190603842492</changelog>
+                           <recovery>Use Any Treble Enabled Recovery</recovery>
+                           <gapps>https://OpenGapps.org</gapps>
+                           <forum>https://forum.xda-developers.com/redmi-note-4/xiaomi-redmi-note-4-snapdragon-roms-kernels-recoveries--other-development/official-msm-xtended-pie-9-0-t3846001</forum>
+                           <telegram>https://t.me/XtendedOfficial</telegram>
+                    </mido>
         </manufacturer>
 <!-- MOTOROLA -->
 	 <manufacturer id="Motorola">
