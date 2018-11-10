@@ -84,13 +84,13 @@
                    <vince>
                            <maintainer>Raj Kale (Rajkale99)</maintainer>
                            <devicename>Redmi Note 5 (vince)</devicename>
-                           <filename>Xtended-vince-20181103-XP2-OFFICIAL-Release-v5.5.zip</filename>
+                           <filename>Xtended-vince-20181103-XP2.5-OFFICIAL-Release-v6.zip</filename>
                            <buildtype>Stable</buildtype>
-                           <download>https://netix.dl.sourceforge.net/project/xtended/vince/Xtended-vince-20181103-XP2-OFFICIAL-Release-v5.5.zip</download>
+                           <download>https://netix.dl.sourceforge.net/project/xtended/vince/Xtended-vince-20181110-XP2.5-OFFICIAL-Release-v6.zip</download>
                            <changelog>https://raw.githubusercontent.com/Xtended-Pie/vendor_xtended_DevicesOTA/xp/vince_changelog.txt</changelog>
                            <recovery>Use Brigdev twrp Recovery</recovery>
                            <gapps>https://OpenGapps.org</gapps>
-                           <forum>https://forum.xda-developers.com/redmi-note-5/development/official-msm-xtended-9-0-pie-t3859327</forum>
+                           <forum>https://forum.xda-developers.com/showpost.php?p=78119849&postcount=22</forum>
                            <telegram>https://t.me/XtendedOfficial</telegram>
 		           </vince>
 		   <mido>
