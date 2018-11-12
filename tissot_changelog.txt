@@ -1,0 +1,236 @@
+====================
+     2018-11-12    
+====================
+
+* device/xiaomi/tissot/overlay/frameworks/base/core/res/res/values/config.xml
+drg4sds Fix Network Flactuations [Dark-Matter7232]
+
+====================
+     2018-11-11    
+====================
+
+ * packages/apps/Xtensions
+b9f7522  Fix NetTraffic UpLink/Downlink disabled on first boot  [SuperDroidBond]
+
+ * vendor/xtended
+222551f  Fix QS Dotted Tile  [SuperDroidBond]
+
+ * vendor/xtended/DevicesOTA
+c9788bd  Update Redmi Note 5 (Vince) for XP2.5 Release v6 (#10)  [Rajkale99]
+490cb9c  Update OP3/3T for XP2.5 Release v6  [SuperDroidBond]
+
+====================
+     2018-11-10    
+====================
+
+ * frameworks/av
+392d974  libcameraservice: add TARGET_CAMERA_NEEDS_CLIENT_INFO  [darkobas]
+7c609cc  av: camera: catch mad hals that mess up buffer time  [maxwen]
+
+ * frameworks/base
+fc08d03  Make roaming indicator optional [1/2]  [Pranav Vashi]
+749bdec  ScreenOff skip track: add Spotify/kdeconn/... remote session compatibility  [ezio84]
+6f90291  QS tiles customizer: respect user tiles columns value  [ezio84]
+be6630b  [1/2] base: make aspect ratio hack configable on app level  [maxwen]
+b1819e9  Add an option to force pre-O apps to use full screen aspect ratio  [Jesse Chan]
+4f807e0  SystemUI: keyguard weather view - fix initial kick off after boot  [maxwen]
+420eee2  OnTheGoTile: Fix active inactive states  [Pranav Vashi]
+49574a5  NetworkTraffic: Fix on lockscreen and with doze  [mydongistiny]
+9335f9b  SystemUI: Fix NPE when creates wifi tracker  [mandy]
+5e5f9ab  Refusing to enter PIP mode when activity destroyed  [wangyougang]
+cad5ad5  Fix PIP media session listener for secondary users  [Kyeongkab.Nam]
+1855950  Fix the behavior of keyguard bouncer in a corner case  [Wang, ArvinX]
+1b3d350  VrManagerService: Solve the null pointer exception  [lvfenglin]
+2284a45  SystemUI: Fixes context for tiles without longClick  [Fabian Kozynski]
+c7fc539  ActivityManager: Fix display id JE issue  [Isaac Lee]
+7346ce6  Activity: Fix class not found exception  [Browse Zhang]
+a15ef71  am: Fix top activity resume with secure keyguard  [Oleksiy Avramchenko]
+17ae287  Fix app shortcuts string when changing language during first boot  [peter.zhang]
+148ac87  Revert "NavigationBarView: Avoid NPE before mPanelView is created"  [mydongistiny]
+ef1ddb1  do not remove system when provider publish timeout  [gaoshiqi]
+9f0b162  service: ResetListener in StorageManagerService  [Risan]
+4b13f51  system_server:process: Crash on Android user-switching  [Amano]
+bdb8c1a  QS: add right/left padding even if it's 0 for collapsed  statusbar  [ezio84]
+99ffeb6  Set statusbar round corners padding conditionally  [Alex Cruz]
+8fac534  UserManagerService: Use XTENDED_FINGERPRINT to signal upgrades  [Sam Mortimer]
+be2784f  LockSettingsService: Support for separate clear key api  [Shivaprasad Hongal]
+6fb87bc  Make sure secondary labels are also hidden with QS hide title  [SKULSHADY]
+8821fea  Fw_base - fix checkapi  [Simon Shields]
+f12ae1e  Fix StatusBar Brightness Control  [Danesh M]
+3bbc266  frameworks: base: Port password retention feature  [AnilKumar Chimata]
+07a40cc  data: sounds: cleanup ogg  [5x]
+52a961c  Phone ringtone setting for Multi SIM device  [Ting Yu]
+1013c02  DO NOT MERGE. Extend SQLiteQueryBuilder for update and delete.  [Jeff Sharkey]
+d15dfba  DO NOT MERGE. Execute "strict" queries with extra parentheses.  [Jeff Sharkey]
+de87873  QS: SystemUI: Add Smart Pixels tile  [adinkwok]
+4956c3b  ViewRootImpl: break out the loop when NPE caught  [aviraxp]
+6b808d8  Revert "ViewRootImpl: break out the loop when NPE caught"  [SuperDroidBond]
+1ee06a7  Fixes crash when getting panel before setting components  [Matthew Ng]
+66da1f9  Return Animation to default  [SuperDroidBond]
+8b771cc  Prevent NFE in SystemUI when parsing invalid int  [Edward Savage-Jones]
+9036407  CarrierLabel: Fix npe when loading settings  [mydongistiny]
+1f769f0  Fix UsbDeviceManager null object reference  [Eddie Hung]
+7a2ba57  KeyguardStateMonitor looses connection with keystore if keystore dies  [Janis Danisevskis]
+23d8d9f  Remove unused calling for better performance  [qiushi.han]
+
+ * packages/apps/Settings
+72ab4e4  Phone ringtone setting for Multi SIM device  [Ting Yu]
+
+ * packages/apps/Xtensions
+f415eaf  Make roaming indicator optional [2/2]  [Pranav Vashi]
+43ed5f6  Fix QS Info Header  [SuperDroidBond]
+83412ae  make aspect ration hack configable on app level [2/2]  [maxwen]
+
+ * vendor/xtended
+c51ad06  Kang apns-conf from Lineage  [xyyx]
+8884acb  Trial Fix for SubsSignature package  [SuperDroidBond]
+98c1070  vendor: Fix build's XTENDED_FINGERPRINT  [Henrique Silva]
+
+====================
+     2018-11-09    
+====================
+
+ * frameworks/base
+195e294  Fix current formating on lockscreen for devices, that report directly in Ampere. Shamelessly extracted from:   base: Lockscreen Charging info  (3/3)   by: xyyx <xyyx@mail.ru>  
+[Jens Lody]
+
+ * hardware/interfaces
+33e9784  keymasterV4_0: Tags support for FBE wrapped key.  [Shivaprasad Hongal]
+
+ * system/vold
+cbf6e54  vold: Move QCOM HW FDE inclusion under custom namespace  [Michael Bestas]
+55d98f7  vold: Wrapped key support for FBE  [Shivaprasad Hongal]
+99fe5fe  vold: Add Hardware FDE feature  [AnilKumar Chimata]
+807dcde  Switch pattern/PIN constants to match values in cryptfs.h  [Paul Crowley]
+f65f42c  secdiscard: should pin_file to avoid moving blocks in F2FS  [Jaegeuk Kim]
+18d68d2  vold: Accept Linux GPT partitions on external SD cards  [lambdadroid]
+2317eb8  vold: skip first disk change when converting MBR to GPT  [Scott Mertz]
+d0308d6  Fix the group permissions of the sdcard root.  [Jani Lusikka]
+dd1dfc1  vold ext4/f2fs: do not use dirsync if we're mounting adopted storage  [Sam Mortimer]
+a22f7b3  vold: Mount ext4/f2fs portable storage with sdcard_posix  [Jani Lusikka]
+9b2bf8b  vold: Honor mount options for ext4/f2fs partitions  [Tom Marshall]
+b445d97  vold: Support internal storage partitions  [Tom Marshall]
+d7dd979  vold: Fix fsck on public volumes  [Michael Bestas]
+5fb36b0  vold: add support for more filesystems for public storage  [Dan Pasanen]
+
+ * vendor/xtended
+722782b  soong_config: Add flag for crypto waiting on QSEE to start  [Michael Bestas]
+0715a46  soong_config: Add flag for legacy HW FDE  [Michael Bestas]
+edb4f9c  soong_config: Add new flags for HW FDE  [AnilKumar Chimata]
+
+ * vendor/xtended/DevicesOTA
+314a655  Add Mido Update XP-2.5 08/11/18 (#9)  [Sagar Rokade]
+
+====================
+     2018-11-08    
+====================
+
+ * frameworks/base
+072180c  privapp-permissions: Add missed Launcher3 permissions  [xyyx]
+ac22e4d  Merge tag 'android-9.0.0_r16' into p  [SuperDroidBond]
+9c0352a  Remove padding commits  [xyyx]
+
+ * frameworks/opt/net/ims
+cbbec8e  Merge tag 'android-9.0.0_r12'  [SuperDroidBond]
+
+ * frameworks/opt/net/wifi
+6d2c681  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD  [Henrique Silva]
+
+ * hardware/libhardware
+670787c  libhardware: Add new display types.  [Dileep Marchya]
+1ae3b0b  hardware: power: Remove POWER_HINT_AUDIO  [Zhao Wei Liew]
+
+ * packages/services/BuiltInPrintService
+68c5976  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/packages/services/BuiltInPrintService into HEAD  [Prema Chand Alugu]
+
+ * system/core
+c68e26e  metricslogger: fix ACTION_BATTERY_CAUSED_SHUTDOWN not matching proto  [Thierry Strudel]
+
+ * vendor/xtended
+64cdef2  Increase Release & Xtended Version  [SuperDroidBond]
+
+====================
+     2018-11-07    
+====================
+
+ * bionic
+80eeb57  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//bionic into HEAD  [Alex Cruz]
+
+ * build/make
+e460c7e  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//build into HEAD  [SuperDroidBond]
+
+ * external/perfetto
+5749b84  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/external/perfetto into HEAD  [Prema Chand Alugu]
+
+ * frameworks/av
+f630fb4  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//frameworks/av into HEAD  [SuperDroidBond]
+
+ * frameworks/base
+a20ee7b  BurnInProtection: Fix null object reference with timer  [mydongistiny]
+
+ * frameworks/native
+3459e29  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//frameworks/native into HEAD  [Alex Cruz]
+
+ * frameworks/opt/telephony
+bace32a  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//frameworks/opt/telephony into HEAD  [SuperDroidBond]
+
+ * hardware/interfaces
+71c8266  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//hardware/interfaces into HEAD  [Alex Cruz]
+6ac5ff2  Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/hardware/interfaces into p9x  [Alex Cruz]
+
+ * hardware/qcom/audio
+5b019f7  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/hardware/qcom/audio into HEAD  [Prema Chand Alugu]
+
+ * hardware/qcom/bootctrl
+db0cfdc  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/hardware/qcom/bootctrl into HEAD  [Prema Chand Alugu]
+
+ * hardware/qcom/display
+04c19d1  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/hardware/qcom/display into HEAD  [Prema Chand Alugu]
+
+ * hardware/qcom/gps
+e3dacb2  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/hardware/qcom/gps into HEAD  [Prema Chand Alugu]
+
+ * hardware/qcom/media
+f409829  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/hardware/qcom/media into HEAD  [Prema Chand Alugu]
+
+ * manifest
+1698873  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//manifest into HEAD  [SuperDroidBond]
+
+ * packages/apps/Bluetooth
+d4f60e8  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//packages/apps/Bluetooth into HEAD  [SuperDroidBond]
+
+ * packages/apps/Nfc
+0f9667c  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//packages/apps/Nfc into HEAD  [SuperDroidBond]
+
+ * packages/apps/Settings
+e1c1b75  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//packages/apps/Settings into HEAD  [SuperDroidBond]
+
+ * packages/providers/DownloadProvider
+cb94bab  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//packages/providers/DownloadProvider into HEAD  [SuperDroidBond]
+
+ * packages/services/Telecomm
+121d613  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//packages/services/Telecomm into HEAD  [SuperDroidBond]
+
+ * system/bt
+3bc3b3e  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//system/bt into HEAD  [Alex Cruz]
+
+====================
+     2018-11-06    
+====================
+
+ * frameworks/base
+a7b53c9  Status bar notification ticker [1/2]  [rogersb11]
+fc3698d  SystemUI: small optimization for notification icon numbers  [Roman Birg]
+6fdf78f  Status bar: Update notification count icons  [XXMrHyde]
+aacbfe4  SystemUI: Forward-port notification counters [1/2]  [Steve Kondik]
+e34f1a5  Add more qs tiles style [1/3]  [ElDainosor]
+
+ * packages/apps/Xtensions
+7379954  [SQUASHED] Status bar notification ticker [2/2]  [SpiritCroc]
+3825c10  Strings : Clean Up  [SuperDroidBond]
+b47e23d  Forward-port notification counters [2/2]  [Steve Kondik]
+c7b7993  Add more qs tiles style [3/3]  [ElDainosor]
+
+ * vendor/xtended
+d1f7c2e  Add more qs tiles style [2/3]  [ElDainosor]
+

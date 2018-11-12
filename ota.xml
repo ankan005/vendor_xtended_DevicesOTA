@@ -105,7 +105,19 @@
                            <forum>https://forum.xda-developers.com/redmi-note-4/xiaomi-redmi-note-4-snapdragon-roms-kernels-recoveries--other-development/official-msm-xtended-pie-9-0-t3846001</forum>
                            <telegram>https://t.me/XtendedOfficial</telegram>
                     </mido>
-        </manufacturer>
+                  <tissot>
+                           <maintainer>AnuragRai (Dark-Matter7232)</maintainer> 
+                           <devicename>MI A1 (tissot)</devicename>
+                           <filename>Xtended-tissot-20181112-XP2.5-OFFICIAL-Release-v6.zip</filename>
+                           <buildtype>Stable</buildtype>
+                           <download>https://drive.google.com/uc?export=download&confirm=qa3y&id=1iB4GZOWa6M_ciUdeOvYbzl1lpuZYx6sf</download>
+                           <changelog>https://raw.githubusercontent.com/Xtended-Pie/vendor_xtended_DevicesOTA/xp/tissot_changelog.txt</changelog>
+                           <recovery>Use Cosmic Dan twrp Recovery</recovery>
+                           <gapps>https://OpenGapps.org</gapps>
+                           <forum>https://forum.xda-developers.com/mi-a1/development/stable-msm-xtended-xp-1-release-v1-t3854187</forum>
+                           <telegram>https://t.me/XtendedOfficial</telegram>
+                  </tissot>
+       </manufacturer>
 <!-- MOTOROLA -->
 	 <manufacturer id="Motorola">
 		<potter>
