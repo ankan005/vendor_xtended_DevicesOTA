@@ -93,7 +93,7 @@
                            <forum>https://forum.xda-developers.com/showpost.php?p=78119849&postcount=22</forum>
                            <telegram>https://t.me/XtendedOfficial</telegram>
 		           </vince>
-		   <mido>
+		              <mido>
                            <maintainer>Sagar Rokade</maintainer>
                            <devicename>Redmi Note 4 (mido)</devicename>
                            <filename>Xtended-mido-20181108-XP2.5-OFFICIAL-Release-v6</filename>
@@ -110,7 +110,7 @@
                            <devicename>MI A1 (tissot)</devicename>
                            <filename>Xtended-tissot-20181112-XP2.5-OFFICIAL-Release-v6.zip</filename>
                            <buildtype>Stable</buildtype>
-                           <download>https://drive.google.com/uc?export=download&confirm=qa3y&id=1iB4GZOWa6M_ciUdeOvYbzl1lpuZYx6sf</download>
+                           <download>https://netix.dl.sourceforge.net/project/xtended/tissot/Xtended-tissot-20181112-XP2.5-OFFICIAL-Release-v6.zip</download>
                            <changelog>https://raw.githubusercontent.com/Xtended-Pie/vendor_xtended_DevicesOTA/xp/tissot_changelog.txt</changelog>
                            <recovery>Use Cosmic Dan twrp Recovery</recovery>
                            <gapps>https://OpenGapps.org</gapps>
