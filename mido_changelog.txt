@@ -1,0 +1,575 @@
+====================
+     2018-11-11    
+====================
+
+ * vendor/xtended/DevicesOTA
+490cb9c  Update OP3/3T for XP2.5 Release v6  [SuperDroidBond]
+
+====================
+     2018-11-10    
+====================
+
+ * frameworks/base
+fc08d03  Make roaming indicator optional [1/2]  [Pranav Vashi]
+749bdec  ScreenOff skip track: add Spotify/kdeconn/... remote session compatibility  [ezio84]
+6f90291  QS tiles customizer: respect user tiles columns value  [ezio84]
+be6630b  [1/2] base: make aspect ratio hack configable on app level  [maxwen]
+b1819e9  Add an option to force pre-O apps to use full screen aspect ratio  [Jesse Chan]
+4f807e0  SystemUI: keyguard weather view - fix initial kick off after boot  [maxwen]
+420eee2  OnTheGoTile: Fix active inactive states  [Pranav Vashi]
+49574a5  NetworkTraffic: Fix on lockscreen and with doze  [mydongistiny]
+9335f9b  SystemUI: Fix NPE when creates wifi tracker  [mandy]
+5e5f9ab  Refusing to enter PIP mode when activity destroyed  [wangyougang]
+cad5ad5  Fix PIP media session listener for secondary users  [Kyeongkab.Nam]
+1855950  Fix the behavior of keyguard bouncer in a corner case  [Wang, ArvinX]
+1b3d350  VrManagerService: Solve the null pointer exception  [lvfenglin]
+2284a45  SystemUI: Fixes context for tiles without longClick  [Fabian Kozynski]
+c7fc539  ActivityManager: Fix display id JE issue  [Isaac Lee]
+7346ce6  Activity: Fix class not found exception  [Browse Zhang]
+a15ef71  am: Fix top activity resume with secure keyguard  [Oleksiy Avramchenko]
+17ae287  Fix app shortcuts string when changing language during first boot  [peter.zhang]
+148ac87  Revert "NavigationBarView: Avoid NPE before mPanelView is created"  [mydongistiny]
+ef1ddb1  do not remove system when provider publish timeout  [gaoshiqi]
+9f0b162  service: ResetListener in StorageManagerService  [Risan]
+4b13f51  system_server:process: Crash on Android user-switching  [Amano]
+bdb8c1a  QS: add right/left padding even if it's 0 for collapsed  statusbar  [ezio84]
+99ffeb6  Set statusbar round corners padding conditionally  [Alex Cruz]
+8fac534  UserManagerService: Use XTENDED_FINGERPRINT to signal upgrades  [Sam Mortimer]
+be2784f  LockSettingsService: Support for separate clear key api  [Shivaprasad Hongal]
+6fb87bc  Make sure secondary labels are also hidden with QS hide title  [SKULSHADY]
+8821fea  Fw_base - fix checkapi  [Simon Shields]
+f12ae1e  Fix StatusBar Brightness Control  [Danesh M]
+3bbc266  frameworks: base: Port password retention feature  [AnilKumar Chimata]
+07a40cc  data: sounds: cleanup ogg  [5x]
+52a961c  Phone ringtone setting for Multi SIM device  [Ting Yu]
+1013c02  DO NOT MERGE. Extend SQLiteQueryBuilder for update and delete.  [Jeff Sharkey]
+d15dfba  DO NOT MERGE. Execute "strict" queries with extra parentheses.  [Jeff Sharkey]
+de87873  QS: SystemUI: Add Smart Pixels tile  [adinkwok]
+4956c3b  ViewRootImpl: break out the loop when NPE caught  [aviraxp]
+6b808d8  Revert "ViewRootImpl: break out the loop when NPE caught"  [SuperDroidBond]
+1ee06a7  Fixes crash when getting panel before setting components  [Matthew Ng]
+66da1f9  Return Animation to default  [SuperDroidBond]
+8b771cc  Prevent NFE in SystemUI when parsing invalid int  [Edward Savage-Jones]
+9036407  CarrierLabel: Fix npe when loading settings  [mydongistiny]
+1f769f0  Fix UsbDeviceManager null object reference  [Eddie Hung]
+7a2ba57  KeyguardStateMonitor looses connection with keystore if keystore dies  [Janis Danisevskis]
+23d8d9f  Remove unused calling for better performance  [qiushi.han]
+
+ * packages/apps/Settings
+72ab4e4  Phone ringtone setting for Multi SIM device  [Ting Yu]
+
+ * packages/apps/Xtensions
+b9f7522  Fix NetTraffic UpLink/Downlink disabled on first boot  [SuperDroidBond]
+f415eaf  Make roaming indicator optional [2/2]  [Pranav Vashi]
+43ed5f6  Fix QS Info Header  [SuperDroidBond]
+83412ae  make aspect ration hack configable on app level [2/2]  [maxwen]
+
+ * vendor/xtended
+222551f  Fix QS Dotted Tile  [SuperDroidBond]
+c51ad06  Kang apns-conf from Lineage  [xyyx]
+8884acb  Trial Fix for SubsSignature package  [SuperDroidBond]
+
+====================
+     2018-11-09    
+====================
+
+ * frameworks/av
+392d974  libcameraservice: add TARGET_CAMERA_NEEDS_CLIENT_INFO  [darkobas]
+7c609cc  av: camera: catch mad hals that mess up buffer time  [maxwen]
+
+ * hardware/interfaces
+33e9784  keymasterV4_0: Tags support for FBE wrapped key.  [Shivaprasad Hongal]
+
+ * system/vold
+cbf6e54  vold: Move QCOM HW FDE inclusion under custom namespace  [Michael Bestas]
+55d98f7  vold: Wrapped key support for FBE  [Shivaprasad Hongal]
+99fe5fe  vold: Add Hardware FDE feature  [AnilKumar Chimata]
+807dcde  Switch pattern/PIN constants to match values in cryptfs.h  [Paul Crowley]
+f65f42c  secdiscard: should pin_file to avoid moving blocks in F2FS  [Jaegeuk Kim]
+18d68d2  vold: Accept Linux GPT partitions on external SD cards  [lambdadroid]
+2317eb8  vold: skip first disk change when converting MBR to GPT  [Scott Mertz]
+d0308d6  Fix the group permissions of the sdcard root.  [Jani Lusikka]
+dd1dfc1  vold ext4/f2fs: do not use dirsync if we're mounting adopted storage  [Sam Mortimer]
+a22f7b3  vold: Mount ext4/f2fs portable storage with sdcard_posix  [Jani Lusikka]
+9b2bf8b  vold: Honor mount options for ext4/f2fs partitions  [Tom Marshall]
+b445d97  vold: Support internal storage partitions  [Tom Marshall]
+d7dd979  vold: Fix fsck on public volumes  [Michael Bestas]
+5fb36b0  vold: add support for more filesystems for public storage  [Dan Pasanen]
+
+ * vendor/xtended
+98c1070  vendor: Fix build's XTENDED_FINGERPRINT  [Henrique Silva]
+722782b  soong_config: Add flag for crypto waiting on QSEE to start  [Michael Bestas]
+0715a46  soong_config: Add flag for legacy HW FDE  [Michael Bestas]
+edb4f9c  soong_config: Add new flags for HW FDE  [AnilKumar Chimata]
+
+ * vendor/xtended/DevicesOTA
+314a655  Add Mido Update XP-2.5 08/11/18 (#9)  [Sagar Rokade]
+
+====================
+     2018-11-08    
+====================
+
+ * frameworks/base
+195e294  Fix current formating on lockscreen for devices, that report directly in Ampere. Shamelessly extracted from:   base: Lockscreen Charging info  (3/3)   by: xyyx <xyyx@mail.ru>  [Jens Lody]
+072180c  privapp-permissions: Add missed Launcher3 permissions  [xyyx]
+ac22e4d  Merge tag 'android-9.0.0_r16' into p  [SuperDroidBond]
+
+ * frameworks/opt/net/ims
+cbbec8e  Merge tag 'android-9.0.0_r12'  [SuperDroidBond]
+
+ * frameworks/opt/net/wifi
+6d2c681  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD  [Henrique Silva]
+
+====================
+     2018-11-07    
+====================
+
+ * build/make
+e460c7e  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//build into HEAD  [SuperDroidBond]
+
+ * external/perfetto
+5749b84  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/external/perfetto into HEAD  [Prema Chand Alugu]
+
+ * frameworks/av
+f630fb4  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//frameworks/av into HEAD  [SuperDroidBond]
+
+ * frameworks/base
+9c0352a  Remove padding commits  [xyyx]
+
+ * frameworks/native
+3459e29  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//frameworks/native into HEAD  [Alex Cruz]
+
+ * frameworks/opt/telephony
+bace32a  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//frameworks/opt/telephony into HEAD  [SuperDroidBond]
+
+ * hardware/interfaces
+71c8266  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//hardware/interfaces into HEAD  [Alex Cruz]
+6ac5ff2  Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/hardware/interfaces into p9x  [Alex Cruz]
+
+ * hardware/libhardware
+670787c  libhardware: Add new display types.  [Dileep Marchya]
+1ae3b0b  hardware: power: Remove POWER_HINT_AUDIO  [Zhao Wei Liew]
+
+ * hardware/qcom/audio
+5b019f7  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/hardware/qcom/audio into HEAD  [Prema Chand Alugu]
+
+ * hardware/qcom/bootctrl
+db0cfdc  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/hardware/qcom/bootctrl into HEAD  [Prema Chand Alugu]
+
+ * hardware/qcom/display
+04c19d1  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/hardware/qcom/display into HEAD  [Prema Chand Alugu]
+
+ * hardware/qcom/gps
+e3dacb2  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/hardware/qcom/gps into HEAD  [Prema Chand Alugu]
+
+ * hardware/qcom/media
+f409829  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/hardware/qcom/media into HEAD  [Prema Chand Alugu]
+
+ * manifest
+1698873  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//manifest into HEAD  [SuperDroidBond]
+
+ * packages/apps/Bluetooth
+d4f60e8  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//packages/apps/Bluetooth into HEAD  [SuperDroidBond]
+
+ * packages/apps/Nfc
+0f9667c  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//packages/apps/Nfc into HEAD  [SuperDroidBond]
+
+ * packages/apps/Settings
+e1c1b75  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//packages/apps/Settings into HEAD  [SuperDroidBond]
+
+ * packages/providers/DownloadProvider
+cb94bab  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//packages/providers/DownloadProvider into HEAD  [SuperDroidBond]
+
+ * packages/services/BuiltInPrintService
+68c5976  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/packages/services/BuiltInPrintService into HEAD  [Prema Chand Alugu]
+
+ * packages/services/Telecomm
+121d613  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//packages/services/Telecomm into HEAD  [SuperDroidBond]
+
+ * system/core
+c68e26e  metricslogger: fix ACTION_BATTERY_CAUSED_SHUTDOWN not matching proto  [Thierry Strudel]
+
+ * vendor/xtended
+64cdef2  Increase Release & Xtended Version  [SuperDroidBond]
+
+====================
+     2018-11-06    
+====================
+
+ * bionic
+80eeb57  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//bionic into HEAD  [Alex Cruz]
+
+ * frameworks/base
+a20ee7b  BurnInProtection: Fix null object reference with timer  [mydongistiny]
+a7b53c9  Status bar notification ticker [1/2]  [rogersb11]
+fc3698d  SystemUI: small optimization for notification icon numbers  [Roman Birg]
+6fdf78f  Status bar: Update notification count icons  [XXMrHyde]
+aacbfe4  SystemUI: Forward-port notification counters [1/2]  [Steve Kondik]
+e34f1a5  Add more qs tiles style [1/3]  [ElDainosor]
+
+ * packages/apps/Xtensions
+7379954  [SQUASHED] Status bar notification ticker [2/2]  [SpiritCroc]
+3825c10  Strings : Clean Up  [SuperDroidBond]
+b47e23d  Forward-port notification counters [2/2]  [Steve Kondik]
+c7b7993  Add more qs tiles style [3/3]  [ElDainosor]
+
+ * system/bt
+3bc3b3e  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//system/bt into HEAD  [Alex Cruz]
+
+ * vendor/xtended
+d1f7c2e  Add more qs tiles style [2/3]  [ElDainosor]
+
+====================
+     2018-11-05    
+====================
+
+ * frameworks/base
+defb79c  Themes: Add Theme.DeviceDefault.Resolver.Exposed  [SpiritCroc]
+16e2e60  Themes: add bool to optimize notification icon colors on dark backgrounds  [SpiritCroc]
+8fb4bce  Themes: Expose notification icon colors  [Nicholas Chum]
+13487bb  Themes: Set UserIcons tintMode to SRC_ATOP  [Adarsh-MR]
+a71ec41  Themes: Expose QS tiles and label colors  [Adarsh-MR]
+66a5b74  Themes: SystemUI: expose screen pinning colors  [Adarsh-MR]
+aa6ec91  Themes: SystemUI: Expose QS edit item decoration background color  [Ivan Iskandar]
+4053f58  Themes: Allow Permission Icons to be fully themed  [Nicholas Chum]
+68da763  Themes: Allow Immersive cling colors to be fully themed  [Nicholas Chum]
+149d3af  Themes: Expose resolver hardcoded colors  [Dave Kover]
+6a52fbe  Themes: Expose toast & tooltip text colors for themes  [Adarsh-MR]
+f94d1ad  Themes: Expose Keyguard affordance circle background  [Branden M]
+d8eadaa  Themes: Allow volume slider and thumb to work with custom images.  [Randall Rushing]
+0d60b76  Themes: Expose Screenshot flash and background colors  [ezio84]
+c9bb576  Themes: Expose Keyboard Shortcuts Dialog  [Bryan Owens]
+5ae5411  Themes: graphics: ADB "N" icon compatible with OMS7  [George G]
+5da04d8  Themes: SystemUI: Expose switch bar title  [daveyannihilation]
+73fb95e  Themes: Allow Navbar ripple color to be themed  [Dave Kover]
+
+ * packages/apps/Settings
+9bcd24b  Themes: Settings: Fix theming  zoom preview timestamp text color  [Adarsh-MR]
+b1c0f95  Themes: Settings: expose msim color picker text colors  [Adarsh-MR]
+3867d81  Themes: Settings: Expose storage summary text  [George G]
+0e4dcfe  Themes: Settings: Expose storage icon colors  [SpiritCroc]
+
+ * vendor/xtended
+ba1617b  Add SusbsSig apk as it's not building  [SuperDroidBond]
+
+====================
+     2018-11-04    
+====================
+
+ * build/make
+2f527f0  build: Automatically replace old-style kernel header includes with new header lib (#2)  [Rajkale99]
+53fbde4  build: whitelist CAF bootjars  [Christian Oder]
+0ee420c  build: Introduce SubstratumHelperService  [Ivan Iskandar]
+
+ * build/soong
+3c26121  soong: add PathForSourceRelaxed function  [Sam Mortimer]
+175d556  soong sbox: Add option to allow copying all generated output  [Sam Mortimer]
+
+ * frameworks/base
+17342f4  SystemUI: Show bluetooth battery level when available  [LuK1337]
+243d79d  Tuner:Re-enable Headset Tuner Switch  [SuperDroidBond]
+84a94e1  OMS: handle target or overlay package disabled  [Mårten Kongstad]
+e0b92ef  OMS: try harder not to update assets if nothing changed  [Mårten Kongstad]
+6a8365c  SubstratumService: Rewrite installation method for Pie InstallSession API  [Ivan Iskandar]
+7b53614  Unbreak public api by hiding substratum interfaces  [Alex Naidis]
+d7daf7f  Pie OMS: allow non-system overlays from Substratum  [George G]
+4e41d30  SubstratumService: Refactor & cleanup according to AOSP conventions  [George G]
+2b7e2d1  base: modify/define custom overlay management  [Surge Raval]
+2a68423  SubstratumService: unify permissions  [Surge Raval]
+c401b72  SubstratumService: allow CHANGE_OVERLAY_PACKAGES permission  [Surge Raval]
+10223c0  base: Introduce SubstratumService  [Ivan Iskandar]
+6185ab4  OMS: StrictMode and files under /data/system/theme/  [mickybart]
+0504c6f  Hold "volume up" during boot to disable all overlays  [George G]
+dc80768  ThemeSafety: Introduce App Crash Intent  [Ivan Iskandar]
+077fc9e  ApplicationsState: add filter for Substratum overlays [2/2]  [George G]
+2859bbe  Extras: Add dynamic theme sound effects support  [Nicholas Chum]
+97f40d6  Extras: Add dynamic theme shutdown and boot animation support  [Ivan Iskandar]
+
+ * hardware/qcom/display-caf/msm8996
+ef8a7f2  hwc2: Dont built vendor.display.config with _vendor suffix  [Offain]
+
+ * packages/apps/Settings
+4906e61  Settings: Introduce Substratum changes.  [George G]
+
+ * packages/services/OmniJaws
+d1a42b6  OmniJaws: fix OWM forecast call and check for empty API keys  [maxwen]
+4c9edc6  OmniJaws: Add Google weather icon set  [SKULSHADY]
+
+ * vendor/xtended
+aaaace1  Merge pull request #2 from rajkale99/xp  [SuperDroidBond]
+cca5168  qcom: Declare PRODUCT_SOONG_NAMESPACES for HALs  [Rashed Abdel-Tawab]
+2aff99b  vendor: Move QC board variables earlier  [Rashed Abdel-Tawab]
+9ebefdc  xtended: Dynamically generate kernel headers using arrow generator  [Rashed Abdel-Tawab]
+6b54cab  vendor/arrow: Add soong generator module type  [Sam Mortimer]
+e5492c5  xtended: Move kernel variable configuration to BoardConfigKernel  [Rashed Abdel-Tawab]
+91ca34d   vendor/xtended: Remove kernel.mk headers generation  [Sam Mortimer]
+985fed3  qcom_target: Add wlan-caf to CFI paths  [intervigilium]
+
+ * vendor/xtended/DevicesOTA
+15badcc  20181103_update. (#7)  [Ankan Ghosh]
+
+====================
+     2018-11-03    
+====================
+
+ * frameworks/base
+c4ed71b  Fix Date & Alarm Size on boot  [SuperDroidBond]
+495b73c  SystemUI: Add heads up tile  [Michael Bestas]
+8923632  base: SystemUI: add tuner switch to hide qs info header  [maxwen]
+4983d88  DoubletapPowerForCamera disabled by default [2/2]  [ezio84]
+2ad5dc4  Allow dismiss notifications with FP left/right swipe [1/2]  [ezio84]
+f84cadc  GamingMode Tile: Show "What's This?" on long click.  [spezi77]
+14643a7  Framework: Remove some methods from boot image profile  [Andreas Gampe]
+442a63e  Fix issue which exception happens with ExifInterface for HEIF content  [Toshikazu Saito]
+6f430f6  Change caught exception in MediaScanner when ExifInterface is created  [Toshikazu Saito]
+b4b047b  ExifInterface: Avoid infinite loop on stream seeking failed  [hovanchen]
+01de050  Notifications: Publish binder service for lights  [Sam Mortimer]
+17f6d69  Allow to set a full gesture navbar (swipe left for back action) [1/2]  [ezio84]
+4e1f3f0  Remove NotificationVisibility storage pool  [Hans Boehm]
+95f22b9  Fix data source for HEIF exif extractor  [Chong Zhang]
+935bef7  BatteryService:add turbo power charging support  [jhenrique09]
+09db500  platform priv-app-permissions: update used development/tools/privapp_permissions/privapp_permissions.py script  [DennySPB]
+bbce2ec  Fix FC of Tiles on Long click  [SuperDroidBond]
+
+ * hardware/qcom/power
+d73afb9  power-8084: Revert POWER_HINT_LAUNCH handling  [Corinna Vinschen]
+abc2a59  power: Remove 1.0 HAL remnants  [Michael Bestas]
+d91b678  power: sdm660: Support power profiles  [dianlujitao]
+932a21f  power: Clean up hint IDs  [dianlujitao]
+586e22e  power: set_power_profile: handle errors  [Corinna Vinschen]
+b803ed1  power: perform_hint_action: return an error code  [Corinna Vinschen]
+ce7f264  power: Return empty subsystems power stats and always use Power@1.1  [Rashed Abdel-Tawab]
+
+ * manifest
+dc85b45  Track our opt_net_wifi  [SuperDroidBond]
+
+ * vendor/xtended/DevicesOTA
+d336250  Update Vince For Release v5.5 (#6)  [Rajkale99]
+9a5f805  update cheeseburger & dumpling for Release v5.5  [mukesh22584]
+04acccc  Change the download link for direct download Thanks to @Subinsmani  [SuperDroidBond]
+d6d40c5  Update OP3 for Release v5.5  [SuperDroidBond]
+
+====================
+     2018-11-02    
+====================
+
+ * frameworks/opt/net/wifi
+1c18946  Wifi: Disable RTT if RTT permission file is missing from device  [Anurag Das]
+892a4e7  Wifi: Ignore p2p group with null ssid when loadGroups  [Hu Wang]
+012d047  frameworks/opt/net/wifi: add support for Fast Session Transfer (FST)  [Dedy Lansky]
+44ed146  wifi: Add WifiGbk to support GBK SSID in framework  [Hu Wang]
+9a2eb87  wifi: Delay disconnection when wifi_disconnect_delay_duration is set.  [Purushottam Kushwaha]
+d0bc0a4  Wifi: Reconnect on IP change.  [Anurag Das]
+26678f9  p2p: allow device to disable automatic P2P interface setup  [Lukas0610]
+cd8a91e  WiFi: Ignore connectivity scans during WFD session  [Arif Hussain]
+8ae69da  Wi-Fi : Abort setWifiEnabled if WifiController not ready  [Abhishek Srivastava]
+1805887  wifi: don't check if WIFI_DRIVER_STATE_CTRL_PARAM is readable  [codeworkx]
+893000e  wifi: Check whether dev node is accessible or not before opening  [Yuanyuan Liu]
+
+ * frameworks/opt/telephony
+f4b2552  Allow LocaleTracker to work even if wifi is not up (FDE)  [Pierre-Hugues Husson]
+ec696ef  Refresh SIM operator numeric for multi-mode SIM  [Mengjun Leng]
+6e7ab7b  Revert "IMS : Fix to prevent back to back emergency call redial".  [Ravi Paluri]
+6ff1929  Add check before replacing volte RAT  [Avinash Nalluri]
+
+ * packages/apps/Launcher3
+574602d  Settings restart watcher improvements  [Ezio Lacandia Bijelkic]
+0685432  Fix preference key for hidden app feature  [Pranav Vashi]
+6d210c5  [SQUASHED] Implement Hidden Apps  [Alex Cruz]
+2aa856c  Make notifications gesture optional  [Alex Cruz]
+
+ * packages/apps/Settings
+fae3b12  DoubletapPowerForCamera disabled by default [1/2]  [ezio84]
+22cea6f  Allow dismiss notifications with FP left/right swipe [2/2]  [ezio84]
+c1a3fb3  Allow to set a full gesture navbar (swipe left for back action) [2/2]  [ezio84]
+
+ * packages/apps/Xtensions
+9075fae  Fix Date & Alarm Size on Boot  [SuperDroidBond]
+4fe1a5a  Toggle for QS Header Info [2/2]  [maxwen]
+
+ * vendor/xtended/DevicesOTA
+6e4b989  Add X00TD & Update for Release v5 (#5)  [Aryan Patidar]
+f914b50  Add Vince (#3)  [Rajkale99]
+
+====================
+     2018-11-01    
+====================
+
+ * packages/apps/Launcher3
+43f8214  Add a flashlight gesture & group it with the sleep one  [Alex Cruz]
+6a24aa9  Swipe down to show notifications panel  [ezio84]
+753ab8c  Add double tap to sleep gesture  [ezio84]
+2b97b4a  Fix compilation warnings  [Alex Cruz]
+8ae9802  Restart with change only on exit  [Alex Cruz]
+d3eb981  Lint fix: IS_DEBUG_DEVICE: Implied default locale  [Tobias Dubois]
+8673434  Use View.getHeight() instead of Canvas.getHeight() for PageIndicatorDots  [Tobias Dubois]
+bfd1cd9  Fix overlapping FloatingViewType IntDef  [Tobias Dubois]
+be150b9  Elevate to 'core/platform' app'  [Alex Cruz]
+803e9b5  Only fail for the current user  [deletescape]
+d4d9cff  Add back button to Settings  [Alex Cruz]
+786fc37  Add SearchLauncher target  [Artem Borisov]
+6a855a6  Use new widget style for Google searchbar  [Artem Borisov]
+18d6d07  Avoid NullPointerException on non-feed devices.  [Jens Lody]
+7635140  My Finishing Touch  [SuperDroidBond]
+78b1efb  Quickstep: feed integration support  [Thecrazyskull]
+bb46af8  Launcher3: Workaround the Icon pack issue on adaptive apps  [ElDainosor]
+f346935  PagedView: fix pointer index out of range  [Alexander Martinz]
+
+ * packages/apps/Xtensions
+8e75af4  Pixel Navbar animation toggle [2/2]  [beanstown106]
+51821c3  Allow toggling animations off [2/2]  [Shuhao Wu]
+08a57b1  disable not working Animation Override Switch  [alexxxdev]
+
+====================
+     2018-10-31    
+====================
+
+ * frameworks/base
+8856c29  ViewRootImpl: break out the loop when NPE caught  [aviraxp]
+649c40a  base: fix check for keyguard in edge gestures  [maxwen]
+8f3ea55  SystemUI: Fix mCallbacks is not thread-safe  [Yutaka Sato]
+a187ad6  FileSystemProvider: Fix renaming error in DocumentsUI  [sxia]
+38988cd  SystemUI: Patch navigation bar to emulate hw keys  [Carlo Savignano]
+b52e0a3  Add Pixel UI  [SKULSHADY]
+dec82cd  Use dialogCornerRadius for more dialogs  [SKULSHADY]
+1fdeb17  Base: Update default material popup animations  [westcripp]
+d6d5d3f  MTU should be 1358 as per 3GPP standards, especially for LTE radio interfaces.  [Stacy Devino]
+cc8edd96  Fix Alarms & Tiles low space  [SuperDroidBond]
+407a1a1  Fix padding for bottom brightness slider  [SKULSHADY]
+96bb7c0  Disable FP Wakelock debugging  [Miguel Martinez]
+2e9d410  SystemUI: Fix several issues in the ADB over Network tile  [Bruno Martins]
+87b82ca  QS: SystemUI: ADB over network tile  [Danesh M]
+64c20be  SystemUI: Fix Data Usage tile to match Settings  [Paul Keith]
+4e33747  Add SleepScreen QS Tile (PowerMenu on longpress)  [STELIX]
+108fe73  Fix pinned stack may be null after animation end  [zhaoyue9]
+d7a1ff3  Move BT state to OFF when BLE app count is zero  [Subramanian Srinivasan]
+b367955  Bluetooth: Prioritize Bluetooth state change intent to start Service  [Vic Wei]
+f9e0ee5  Fix System Server Crash in onRestrictBackground()  [Yusuke Akahoshi]
+8b6fb47  base: SystemUI: fix tuner status bar icon blacklist  [maxwen]
+91d4098  SystemUI: add volume tones and toggle back [1/2]  [Roman Birg]
+225e1ae  Add volume up/down tones back  [Roman Birg]
+fb5ac9a  Reload Pixel Home Animation without reboot  [Joe Maples]
+dec30e0  Pixel Navbar animation toggle [1/2]  [beanstown106]
+fbafc8b  OpaLayout: Set PorterDuff mode to SRC_ATOP  [Harsh Shandilya]
+81d4bf7  SystemUI: Add AmbientDisplay tile  [Adnan Begovic]
+01f021b  Add Always On Display QS Tile  [SpiritCroc]
+1212f4f  MusicTile: Make tile state inactive if not playing music  [Pranav Vashi]
+e6495ba  Add Music QS Tile  [Lars Greiss]
+c32efa3  AppTransitions: Remove hackery for controls duration * Use customseekbarpreference in settings.  [Pranav Vashi]
+c08fe2c  Reset WindowingMode of the orphaned TaskRecord  [Tetsutoki Shiozawa]
+04c1c7f  Synchronize mPermissions to void NullPointerException  [xiaobing.sun]
+571fa94  PhoneWindowManager: Check if proposed rotation is in range  [Luca Stefani]
+123ca37  Allow toggling animations off [1/2]  [Shuhao Wu]
+066f74b  FWbase : Fix GA fc and saving the gesture cache  [westcripp]
+f71b5b5  Increase gesture anywhere width to 40px [1/2]  [Alex Cruz]
+a1727d0  Gesture Anywhere [1/3]  [0xD34D]
+a00ba66  Weather tile longclick: alternative weather apps when google weather not installed  [SpiritCroc]
+a92b368  WeatherTile: Start Google Weather on LongClick  [LorDClockaN]
+06c1097  HWKeys: Fix annoying trouble with wakeup from hw keys  [xyyx]
+c5087e7  ScreenRecord: Fix wrong call to share/delete  [Miguel Martinez]
+
+ * packages/apps/Settings
+dc0e001  Remove night mode from development settings  [ganeshi4u]
+469aaf2  Add Pixel UI  [SKULSHADY]
+185973f  Settings: Add AGPS setting menu.  [juwei]
+6368ebf  Tint suggestion icons to match system accent  [Alex Cruz]
+0f31ed4  Center the suggestion text and icon  [Alex Cruz]
+bb2292c  Fix Sim dialog  [SKULSHADY]
+0274b75  Settings: add volume tone toggle back [2/2]  [Roman Birg]
+
+ * packages/apps/XOta
+8cecdae  Align All Icons on Device Accent  [SuperDroidBond]
+
+ * packages/apps/Xtensions
+222bb74  Gesture Anywhere [2/3]  [0xD34D]
+
+====================
+     2018-10-30    
+====================
+
+ * frameworks/base
+7a3f48b  Remove the property of touch optimization check.  [binzhang]
+2943902  MSIM: Get network operator name of default data sub.  [qiongz]
+e487c6f  NtpTrustedTime:Abstract forceSync and forceRefresh  [John Zhao]
+bbc41902  SystemUI: Fixed traffic icon show in SUB1 while sending MMS on SUB2  [Weijie Wang]
+4af2132  SystemUI: Fix NPE  [Weijie Wang]
+27e1a8d  SystemUI: Sort subscriptions for SPN  [Weijie Wang]
+da7d81f  null check before accessing getCurrentScore()  [Devi Sandeep Endluri V V]
+701fef6  Update network score from NetworkAgent  [Devi Sandeep Endluri V V]
+
+ * packages/apps/Settings
+2398d2f  Align X-Tensions Icon on Accent  [SuperDroidBond]
+535979b  Bring back selinux version  [Stephen Smalley]
+00873ba  Gesture Anywhere [3/3]  [0xD34D]
+
+ * vendor/xtended/DevicesOTA
+f2782ba  Add Potter & Update for Release v5 (#4)  [iCodeLife]
+
+====================
+     2018-10-29    
+====================
+
+ * frameworks/base
+3e490d5  GnssLocationProvider to remember the Networks and connection types  [Kevin Tang]
+ebedf90  wifi: Add settings to allow delay_disconnect if needed.  [Purushottam Kushwaha]
+8443150  Add WIFI_COUNTRY_CODE_CHANGED_ACTION broadcast.  [Dedy Lansky]
+3adae69  Fix not-protected broadcast codeaurora.telecom.action.CALL_TYPE  [DennySPB]
+92d57f9  Make all activities resizable  [Andy CrossGate Yan]
+9d90da5  [SQUASHED] Allow to disable qs footer warnings [1/2] QS footer warnings: fix showing after reboot  [ezio84]
+a44b95c  Fix QS Tile Animations after https://github.com/Xtended-Pie/frameworks_base/commit/ad21d1a1f3a6dcc3d56cd9bb5f0cba9b300c41ed#diff-1b563eaa74d7f1e9e2baad59894949a6  [SuperDroidBond]
+91966e7  LS Weather Temp & City Fonts [1/2]  [SuperDroidBond]
+f30f8a6  Add Toggle for LockWeather Image [1/2]  [SuperDroidBond]
+
+ * frameworks/opt/telephony
+271f5fb  MSIM:Fix iccid issue during android upgrade.  [Vidyalakshmi Badiger]
+c764c55  Handle CallFailCause ACCESS_CLASS_BLOCKED  [Sukanya Rajkhowa]
+396b3da  Allow Emergency IMS network request in SIM less case  [Avinash Nalluri]
+
+ * manifest
+25232ca  Track Dragon TC  [SuperDroidBond]
+
+ * packages/apps/DocumentsUI
+84fbc26  DocumentsUI: Check for mStarted state only on eng builds  [Han Wang]
+b52a0ee  Fix duplicate permission info on Adoptable storage  [Takamasa Kuramitsu]
+5161d7e  Fix layout of dropdown_sort_widget  [Takamasa Kuramitsu]
+d47cee9  Fix the other app's scoped directory permissions are revoked  [Takamasa Kuramitsu]
+b57c456  Fix crash when opening inspector screen of broken folder  [Takamasa Kuramitsu]
+2bf227b  Drop the task which already stopped in restoreTask  [Yuntao.Xiao]
+9128a4d  DocumentsUI: Open /sdcard instead of Downloads by default  [mydongistiny]
+
+ * packages/apps/Launcher3
+9a5005e  add option to change icon size  [hundeva]
+26331b5  [Launcher3] Add iconpack support  [maxwen]
+8512d4d  DeviceProfile: fix divide by zero  [Alexander Martinz]
+4cd62c0  Launcher3: Can't search out local app by Chinese  [yingrenw]
+4fb9260  logging: prevent NPE at logDeepShortcutsOpen  [Alexander Martinz]
+15412d5  Workspace: Allow resizing any widget  [Nebojsa Cvetkovic]
+fa0de22  Make app drawer more transparent  [SuperDroidBond]
+65228af  Option to hide/show labels on desktop & app-drawer  [Alexey Derendyaev]
+
+ * packages/apps/Settings
+642acbd  settings: Remove IMEI explicit info  [ElDainosor]
+b9e6dea  Settings: remove input type from summary  [maxwen]
+2c49f62  Act as usb device when there is no hal, but we believe we are a device  [Pierre-Hugues Husson]
+097653b  Rearrange density options under Settings/Display  [Alex Cruz]
+d7100f7  Settings: use XTENDED_FINGERPRINT for search index check  [maxwen]
+4388aaa  Integrate OmniJaws Settings for WeatherTile Long Click  [maxwen]
+17fd7c7  Make BuildNumber show release version. We need users to be informed  [SuperDroidBond]
+00828d8  Integrate Xtended OTA Support [3/3]  [Pranav Vashi]
+f69e1e8  DevelopmentSettings: Hide OEM unlock by default  [Bruno Martins]
+6b15307  Align battery preference like others  [SuperDroidBond]
+3d79d69  Remove feedback and bug report stuff  [ezio84]
+733be3a  Changelog: Add left padding  [xyyx]
+764e913  SimSettings: Use TelephonyExtUtils helper methods  [Bruno Martins]
+1cfc79b  SimSettings: Fix preferred calls sim not being disabled  [Michael W]
+85acfd7  SimSettings: Fix potential NPE  [LuK1337]
+5660a0f  SimSettings: Handle NoClassDefFoundError on devices without telephony-ext  [LuK1337]
+b405920  SimSettings: Improve dialogs  [maxwen]
+afa53ad  SimSettings: Correctly disable sim switch without SIM card  [xyyx]
+d8e86d8  SimSettings: Port manual provisioning support  [Thecrazyskull]
+
+ * system/sepolicy
+27caed8  Allow hal_usb access sysfs when in coredomain  [Artem Borisov]
+ef0e226  Optionally build sepolicy_freeze_test  [Nick Reuter]
+32961c1  sepolicy: allow settings to read selinux status  [maxwen]
+
