@@ -1,602 +1,586 @@
 ====================
+     2018-12-07    
+====================
+
+ * frameworks/base
+3313a03  Lockscreen Visualizer: Check for keyguard fading away  [Pranav Vashi]
+1a1e408  frameworks: Add unlinked ringtone and notification volumes  [Adnan Begovic]
+25c3b68  PIE: Hide network type if wifi is enabled  [Pranav Vashi]
+1d661da  Fw_base - [SQUASH] PIE 3.0 (oreo->Pie)[1/3]  [Paul Henschel]
+8977ea7  Fw_base - SystemUI: filter service disabled broadcast for qs weather tile  [maxwen]
+b3cbd6a  Added toast when a screenshot is deleted  [Alex Cruz]
+c5f990e  ViewConfiguration: Set scroll friction to 0.012  [Alex Naidis]
+63e44b5  SystemUI: Change default animation scales to x0.8 [2/3]  [Adin Kwok]
+8fb53df  SystemUI: Change default animation scales to x0.8 (1/3)  [gtpitch]
+5466d79  SettingsProvider: lowered animations duration  [Maxime Poulain]
+9228e83  Grant Location Permissions to OmniJAWS  [Vaughn N]
+839ed01  Battery charge warning [1/2]  [Nicolas Dhouailly]
+e526f22  NetworkTraffic: decrease padding  [SuperDroidBond]
+d75670c  Networktraffic: Fix gravity  [Shubham Singh]
+427b789  FontService: fix null object reference  [soubhik-khan]
+760355f  LockscreenVisualizer: Use offload thread  [Pranav Vashi]
+653c800  Pulse: allow setting fading blocks opacity [1/3]  [varund7726]
+eba4bae  Stock navbar Pulse : allow to blacklist apps [1/2]  [ezio84]
+9369577  Pulse: Add bar animation smoothing [1/3]  [Ritayan Chakraborty]
+b28494c  Add Pulse Lava Lamp start and end colors (1/3)  [out386]
+902f7b3  Smartbar pixel animation: Ability to customize the dots [1/3]  [varund7726]
+965a7b9  Smarbar Pixel Navbar Animation Duration Settings [1/3]  [varund7726]
+efcb5ba  Fixes for lockscreen visualizer  [Pranav Vashi]
+99156a9  Increase LongPress Timeout  [SuperDroidBond]
+
+ * manifest
+e8403c7  Track Forked Eleven, MusicFX & jamesdsp  [SuperDroidBond]
+
+ * packages/apps/Settings
+d178329  Settings: Add switch for linked ring and media notification volumes  [Bruno Martins]
+bd75748  PIE [3/3]  [thecrazyskull]
+
+ * packages/apps/Xtensions
+70a0b25  PIE [2/3]  [thecrazyskull]
+e867763  Hide SB weather for now  [SuperDroidBond]
+
+ * vendor/xtended
+4cdc8f1  vendor: build Eleven, MusicFX & JamesDSP  [Julian Veit]
+8087e69  Call it XP4 Release v8  [SuperDroidBond]
+9b31f54  Add 23 fancy accent colors  [spezi77]
+
+====================
+     2018-12-06    
+====================
+
+ * packages/apps/Settings
+3ba5385  Battery charge warning [2/2]  [Nicolas Dhouailly]
+
+ * packages/apps/SmartNavSettings
+3fa651d  Smartbar pixel animation: Ability to customize the dots [3/3]  [varund7726]
+
+====================
+     2018-12-05    
+====================
+
+ * frameworks/base
+fdb4720  SystemUI: Fix too big spacing between QS icons in landscape on sw600dp  [LuK1337]
+
+ * packages/apps/OmniDisplayManager
+9d21642  Adapt for Xtended  [SuperDroidBond]
+3146233  OmniDisplayManager: restore night mode when disabling reading mode  [maxwen]
+c427479  OmniDisplayManager: add firewalls around native lib usage  [maxwen]
+31b1356  OmniDisplayManager: add reading mode tile  [maxwen]
+df7af6a  OmniDisplayManager: tune me up baby  [maxwen]
+
+ * packages/apps/SmartNav
+64caffc  Use offload thread (ExecutorService) to start pulsing  [ezio84]
+2e255a0  Smartbar pixel animation: Ability to customize the dots [2/3]  [Varun Date]
+9769cb1  Make Smartbar Pixel Animation Durations Customizable [2/3]  [Varun Date]
+6041127  Pulse: Add bar animation smoothing [2/3]  [Ritayan Chakraborty]
+e452032  Add Pulse Lava Lamp start and end colors (2/3)  [out386]
+e9fb0a5  Pulse: allow setting fading blocks opacity [2/3]  [Varun Date]
+
+ * packages/apps/SmartNavSettings
+231ea4c  Settings: Make Smartbar Pixel Animation Durations Customizable [3/3]  [varund7726]
+c25c0f3  Return Button Opacity for NavBar Pulse  [SuperDroidBond]
+4d53728  Add Pulse blacklist option  [ezio84]
+f5d652f  Pulse: allow setting fading blocks opacity [3/3]  [varund7726]
+d3c24bc  Pulse: Add bar animation smoothing [3/3]  [out386]
+cd5abaa  Add Pulse Lava lamp start and end colors (3/3)  [out386]
+
+ * packages/apps/Xtensions
+ca2439a  Fix Charging Symbol Summary  [SuperDroidBond]
+
+====================
+     2018-12-04    
+====================
+ * art
+b77a91d  Fixed Dex2oat failed to compile a boot image  [Gareth Kitchen]
+
+ * bionic
+6cb714f  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//bionic into HEAD  [SuperDroidBond]
+
+ * build/make
+85af835  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//build into HEAD  [SuperDroidBond]
+
+ * frameworks/base
+4741c66  core: touch response optimizations  [zfu]
+152f7c6  Support for appending "standalone" WHERE chunks  [Jeff Sharkey]
+ce3b0c4  Bind update() args as Object[] for performance  [Jeff Sharkey]
+a839dcd  Extend SQLiteQueryBuilder for update and delete  [Jeff Sharkey]
+fcaa828  Execute "strict" queries with extra parentheses  [Jeff Sharkey]
+c798f83  Revert SQLiteQueryBuilder for now  [Jeff Sharkey]
+39e6f8d  Execute "strict" queries with extra parentheses  [Jeff Sharkey]
+72bc564  Add support for appending standalone phrases  [Jeff Sharkey]
+3c3f52e  GROUP BY and HAVING aren't ready to be strict  [Jeff Sharkey]
+76cc072  Extend SQLiteQueryBuilder for update and delete  [Jeff Sharkey]
+51deefd  Revert "aapt: Default to 0 compression ratio"  [mydongistiny]
+e76c1a7  Revert "Frameworks/base: Compiled-classes support"  [Andreas Gampe]
+a3dda74  Fix ExifInterface for .heic when meta is at the end  [Chong Zhang]
+4ced92a  Select the proper request list size  [Guruprasad Gaonkar]
+1064971  SystemUI: Fix IllegalArgumentException when SystemUI do dumping  [Weijie Wang]
+ef5dde0  Avoid NPE in resumeTopActivityInnerLocked()  [Hang Lu]
+59aa081  Fix Framework Reboot due to invalid display  [Gopal Krishna Shukla]
+5bcf2ef  SystemUI: fix notification overlap with PIN screen  [xiaohuin]
+71b90cb  ResourceManager: Disable APK Assets cache  [Narayan Kamath]
+91b33cc  BoostFramework: Implement asynchronous processing of perflocks  [Alex Naidis]
+12569c6  fwb: disable Aggressive trim settings by default  [maxwen]
+495fd2f  Revert "Temp: Fix NetworkTraffic display"  [xyyx]
+d37f69d  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//frameworks/base into HEAD  [SuperDroidBond]
+d2346e9  Revert "Be more strict about triggering notification lights"  [xyyx]
+fe2994b  Ignore vendor overlays that must be on system/overlay  [jhenrique09]
+
+ * frameworks/native
+064b915  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//frameworks/native into HEAD  [SuperDroidBond]
+
+ * manifest
+0d1fc84  Track Wlan from our GZOSP again  [SuperDroidBond]
+15ada62  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//manifest into HEAD  [SuperDroidBond]
+3e8b928  Track OmniDisplay Manager  [SuperDroidBond]
+
+ * packages/apps/Bluetooth
+4d3ee7f  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//packages/apps/Bluetooth into HEAD  [SuperDroidBond]
+
+ * packages/apps/Settings
+e073c61  Remove DT2S from Pie Gestures for now  [SuperDroidBond]
+5ed460f  Settings: Hide notification light color preference if no multicolor led  [Vol Zhdanov]
+8d1ceb3  Revert "Settings: Allow to specify multicolor notification led support [2/2]"  [Vol Zhdanov]
+
+ * system/bt
+dc381ee  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//system/bt into HEAD  [SuperDroidBond]
+
+ * system/core
+c3dc7fc  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//system/core into HEAD  [SuperDroidBond]
+
+====================
+     2018-12-03    
+====================
+
+ * frameworks/base
+00058eb  Fingerprint: Use FastJNI  [HolyAngel]
+563f651  NetworkTraffic: Fix gravity  [xyyx]
+e9a0597  Avoid casting network traffic to StatusBarIconView to prevent crash  [SpiritCroc]
+2f1ec81  Add network traffic monitor properly to statusbar icons  [SpiritCroc]
+090583e  Revert "NetworkTraffic: Fix on lockscreen and with doze"  [SuperDroidBond]
+
+ * system/bt
+380a003  Fix BT Calls  [AmolAmrit]
+
+====================
+     2018-12-02    
+====================
+
+ * packages/apps/Settings
+99001e0  Add developer setting to set the default GPU renderer.  [Joe Maples]
+
+====================
+     2018-12-01    
+====================
+
+ * frameworks/base
+9a395f3  Wi-Fi Auto-connect support  [Yinling Cai]
+c34b9ba  SmartNav: Update Kill App action  [bigrushdog]
+ab47011  Fix QS BG Color  [SuperDroidBond]
+cd54690  Implement App circle sidebar [1/2]  [Yanuar Harry]
+0744af0  Bluetooth: Fix NPE when accesing Manufacturer Data of invalid ScanRecord  [Jakub Pawlowski]
+9f4b45a  hwui: stability: check mmap return value  [zhangkuili]
+ae86e71  Recents: add pinch-in gesture on tasks to Clear All  [ezio84]
+eb251a6  Recents: Allow closing empty view via tapping  [Michael W]
+0171339  PanelPorn 8.1: Power menu alpha and dim (1/2)  [LorDClockaN]
+
+ * packages/apps/Xtensions
+c90e11e  Implement App circle sidebar [2/2]  [Yanuar Harry]
+f6c0508  Add display colors menu if related package is present  [Vachounet]
+3f706fc  PanelPorn: Power menu alpha and dim (2/2)  [LorDClockaN]
+
+====================
+     2018-11-30    
+====================
+
+ * frameworks/base
+66fab12  base: make old qti telephony optional [1/2]  [Vol Zhdanov]
+a550f2d  Keep recent tasks for more time in memory  [ezio84]
+bc09002  base: Add special captive portal servers for chinese  [LiangXiang Shen]
+1f764e5  Add More Charging Symbols [1/2] Thanks to @mady51 for the idea  [SuperDroidBond]
+57aaa1c  AmbientPlay: Animate ambient indication into view  [Chris]
+d149d40  CustomDoze: fix custom gestures not working if default pulsing is disabled [1/2]  [ezio84]
+fda04d7  SystemUI: qs brightness slider enhancements [1/2]  [maxwen]
+0610b51  Full gesture navbar: add haptic feedback to back action  [ezio84]
+baee3aa  hwkeys: Fix sound search  [Anushek Prasal]
+deea924  Fix the Statusbar and QS panel layout  [Anushek Prasal]
+7fe942e  HWKeysUtils: Fix mismerge after https://github.com/Xtended-Pie/frameworks_base/commit/4337fbf6b504cc3bdfaa03ba27d2fc516180dbd4  [xyyx]
+
+ * frameworks/opt/telephony
+e8604af  PhoneFactory: make old qti telephony optional [1/2]  [Vol Zhdanov]
+acfa67c  TelephonyComponentFactory: Overload makeSubscriptionInfoUpdater  [TheScarastic]
+160b1a1  Make radio power off immediately after data cleanup is complete  [Mengjun Leng]
+bc30c52  Fix to release partial wakelock for SRVCC handover.  [Umashankar Godachi]
+0dd53ee  DcTracker: Change access modifier of isNvSubscription to protected  [Bruno Martins]
+963a011  Telephony: Enable NV based CDMA data call.  [Yashdev Singh]
+b4d7fbf  telephony: Query LTE thresholds from CarrierConfig  [Artem Borisov]
+8630f3c  telephony: Squashed support of dynamic signal strength thresholds  [Paul Keith]
+d6b130c  Implement signal strength hacks used on Huawei devices  [codeworkx]
+
+ * manifest
+0a2e4e2  Track GZOSP Vendor/Audio  [SuperDroidBond]
+9cb71cd  Initial checkin on Pie for SmartNav navigation suite [4/4]  [SuperDroidBond]
+
+====================
+     2018-11-29    
+====================
+
+ * frameworks/base
+87c076b  Pulse: add back auto color based on albumart  [ezio84]
+b4a51fa  Stock AOSP Navbar Pulse bringup  [bigrushdog]
+af07f18  Full nav gesture: Poor Hack to Get Everything working  [SuperDroidBond]
+cd161aa  Battery: Fix the Padding of PercentageView  [SuperDroidBond]
+103f3bc  Launch music player on headset connect: add BT compatibility [1/2]  [ezio84]
+b7c034b  Launch default music player on headset connect [1/2]  [PMS22]
+8056c98  Screenrecord: Adjust 'High' setting to 1080p  [Miguel Martinez]
+1fe7275  Xtended: Fix QS Header Style  [SKULSHADY]
+fbb3f69  Support the perflock request from system/priv apps whose domain are untrusted  [binzhang]
+aa69180  Add Game boost & modify launchboostv2 invocation.  [Bhargav Upperla]
+09b83b5  Disable swipe boost and preferred apps for certain cases  [Sudharshun Iyengar]
+cd13f64  Fling/Pre-fling Boost: Call perf boost from System Server context  [Sudharshun Iyengar]
+86cf535  BoostFramework: Clean up code  [Bhargav Upperla]
+8807d54  IOP : Adding support for UXPerf Class  [Abhimanyu Garg]
+1feb60c  BoostFramework: Move property checks to pass sepolicy requirements.  [Bhargav Upperla]
+ae4768c  IOP/UXE: This change is to enable the IOP and UXE  [Bhargav Upperla]
+2ed9b63  Precise new activity boost.  [Karthik Gopalan]
+41b19d5  Reorder boosts for quick ramp up  [Chitti Babu Theegala]
+14cd06d  Add perf hint for screen rotation animation  [Jun Wang]
+7700b55  Add perf hint for rotation latency  [Jun Wang]
+965b228  framework/base: add parallel verifyV1  [zljing]
+7c4b6cc  add perf_service into system_process.  [zfu]
+56054b8  BoostFramework: To Enhance performance.  [Varun Garg]
+
+ * packages/apps/CustomDoze
+f9369e7  CustomDoze: fix custom gestures not working if default pulsing is disabled [2/2]  [ezio84]
+
+ * packages/apps/SmartNavSettings
+7c1d6cf  Pulse: add back color from album art preference  [bigrushdog]
+25950ef  Pulse: Allow Pulse for all bar modes  [bigrushdog]
+8cf39f9  Link Correctly Stock NavBar Settings  [SuperDroidBond]
+
+ * packages/apps/Xtensions
+9f70c08  Add More Charging Symbols [2/2] Thanks to @mady51 for the idea  [SuperDroidBond]
+2baec60  qs brightness slider enhancements [2/2] add switch for brightness buttons  [maxwen]
+
+====================
+     2018-11-28    
+====================
+
+ * frameworks/base
+5fe7c5b  Rounded Corners: Set default value  [Anushek Prasal]
+229d6f2  [SQUASHED] Rounded Courners [1/2]  [Kshitij Gupta]
+e8b909e  Add kill button to notification guts [1/2]  [Daniel Koman]
+
+ * packages/apps/Snap
+1c60edd  Adapt to AOSP  [DennySPB]
+
+ * packages/apps/Xtensions
+a98fc1f  Launch music player on headset connect: add BT compatibility [2/2]  [ezio84]
+
+====================
+     2018-11-27    
+====================
+
+ * frameworks/opt/jamesdsp
+cedd63c  JamesDSP: Install the module into soundfx directory  [Christos Papageorgiou (root-expert)]
+f11f454  JameaDSP: Make it a vendor module.  [Christos Papageorgiou (root-expert)]
+
+ * packages/apps/Xtensions
+ae487f0  [SQUASHED] Rounded Courners [2/2]  [Kshitij Gupta]
+
+====================
+     2018-11-26    
+====================
+
+ * frameworks/base
+0b15400  Prevent crash when multiple Screenshot request  [Shigeki Yokomichi]
+bec4e9c  Crash app on foreground service notification error  [Da Xing]
+99ddacf  Check the size of the ArrayList in ActivityManager.forceStopPackage()  [Guo Li]
+498a6cf  Preserve x18 while preloading SP-HALs in the zygote  [Peter Collingbourne]
+b2d3398  Fix NullpointException in NetworkPolicyManagerService  [Zhengyu Zhan (詹正禹)]
+f9210f9  Dynamic font fix for FDE devices  [maxwen]
+b7c76e9  Add progress for font apply [1/2]  [maxwen]
+72992d2  Fonts: patched a few need files for boot  [Camvar97]
+b0fee6f  Fonts: Update keyguard when font changes @SKULSHADY: Cleanup for our custom clock, date and carrier label font styles  [bigrushdog]
+
+ * frameworks/opt/jamesdsp
+5cd9bdb  JamesDSP: Declare two functions as static.  [Christos Papageorgiou (root-expert)]
+64c5c56  JamesDSP: Initialize uninitialized variables.  [Christos Papageorgiou (root-expert)]
+78d8342  JamesDSP: Reorder constructor objects.  [Christos Papageorgiou (root-expert)]
+8638f88  JamesDSP: Suppress unused parameter warning.  [Christos Papageorgiou (root-expert)]
+bb06201  JamesDSP: Android.mk cleanup.  [Christos Papageorgiou (root-expert)]
+a5219a7  JamesDSP: Remove C++ and C flag from the makefile  [Christos Papageorgiou (root-expert)]
+9f7a5c6  JamesDSP: Move jni folder to root.  [Christos Papageorgiou (root-expert)]
+2a2823d  JamesDSP: Remove unused/useless files.  [Christos Papageorgiou (root-expert)]
+a231c78  JamesDSP: Remove unused folders.  [Christos Papageorgiou (root-expert)]
+cc6a5be  Change FFT library to commercial friendly implementation  [James Fung]
+d2e0435  Russian translation (strings)  [Ivan Kutepov]
+2567b1c  Russian translation (arrays)  [Ivan Kutepov]
+5695c8f  DDC support arbitrary sample rate by analytical spectrum analyser and reverse calculation of peaking equation  [James Fung]
+bc4f907  Readme  [James Fung]
+4bd4d0b  Add image to readme  [James Fung]
+3ca533f  Add circuit diagram of typical 12AX7 amplifier  [James Fung]
+6552f0e  Better looking  [James Fung]
+245c2d0  More credit  [James Fung]
+e629920  Readme  [James Fung]
+d067e8e  Readme  [James Fung]
+c9c8e55  Readme  [James Fung]
+3b5edff  Readme  [James Fung]
+df468cf  Readme  [James Fung]
+9600756  Readme  [James Fung]
+b676af8  Contributor update  [James Fung]
+6728c30  Renew FFT library  [James Fung]
+9899c90  Add VDC(IIR SOS) and designing utility  [James Fung]
+93d3d70  Readme  [James Fung]
+3313c37  Delete blobs  [James Fung]
+4adb16b  Fix most bit depth issue(Include HTC phone)  [James Fung]
+0c5ba2f  Update readme following up  [James Fung]
+1e0121b  Convolver: direct IR volume control  [James Fung]
+678da41  Fix potential crashes when using string to equalizer string  [James Fung]
+231a050  Simple fix  [James Fung]
+58ba0f6  Sturcture map update  [James Fung]
+3acf0b5  Readme  [James Fung]
+63a765b  Replace tanh() with limiter  [James Fung]
+dabf01f  Remove unrelated files  [James Fung]
+49004ec  Add 64 bit Processing  [James Fung]
+e4ecc34  Spatialization impulse response released  [James Fung]
+bbeb891  README  [James Fung]
+794c2b5  Fix most weird crashes caused by threaded audioflinger  [James Fung]
+8b293ad  Quick fix of apocalyptic crash of threaded audioflinger  [James Fung]
+bd39a5f  Fixed DSP buffer length for Android 8.0 support  [James Fung]
+dcbf639  Readme  [James Fung]
+1d17ab5  Readme  [James Fung]
+f996a6c  Reduce memory consumption  [James Fung]
+879cb63  Currently Android 8.0 is not supported  [James Fung]
+121f721  Upgrade convolver buffer transfer to float32  [James Fung]
+6b3fd4f  Update picture  [James Fung]
+528b473  SmoothEq  [James Fung]
+c9ee807  README  [James Fung]
+f8ad881  README  [James Fung]
+797ae55  15 bands spline interpolated Eq and Improved coefficient update convolver  [James Fung]
+58dbd02  README  [James Fung]
+fa925f3  README  [James Fung]
+78665d9  README  [James Fung]
+1d87fd3  Slightly less accurate tube model  [James Fung]
+104971c  Re-enable tube simulation optimise and Convolver SSE support  [James Fung]
+3c0e418  Minor improvements  [James Fung]
+2280949  Add BS2B effect and BUG fix  [James Fung]
+613d0a1  README  [James Fung]
+a6f7050  README  [James Fung]
+4d5dee3  Bug fix and Performance improve  [James Fung]
+f17f735  Convolver take a step forward to efficiency  [James Fung]
+2522d08  Improve frequency response of equalizer and improve tube simulation CPU usage  [James Fung]
+3854a10  Revert "Improve frequency respobse of equalizer and simprove tube simulation performance"  [James Fung]
+ffda863  Improve frequency respobse of equalizer and simprove tube simulation performance  [James Fung]
+0f74aee  Multithread the full stereo convolver and tube simulation  [James Fung]
+65766a5  remove unused stuff  [james34602]
+b1e2979  Set theme jekyll-theme-leap-day  [James Fung]
+bd43d85  Readme update  [james34602]
+c7c610c  Tweak tube modelling parameters  [james34602]
+5466730  Tweak tube amp preset  [james34602]
+cb2497f  Add analog amplifier modelling  [james34602]
+b5ee4bf  2017/7/1 Release  [james34602]
+72bd808  Revert "2017/7/1 Release"  [james34602]
+66471a9  2017/7/1 Release  [james34602]
+42296bc  BUG FIX  [james34602]
+9a5d74d  Introduce IR resampler, FFTW multithreading, More control on IR volume  [james34602]
+5e486ca  Improve UI performance  [James Fung]
+ee4b3d0  Remove unused files  [James Fung]
+eb7fd70  Micro-Optimisation  [James Fung]
+5fe867d  Convolver fix  [James Fung]
+da9443f  Recovery log  [James Fung]
+36da3e3  Add files via upload  [James Fung]
+6ec5cfc  bug fix  [James Fung]
+77af581  Set theme jekyll-theme-slate  [James Fung]
+ace3203  Set theme jekyll-theme-cayman  [James Fung]
+48f38cd  Set theme jekyll-theme-slate  [James Fung]
+a8a2181  Screenshot added  [James Fung]
+f4eaa13  1. Add theme changing mechanism. 2. improve code appearance  [James Fung]
+43b6a9e  Screenshot preview  [James Fung]
+8e19ce6  Add screenshot  [James Fung]
+5c6cffa  Readme  [James Fung]
+9fc0292  Improve memory management  [James Fung]
+0d2e87e  Screenshot  [James Fung]
+42ae5a7  Add screenshot  [James Fung]
+d57be52  ReadMe  [James Fung]
+e6c07a5  ReadMe  [James Fung]
+24d6572  ReadMe  [James Fung]
+a32547b  Convolver fix  [James Fung]
+e4288f9  This ensure eclipse build success  [James Fung]
+fbb3780  Introduce convolver  [James Fung]
+1f55aac  Readme!  [James Fung]
+0d00a7a  Structure map update  [James Fung]
+d9a60ee  More install guide  [James Fung]
+c4bfc5d  Big update  [James Fung]
+0be5426  Update README.md  [James Fung]
+38c8a71  Update README.md  [James Fung]
+9383d3a  Update README.md  [James Fung]
+e979f7b  New reverb engine...  [James Fung]
+f1bf4c4  Test library missing file fix. You will get unexpected volume be caution!!  [James Fung]
+861bf83  Notice  [James Fung]
+2e89d27  Notice  [James Fung]
+f38f796  Readme!  [James Fung]
+9e66cb1  Remove dither to provide more dynamic range and re-add test  *  [James Fung]
+b328f70  FFT test (Java part) should not included, because my main C++ code have not been public  [James Fung]
+2547f35  Re-add high passed triangular probability density function dithering  [James Fung]
+514ae47  This all do the job  [James Fung]
+4af68a6  Shrink all unnecessary feature, confirm this single  * work with all 3 latest version of Android  [James Fung]
+4af47b7  README  [James Fung]
+42fa830  Improve frequency response  [James Fung]
+e923a4f  Use new linear interpolation to draw frequency response, Nougat build test...  [James Fung]
+ac11090  Use less memory at Bass boost perhaps  [James Fung]
+3e5a332  Update README.md  [James Fung]
+2a9570a  Update README.md  [James Fung]
+2213a32  SVG graph update  [James Fung]
+2ef2952  Much flater response  [James Fung]
+00e76e8  Remove unused code  [James Fung]
+f1c7a8d  Remove unused code and remove 1 order from different bands  [James Fung]
+5470af9  update compiler to Clang and adapt the code changes  [James Fung]
+112a064  Remove interpolation  [James Fung]
+8b0afd6  Do even more reduce 2 orders on 9 and 10 band  [James Fung]
+1e3771a  Update README.md  [James Fung]
+5ad28e2  Update README.md  [James Fung]
+a55bc66  Reduce to 12 band for CPU sake  [James Fung]
+63cbc10  Reduce CPU usage by 5-10%  [James Fung]
+61d6aa2  x86 Android run success  [James Fung]
+cfc1eaa  Equalizer band 1 fix and remove others unused features  [James Fung]
+c1aa327  Add proguard flags and remove depreciated  *  [James Fung]
+0b0524b  Pure stereo widen  [James Fung]
+9f9e1f6  Bug fix and equalizer improvement  [James Fung]
+7e3f968  Better?  [James Fung]
+354c9a9  Added log file for each sample processing time  [James Fung]
+151c330  Prompt user permission grant on Android 6.0  [James Fung]
+97b9cf1  Update README.md  [James Fung]
+84e660f  Update README.md  [James Fung]
+609b26a  Update README.md  [James Fung]
+1b86268  Update README.md  [James Fung]
+2107cbe  Update README.md  [James Fung]
+b8eec8c  Update README.md  [James Fung]
+7fe84d6  Change band 12 back to Band Shelf filter  [James Fung]
+b9fc7e0  Remove unused header from AOSP audio framework  [James Fung]
+79afa1c  ...  [James Fung]
+e6ba687  Equalizer bandwidth ultra fix  [James Fung]
+36f62bb  Download link only available on Github release  [James Fung]
+c94a68e  Audio engine structure map refresh  [James Fung]
+4eaee81  Update zh-TW, ru translations and icons  [James Fung]
+45817f2  Improve algorithm on band 13  [James Fung]
+1fa5e40  Update README.md  [James Fung]
+8a2831b  Milestone1 release  [James Fung]
+d9810b8  Show structure map  [James Fung]
+aaac009  14 Band Hybrid equalizer for Lollipop and Marshmallow  [James Fung]
+0c37186  New IIR filter used on Bass Boost, construct 24dB/Oct filter  [James Fung]
+f5da383  New IIR Filters update!  [James Fung]
+1aca7f4  Add new version of effect engine that don't use math.h  [James Fung]
+b818635  That's really simple  [James Fung]
+43929e0  Not thing changed...  [James Fung]
+2896f15  Update README.md  [James Fung]
+c4c86f5  Update README.md  [James Fung]
+5c85e5e  Update README.md  [James Fung]
+1f9ae57  Update README.md  [James Fung]
+706110c  DSP Bass Boost changes  [James Fung]
+75b4aaa  Make this clean  [James Fung]
+5232c4d  Old things delete  [James Fung]
+723e481  Download link update  [James Fung]
+3aff107  Download link update  [James Fung]
+e5507d2  text...  [James Fung]
+b468626  Android 6.0 support  [James Fung]
+828318d  Will not support KitKat again  [James Fung]
+f41931f  text...  [James Fung]
+6dc4363  Upgrade Filter designer  [James Fung]
+2e153e4  KitKat Fix  [James Fung]
+e4c11c8  Band frequency update + Improve stereo widener  [James Fung]
+19064e8  Band frequency update + Improve stereo widener  [James Fung]
+b653361  8 bands update  [James Fung]
+d3b132a  Update README.md  [James Fung]
+d85fb49  Preset saving feature  [James Fung]
+bec3fec  Update README.md  [James Fung]
+42c79c0  Small Update  [James Fung]
+ea51bad  Update README.md  [James Fung]
+e216aa1  Support KitKat Again and remove unuse feature  [James Fung]
+683dc5b  Update README.md  [James Fung]
+492de99  Update donwload link with latest version  [James Fung]
+211ef78  Information update  [James Fung]
+79da8fe  Update  [James Fung]
+02bbbe0  Data Type fix  [James Fung]
+71a3da4  Add Pre-amp with Amplifier removed  [James Fung]
+984c788  DSP Milestone  [James Fung]
+6b221f8  Amplifier added with minor adjustment  [James Fung]
+a75c8a0  Big Update  [James Fung]
+05101a6  Update README.md  [James Fung]
+5c80e40  Update README.md  [James Fung]
+158260f  Update README.md  [James Fung]
+cb03966  Update README.md  [James Fung]
+1b54b38  Add MP3 quality reduction  [James Fung]
+94b2647  Update README.md  [James Fung]
+225602f  Update README.md  [James Fung]
+f86461c  Make it work!  [James Fung]
+6573ab8  Disable ODEX to ensure clean apk out  [James Fung]
+dd9dac8  Supporting both KitKat and Lollipop  [James Fung]
+6a65d50  Add Low pass Filter type and echo decay  [James Fung]
+cb31786  Create README.md  [James Fung]
+d3a24a4  Delete README.md  [James Fung]
+0ded37f  Update README.md  [James Fung]
+20616c2  Update README.md  [James Fung]
+1c06140  Update README.md  [James Fung]
+d0e7777  Update README.md  [James Fung]
+c67ff50  Create README.md  [James Fung]
+8d668f4  James DSP Manager  [James Fung]
+764330e  :neckbeard: Added .gitattributes & .gitignore files  [James Fung]
+
+====================
+     2018-11-25    
+====================
+
+ * frameworks/base
+c196eb6  bringup: Fontservice  [bigrushdog]
+4337fbf  Initial checkin on Pie for SmartNav navigation suite [1/4]  [bigrushdog]
+
+ * frameworks/opt/jamesdsp
+30e7001  Initial empty repository  [doc HD]
+
+ * packages/apps/Dialer
+88f552e  Possible fix for white background (#2)  [Jan Švanda]
+a88a9ee  Dialer: fix crash on call end when showing post call action  [maxwen]
+7cc4534  Dialer: PoorManThemes: fix context menu in call history  [maxwen]
+
+ * packages/apps/Settings
+fa41e04  Add progress for font apply [2/2]  [maxwen]
+5cf3930  Add Font preference for font manager  [bigrushdog]
+3e12831  Initial checkin for SmartNav navigation suite [2/4]  [bigrushdog]
+
+ * packages/apps/SmartNavSettings
+68296b5  Move Nav Bar elements to new nav bar [2/2]  [SuperDroidBond]
+ffc67c4  Initial checkin for SmartNavSettings  *  [bigrushdog]
+
+ * packages/apps/Xtensions
+0168d76  Hide notch for non-notch devices  [SuperDroidBond]
+2fe4ec8  Add kill button to notification guts [2/2]  [SpiritCroc]
+9853fc2  Move Nav Bar elements to new nav bar [1/2]  [SuperDroidBond]
+81c0fb1  Initial checkin on Pie for SmartNav navigation suite [3/4]  [bigrushdog]
+4c85506  [SQUASHED] Revert NavBar Pulse Options  [SuperDroidBond]
+
+ * system/sepolicy
+e59bc40  Implement sepolicy rules for font service in o-mr1  [Surge Raval]
+147fc12  sepolicy: Add rules for FontService  [bigrushdog]
+
+ * vendor/xtended
+8335646  Return DU Font Engine  [SuperDroidBond]
+
+ * vendor/xtended/DevicesOTA
+4789542  update for tissot (#17)  [AnuragRai]
+23e2b8b  Vince update to XP-3 v7 (#16)  [Rajkale99]
+
+====================
      2018-11-24    
 ====================
 
-====================
-     2018-11-23    
-====================
-
- * build/make
-7a0add2  [2/2] build: install overlays in system  [maxwen]
-
- * frameworks/base
-374a6d3  Lockscreen visualizer: fix SystemUI FC when using Pulse  [Ezio Lacandia Bijelkic]
-
- * packages/apps/Settings
-4efbb7e  Now playing history: Fix BG of entry dialog in Dark UI  [rajadeja]
-
- * vendor/xtended/DevicesOTA
-985ebc9  Update OP3/T for XP3 Release v7  [SuperDroidBond]
-1e022c9  Fix the mess  [SuperDroidBond]
-
-====================
-     2018-11-22    
-====================
-
- * frameworks/base
-5bd8175  BatteryMeterView: remove percentage before updating style  [ezio84]
-befe554  beryllium has rounded corners too  [fir3walk]
-ae2c1e4  BatteryStyle: Fix my derpba ;)  [SuperDroidBond]
-870a1d8  base: update Launcher3 app permissions  [Ali B]
-7a33897  Fix notifications for some apps if Less notification sounds is enabled  [ezio84]
-cd06948  Full gestures nav: longpress to move keyboard cursors [1/2]  [ezio84]
-b29226f  Spam: Fix non-protected broadcast from supersu, qcril and fm  [xyyx]
-79a0b1f  Align VoLTE Icon with Other Elements  [SuperDroidBond]
-65cf315  base: Option to use volume keys to control ring volume anytime (1/2)  [Pawit Pornkitprasan]
-82a46d5  base: Volume dialog timeout (1/2)  [LorDClockaN]
-acc5985  Toggle to hide notch [1/2]  [Vachounet]
-aa2d0a0  Fix the Status Bar Layout. Align all custom icons  [SuperDroidBond]
-
- * manifest
-a05b801  Sync forked SnapCam from Syberia Thanks to @alexxxdev & @DennySPB  [SuperDroidBond]
-e42f8a8  Make Our Threads Awesome like Old Days  [SuperDroidBond]
-
- * packages/apps/Settings
-67314f8  Full gestures nav: longpress to move keyboard cursors [2/2]  [ezio84]
-5ba7c38  All About Xtended -: 1) Added Official Devices List 2) Clean up Credits Section 3) Add more testers of core team 4) Replace About Phone headers with our Logo  [SuperDroidBond]
-
- * vendor/xtended
-0afdc49  Time for XP3 Release v7  [SuperDroidBond]
-
-====================
-     2018-11-21    
-====================
-
- * frameworks/av
-059b440  stagefright: add changes related to high-framerates in CameraSource  [Paras Nagda]
-22dd6ed  camera: Allow to use boottime as timestamp reference  [maxwen]
-
- * frameworks/base
-41ab58a  Add the powersave hint to the circle battery  [camcory]
-
- * packages/apps/DocumentsUI
-16fdd46  Fix duplicate permission info on Adoptable storage  [Takamasa Kuramitsu]
-fbdc671  Fix layout of dropdown_sort_widget  [Takamasa Kuramitsu]
-3ea4806  Fix the other app's scoped directory permissions are revoked  [Takamasa Kuramitsu]
-a61c85e  Fix crash when opening inspector screen of broken folder  [Takamasa Kuramitsu]
-60713bb  Drop the task which already stopped in restoreTask  [Yuntao.Xiao]
-c32abb4  DocumentsUI: Open /sdcard instead of Downloads by default  [mydongistiny]
-4ea8f4b  DocumentsUI: PoorManThemes: fix sort arrow icon color and menu  [maxwen]
-6822bd5  PoorManThemes: allow some theming in DocumentsUI  [Marko Man]
-
- * packages/apps/Xtensions
-981c42f  Option to use volume keys to control ring volume anytime (2/2)  [Pawit Pornkitprasan]
-08ae1d3  Volume dialog timeout (2/2)  [LorDClockaN]
-58be6a4  Toggle to hide notch [2/2]  [Vachounet]
-7f883c2  Separate LS UI from other LS elements  [SuperDroidBond]
-32b294e  Safe headset volume option (2 of 2)  [Lars Greiss]
-
-====================
-     2018-11-20    
-====================
-
- * frameworks/base
-1e0e38a  Fw_base: Fix Keyguard dimiss callback on Slim actions  [villarleg]
-21b216e  Fw_base - adjust ImageHelper  [STELIX]
-1703756  Fw_base - Slim LS shortcuts: Fix missing icons after reboot  [SpiritCroc]
-d567297  Fw_base - Add double tap option to lockscreen shortcuts [1/2]  [Griffin Millender]
-49708fe  Fw_base - Lockscreen shortcuts improvements [1/2]  [rogersb11]
-eb52441  Fw_base - Add more lockscreen shortcut custom icons Part2  [westcripp]
-ca02a28  Fw_base - Add new 73 hd lockscreen shortcus icons  [westcripp]
-fcd0c1e  Fw_base - SystemUI: vector support for action icons  [Daniel Koman]
-aeb0102  Fw_base - Keyguard - Add user configurable shortcuts [1/2]  [Lars Greiss]
-6e78092  Fw_base - inital bringup of slim actions and helper classes  [Lars Greiss]
-47b5905  Fw_base - Add several Slim helper classes and constants back  [Lars Greiss]
-d100a9b  Fw_base - add shortcut action icons  [dankoman]
-bad0f77  Fw_base - rest of shortcut icons by Sven R.  [Sven R]
-3ac93df  Fw_base - moar shortcut icons by Sven R.  [Sven R]
-72065b9  Fw_base - icon materialization  [dankoman]
-d7dca13  Fw_base - add all slim shortcut image resources  [Lars Greiss]
-1aa0137  Fw_base - SlimSeekBarPreference refactor  [Randall Rushing]
-839d8b2  Fw_base - Clean up a wee bit  [dankoman]
-26d02a4  Fw_base - Set monitorbox text as string  [dankoman]
-5cf16f8  Fw_base - Forward port SlimSeekBarPreference  [Daniel Koman]
-ed28ebc  Fw_base - Safe headset volume option (1 of 2)  [Lars Greiss]
-8fb3396  Fw_base - Disable Immersive Messages [1/2]  [Jmz]
-d4ed8c8  base: Fix SB Clock showing up on reboot  [El Dainosor]
-6c36373  Revert "base: Attempt to fix Statusbar Clock showing on LS"  [SuperDroidBond]
-
- * packages/apps/Xtensions
-de04b09  Settings - Add double tap option to lockscreen shortcuts [2/2]  [Griffin Millender]
-ee072be  Settings - DSLV: Resize system icons to match vector drawable size  [fusionjack]
-9244f4a  Settings - Lockscreen shortcuts improvements [2/2]  [rogersb11]
-ada169b  Settings - dslv: Remove add icon. We already have a FAB  [mydongistiny]
-d463f83  Settings - Add new lockscreen shortcus icons  [westcripp]
-5686b20  Settings - dslv: Bring in FAB for Lockscreen Shortcuts  [mydongistiny]
-d431983  Settings - Slim DSLV improvement  [XXMrHyde]
-eb44492  Settings - add user configurable lockscreen shortcuts [2/2]  [dankoman]
-3b696f7  Settings - Materialize DSLV  [Lars Greiss]
-8755e70  Xtensions - add dslv controller  [Lars Greiss]
-e4693b4  Xtensions - add central slim ActionListViewSettings class back...  [Lars Greiss]
-
-====================
-     2018-11-19    
-====================
-
- * frameworks/base
-37a4e64  Fw_base: App picker Tile  [LorDClockaN]
-f236220  Fw_base - Get the reboot menus to follow power menu animations previously merged  [Alex Cruz]
-7fb980a  Fw_base - Rotation anim to Power and reboot menu [1/2]  [LorDClockaN]
-eeb781d  Fw_base - Breathing missedcall/sms/voicemail [1/5]  [garwedgess]
-
- * packages/apps/Dialer
-4ac5124  Dialer - Breathing missedcall/sms/voicemail [2/5]  [garwedgess]
-
  * packages/apps/Messaging
-8b977dd  Messaging - Breathing missedcall/sms/voicemail [4/5]  [Bajee11]
+73bc2b4  New sexy blue color (#1)  [Jan Švanda]
 
- * packages/apps/Xtensions
-6141167  Disable Immersive Messages [2/2]  [Jmz]
-c6ce75f  Rotation anim to Power and reboot menu [1/2]  [LorDClockaN]
-a6da771  Breathing missedcall/sms/voicemail [5/5]  [garwedgess]
-
- * packages/services/Telephony
-4d42e03  services/Telephony - Breathing missedcall/sms/voicemail [3/5]  [garwedgess]
-
-====================
-     2018-11-18    
-====================
-
- * frameworks/base
-84e8a56  Volume wake/skip track: Make it work independently  [Henrique Silva]
-db92929  Fix socket leaks in various android.net.Network methods  [Alex]
-0bf3fd7  Volume Rocker Wake [1/2]  [rascarlo]
-ad1e678  FWBase: Add 7 more power menu animations [1/2]  [westcripp]
-8a703af  QS tiles: add ambient play tile  [DennySPB]
-4058655  Power Menu animations [1/2]  [Alex Cruz]
-
- * manifest
-8094d86  Keyguard Charging Animation Thanks to AOSCP ROM  [SuperDroidBond]
-
- * packages/apps/Dialer
-00284b1  [1/2] Dialer: PoorMensTheme: fix call log popup menu colors  [maxwen]
-d4f7a2c  Dialer: PoorManThemes: define text color for number interactions  [Marko Man]
-27e0713  PoorManTheme: fix log cards bg  [Marko Man]
-
- * packages/apps/OmniStyle
-dd71a8e  OmniStyle: leverage app overlays  [maxwen]
-
- * packages/apps/Xtensions
-7f266cb  Volume Rocker Wake [2/2]  [rascarlo]
-c7f746f  Add 7 more power menu animations [2/2]  [westcripp]
-aaa0774  Power Menu animations [2/2]  [Alex Cruz]
-
- * vendor/xtended
-007797c  [2/2] omni: PoorMensTheme: fix call log popup menu colors  [maxwen]
-
-====================
-     2018-11-17    
-====================
-
- * build/make
-43cd465  Ditch Snap of Omni & Build Snap from LOS  [SuperDroidBond]
-
- * device/qcom/sepolicy
-4999afe  Allow charger access to /mnt/vendor  [DennySPB]
-3a4674a  CNE: Restore rules After moving to data factory HAL CNE rules was removed  [DennySPB]
-
- * frameworks/base
-b93f727  Camera: allow camera to use power key as shutter  [Danesh M]
-27cf4f9  PrivacyGuard: fixes from Lineage  [DennySPB]
-
- * packages/apps/Launcher3
-c4b503e  Stock recents: cards rounded corners  [Ezio Lacandia Bijelkic]
-e13c4e2  Whitelist Google widgets  [ezio84]
-c187263  Hide only default hidden apps in the widget panel, not user ones  [ezio84]
-a1175b7  Hide some apps by default and fix FC when hiding all most used apps  [ezio84]
-7bc80d3  Skip unneded package manager calls when checking QSB availability  [ezio84]
-00dd02f  Set a toggle to show Search bar on first screen  [ElDainosor]
-36aaae9  Enable circle icon shape by default  [Chris]
-a339494  New Recents: add kill action to app shortcuts popup  [ezio84]
-02e5e5d  Remove the extra circle icon shape option  [Alex Cruz]
-
- * system/sepolicy
-9f2c030  Allow charger access to /mnt/vendor  [DennySPB]
-85db2ad  Allow e2fs to format cache  [Luca Stefani]
-
-====================
-     2018-11-16    
-====================
-
- * build/make
-a6bba5e  Revert "Build: Make dex2oat boot image error abort explicit"  [Henrique Silva]
-
- * frameworks/av
-c723ebb  libstagefright: Allow HFR-60 in HAL-3 recording  [Manikanta Kanamarlapudi]
-74dbbe3  stagefrightrecorder: don't modify timeOffset in surface source case  [Uma Mehta]
-
- * frameworks/base
-f490b61  SystemUI: Animate the keyguard when charging  [Chris]
-39cd608  Support more Network modes for LTE-tile.  [drpradsms]
-3a5c40a  LteTile: multisim compatibility  [xyyx]
-b68cc55  SystemUI:Add LTE Tile @xyyx: reworked with slash  [Decad3nce]
-9eded42  appops: Switch to Privacy Guard for P (1/2)  [Steve Kondik]
-9092970  KeyStore: Check for daemon death and reconnect if needed  [David Zeuthen]
-f5c0e02  Increase edge gesture region  [Anushek Prasal]
-3b78f20  Implement animations for back edge gestures  [maxwen]
-bb0e9bd  Add NPE handling to the Edge Gesture Manager  [Valters Strods]
-704aba7  Add ability to use EdgeGestureService for system gestures  [Kyrylo Mikos]
-de3021e  Add EdgeGesture service  [Kyrylo Mikos]
-2fc6e47  Add edge gesture (1/2)  [Arasthel]
-
- * frameworks/native
-bf0b9d9  AppOpsManager: Update with the new ops  [Bruno Martins]
-
- * manifest
-9c4f79e  Track Wlan from our Repo  [SuperDroidBond]
-a1e8065  Track our cryptfs_hw  [SuperDroidBond]
-5abac85  AmbientPlay: Introduce history manager [1/4]  [Henrique Silva]
-24ebbbd  Trak Pulse from Bliss Forked Repo  [SuperDroidBond]
-
- * packages/apps/Settings
-3716ab3  Cleanup Android.mk  [SKULSHADY]
-3f78131  AmbientPlay: fix crash in history  [a.derendyaev]
-453546e  SettingsGateway: publish for ambient play tile  [DennySPB]
-36aefb7  Settings: Switch to Privacy Guard for P (2/2)  [Bruno Martins]
-8f538df  UserSettings: Fix new user can not switch to owner or other new user  [Qiang Bo]
-2f1e1a3  Make migrate option menu invisible when src volume is not mounted  [Takamasa Kuramitsu]
-134300d  Manage storage button is not showing in storage settings  [SeungHoon Han]
-
- * packages/apps/Xtensions
-3f0a6c1  Change link from appops to privacy guard  [mydongistiny]
-f57a471  Implement animations for back edge gestures [2/2]  [maxwen]
-e89df49  Add edge gestures (2/2)  [arghyac35]
-
- * packages/services/Telephony
-1bd13e9  ToggleLte: fix WCDMA only  [xyyx]
-4144fd2  ToggleLte: multisim compatibility  [xyyx]
-88fe17d  Restore previous network value after toggleLTE  [xyyx]
-5c6bd6b  Implement toggleLte Using logic based on Ryan Hope's commits  [Scott Warner]
-
- * system/sepolicy
-0307763  sepolicy: Add policy for edgegestureservice  [slothdabski]
-
- * vendor/qcom/opensource/cryptfs_hw
-9da13f9  cryptfs_hw: Featureize support for waiting on QSEE to start  [Michael Bestas]
-c2c9b8c  cryptfs_hw: Add compatibility for pre-O hw crypto  [Michael Bestas]
-e1695f1  cryptfs_hw: add missing logging tag  [steadfasterX]
-467d801  cryptfs_hw: Remove unused variable  [Michael Bestas]
-
-====================
-     2018-11-15    
-====================
-
- * frameworks/base
-8ed628b  Battery styles : Fix icon portrait level  [Nicolas Dhouailly]
-faff9a0  Fix QS customizer not reflecting rows/columns correctly  [Alex Cruz]
-4d08577  Statusbar battery level device filter: add a few more ones  [maxwen]
-7a0ed81  Statusbar bluetooth battery level: improvements  [ezio84]
-c86ae75  Option to Display Data Disabled Indicator Icon [1/2]  [varund7726]
-b2ec817  AmbientPlay: Introduce history manager [3/4]  [Henrique Silva]
-facff48  AmbientPlay: Move strings to fw/res  [Henrique Silva]
-b4ed930  AmbientPlay: Rework  [Henrique Silva]
-6f7e571  Now playing : Clean up old code and schedule now playing feature sensitive to Charging and Network Connection Type.  [Shreyansh Lodha]
-81ae910  Now Playing : Multiple Changes  [Shreyansh Lodha]
-37af9a9  RecoginitionObserverFactory : Simplify entire logic  [Shreyansh Lodha]
-1409e08  Now Playing : Change recording duration to 10s and remove un-used return statement  [Shreyansh Lodha]
-00495f2  Now Playing : Various Improvements  [Shreyansh Lodha]
-737f233  RecoginitionObserverFactory: Change Thread priority  [Shreyansh Lodha]
-a7d3f72  RecoginitionObserverFactory : Check if we have aquired resources before releasing it.  [Shreyansh Lodha]
-aaa3954  RecoginitionObserverFactory: Why worry about charging status  [Shreyansh Lodha]
-dfa87b0  Ambient Play: Various fixes. - Initialize int read to supress a warning. - Fix a NP which was in my logcat.  [spezi77]
-5f59e29  Ambient Play: Allow to configure the scan interval [1/2].  [spezi77]
-4da0c82  Ambient Play: Make it also work while charging. Why not?  [spezi77]
-7ae4591  Ambient Play: Hide AmbientIndication if Song and Artist are null.  [spezi77]
-2bf4bc9  Ambient Play: Workaround for Pie (allow cleartext traffic). Note: This is a quick hack, and doesn't comply with the current security standards.  [spezi77]
-5f4b586  Introduce Ambient Indication Interface  [Chris]
-2ec35f8  Make status bar ticker play nice with center clock  [SpiritCroc]
-3e114c6  [DNM][HACK] Persist user brightness model  [Sam Mortimer]
-ee750d6  Add QS header styles [1/3]  [Anushek Prasal]
-e9e3163a  Make carrier label's visibility gone  [TheScarastic]
-706b129  Fix screen saver FC due to missing flag  [Alex Cruz]
-e1733ee  Less boring heads up option [1/2]  [ezio84]
-ef4fb3a  base: Attempt to fix Statusbar Clock showing on LS  [ElDainosor]
-
- * packages/apps/Settings
-526d790  AmbientPlay: Introduce history manager [4/4]  [Henrique Silva]
-89bbc54  Add preference for Ambient Play  [Chris Crump]
-
- * packages/apps/Snap
-d53b7d6  Adapt to AOSP  [DennySPB]
-8bcc7de  Fix get aePref is null in PhotoMenu  [jinwu]
-e8a695d  Fix to change default mode to Camera1 HAL1  [zhuw]
-f9082d8  SnapdragonCamera: Fix parameters NullPointerException  [xianming wang]
-6ec162a  SnapdragonCamera: SetParameters use the mParameters Object  [mingwax]
-83edab8  Fix force close when launch camera on P  [zhuw]
-58b5ff1  Import translations from 15.1  [Arne Coucheron]
-5882c51  Snap: use platform cert  [codeworkx]
-f271d8e  CameraSettings: Do not crash if zoom ratios are not exposed  [dkati]
-ddf47ca  Snap: Allow quickreader to work with secure device  [Michael W]
-1a88d6d  Snap: turn developer category title into a translatable string  [Andreas Blaesius]
-0bf4ec7  SnapdragonCamera: Panorama, replace border drawable  [darkobas]
-26fa3ef  Snap: remove unused shutter buttons  [Andreas Blaesius]
-54e8016  Snap: Add support for focus distance  [Steve Kondik]
-190af66  Drop new focus indicator into Camera2.  [Paul Rohde]
-98d19d3  Snap: fix copy and paste fail  [codeworkx]
-766e56b  Snap: add missing null check on isCamera2Supported  [codeworkx]
-dff349a  Snap: don't try to set up cameras with ids greater than MAX_NUM_CAM  [codeworkx]
-7b4c9da  Do not crash if we don't have support for RAW files  [Andreas Schneider]
-46910e9  Snap: Fix "Convert "save best" dialog text to a quantity string"  [Michael Bestas]
-2f8d29d  Snap: Convert "save best" dialog text to a quantity string  [Michael W]
-634a605  Snap: adaptive icon  [Asher Simonds]
-eeb4e5c  Snap: Port all string improvements from cm-14.1  [Michael Bestas]
-3b3827e  Snap: Update pano and video icons to be more like photo icons  [Paul Keith]
-44e321d  Snap: Add missing thumbnails for filter modes  [Sebastian Haderecker]
-b336c53  Snap: update shutter buttons on CaptureUI  [codeworkx]
-9381b8d  QuickReader: Match switch icon size and fill color with other icons  [Arne Coucheron]
-98c0311  Snap: add QReader to module switch  [Joey Rizzoli]
-2595a8e  QuickReader: initial commit  [Joey Rizzoli]
-254e2de  Snap: check tags before using them  [codeworkx]
-89598df  Snap: Rip out hdr-need-1x option  [Paul Keith]
-07a6756  Removed littlemock dependency and cleanup  [Paul Duffin]
-01d02db  Snap: Update HDR icons  [Arne Coucheron]
-0ed3d65  Snap: Fix panorama layout  [Arne Coucheron]
-e90a3f3  Snap: Arrange video menu so it's similar to photo menu  [Arne Coucheron]
-bc0bae8  Snap: Remove "help screen on first start" feature  [Arne Coucheron]
-0dbbef4  Snap: Fix filter mode button after disabling HDR mode  [Arne Coucheron]
-a7d3055  Snap: Fix swipe right to open menu  [Arne Coucheron]
-e598fd7  Snap: Don't close slide out menu after selecting scene mode  [Arne Coucheron]
-1023078  Snap: Adjust scene and filter mode layout dimensions  [Arne Coucheron]
-3c70ba2  Snap: Increase default pano capture pixels to 1440x1000  [Arne Coucheron]
-b15e81a  Snap: Disable warped pano preview  [Arne Coucheron]
-9dbe14d  Snap: Show remaining photos on initial start  [Arne Coucheron]
-12dc0b3  SnapdragonCamera: Add missing toast on HSR/HFR override  [Alex Naidis]
-4e095e6  Snap: Don't do touch-to-focus on top of UI elements  [Sultanxda]
-a44923d  Snap: Render zoom circle in the center of the camera preview  [Sultanxda]
-f13d241  SnapdragonCamera: Enforce 120ms delay in between shutter clicks  [Sultanxda]
-676134e  SnapdragonCamera: Fix shutter button clicks in rapid succession getting ignored  [Sultanxda]
-32b935b  VideoModule: don't set negative HFR value  [Anas Karbila]
-8eaaafe  ListPreference: prevent ArrayIndexOutOfBoundsException  [Thecrazyskull]
-725f963  Protect against multiple shutter callbacks per frame in longshot mode.  [Danny Baumann]
-475d975  SnapdragonCamera: Longshot with Burst Functionality.  [Vijay kumar Tumati]
-68a5767  Snapdragon Camera: Use consistent API for preview fps reset  [Emilian Peev]
-b30320a  Snapdragon Camera: Avoid possible race condition  [Emilian Peev]
-7146701  Camera: Set preview fps after recording.  [Suman Mukherjee]
-edc0768  Initialize focus overlay manager if it is not initialized.  [Santhosh Kumar H E]
-84f895b  Never ignore finger swipes in gallery mode  [Gabriele M]
-c83c48a  Add overlay for restarting camera preview for additional cameras  [LuK1337]
-7a8a21a  Snap: Simulate back button press when menu back button is pressed  [Gabriele M]
-efeb7fc  Always apply frame size reduction to panorama pictures  [Gabriele M]
-13856ccf  Snap: Allow switching beyond just 2 cameras  [Christian Frisson]
-241b073  Snap: CaptureModule: check if ZSL is supported before using it  [codeworkx]
-dcaf5ac  Snap: detect and use Camera2 if available  [codeworkx]
-0c846e5  Snap: prevent NPE when checking if controls are visible  [Joey Rizzoli]
-fffcbcf  Initialize focus manager in onResume().  [Danny Baumann]
-c6f9409  Stop data loader on activity destroy.  [Danny Baumann]
-4b30872  CameraNext: Update focus behavior for panoramas  [Jim Wilson]
-3c3d5ad  Make panorama able to go 270 degrees in landscape  [Martin Brabham]
-b8c4ebc  Grant read URI permission for playback of video capture  [Alan Newberger]
-982a1c0  CameraNext: stop updating the pano progress bar on pause  [Scott Mertz]
-05360d5  CropActivity: notify MediaScanner on save complete  [Khalid Zubair]
-1454ec6  Fix broken filenames for cropped images  [Khalid Zubair]
-e23c1db  snap: Panorama fixes  [Steve Kondik]
-f22c1dd  Show UI when pano stitch starts and remove cancel condition  [Artem Shvadskiy]
-65029ce  CameraNext: don't crash when pref is not boolean  [Keith Mok]
-faeef40  CameraNext: Fallback to do copy exif if exif not exist  [Keith Mok]
-138abf4  Snap: update caf icons  [Joey Rizzoli]
-a98e54a  Use material versions of share/delete/edit icons.  [Danny Baumann]
-df90807  De-uglify menu.  [Danny Baumann]
-a5219c1  snap: Adjust top bar icon order  [Steve Kondik]
-646aac1  Snap: Add icons to all scene modes  [jrizzoli]
-b748292  Snap: Add icons to all remaining preferences  [jrizzoli]
-e0ba598  Snap: update shutter button style  [jrizzoli]
-cc90cc5  Remove unused menu indicators code.  [Danny Baumann]
-e611522  Snap: remove captureUI pngdrawables  [jrizzoli]
-d6a58ed  Snap: Material toasts  [Michael Bestas]
-d9f7d61  Snap: initial materialization  [jrizzoli]
-362bb15  Snap: grant android.permission.RECEIVE_BOOT_COMPLETED permisions  [Martin Bouchet]
-f12a271  snap: Additional fixes for auto-HDR mode  [Steve Kondik]
-26a353f  snap: Fixes for advanced features and scene modes  [Steve Kondik]
-9f2798c  camera: Keep touch focus intact during back-to-back ZSL shots  [Steve Kondik]
-ec1daff  Camera2: Only autofocus before a snap if we are actually in "auto" mode.  [Steve Kondik]
-f450ab3  Snap: Fix crash when set infinite touch-focus duration  [Michael Bestas]
-be70bb1  Snap: Separate default focus time between camera/video  [Sultanxda]
-f9f3104  Snap: Cleanup focus time duration entries  [Michael Bestas]
-1d4cfde  Snap: Add ability to set the tap-to-focus duration to 0 sec  [Sultanxda]
-f342580  Snap: Add focus time support in camcorder  [Michael Bestas]
-a3cda6b  Snap: Expose video snapshot size setting  [Michael Bestas]
-62ade6b  SnapdragonCamera: Unlock AE/AWB after taking a photo with ZSL  [Sultanxda]
-ea3bf66  SnapdragonCamera: Lock AE and AWB for tap-to-focus in camcorder  [Arne Coucheron]
-325fae4  SnapdragonCamera: Always lock AE and AWB when auto-focus is used  [Sultanxda]
-0d33a98  SnapdragonCamera: Add focus-mode option to camcorder  [Sultanxda]
-8d68a0d  Snap: Set parameters before starting preview  [lion0738]
-ae9bfc5  Camera2: Prevent propogating CancelAutoFocus during Video Recording  [Dheeraj CVR]
-99b5080  Camera2: Prevent autofocus when video snapshot is in progress  [Dheeraj CVR]
-9d08e29  camera: Touch focus support for camcorder  [Steve Kondik]
-fdef35f  Add orientation correction for landscape devices  [andralex8]
-d932733  Allow to re-open Snap from recent menu  [Gabriele M]
-5de828b  Snap: add auto-hdr option to photo menu  [codeworkx]
-6d4d6a3  CameraNext: dynamically generate available photo resolutions  [Wilhelm Fitzpatrick]
-027eb08  Snap: Fix possible NPE  [Michael W]
-3efa5d3  Snap: Remove storage menu if no external storage available  [maxwen]
-df38386  snap: Add constrained longshot mode  [Steve Kondik]
-d7a5221  snap: Always turn touch-af-aec on  [Steve Kondik]
-aee02cc  Snap: Unbreak auto-HDR  [Steve Kondik]
-7558f06  Snap: Make developer menu more accessible  [Michael Bestas]
-b65f208  Snap: Extend user menu, disable dev menu  [codeworkx]
-77dbf82  Snap: force enable zsl for lge hdr  [codeworkx]
-0c1efbf  Snap: Support override maker and model exif tag  [Ketut Putu Kumajaya]
-a6fda6a  Fix view index tracking.  [Danny Baumann]
-f989f25  Snap: Fall back to REVIEW intent before VIEW intent  [Ethan Chen]
-6896979  Snap: Do not crash when cur-focus-scale is null  [LuK1337]
-9eaa97a  Snap: Fix incorrect preview layout surface size in landscape mode  [Nikita]
-61dc50c  Snap: fix camera hang on LGE G4 when flash got used  [codeworkx]
-25405db  Snap: Remove face detection option if not supported  [Arne Coucheron]
-da3530e  Snap: Remove video snapshot size when not supported  [Michael Bestas]
-10f4419  Snap: Remove auto HDR option when not supported  [Michael Bestas]
-09e2264  Snap: Fix filtering of unsupported HFR/HSR modes  [Michael Bestas]
-9297815  SnapdragonCamera: Scale up bitrate for HSR recordings  [Sultanxda]
-4fdabfb  Snap: Don't crash if user saved preference is not valid  [Gabriele M]
-072f822  Snap: Cleanup flash icons  [Michael Bestas]
-8439917  Fix crash if Exif-Tag buffer-length and component-count are both 0  [tobigun]
-7e8e454  SnapdragonCamera: Set camera parameters before restarting preview  [Sultanxda]
-ae7927d  Snap: Don't crash when hardcoded gallery intent fails  [Ethan Chen]
-dbc2861  Snap: do not restart preview during longshots  [codeworkx]
-c8f8773  SnapdragonCamera: Fix UI alignment glitches when nav-bar is enabled  [Sultanxda]
-9cc035f  Snap: Don't enable ZSL when disabling HDR  [Gabriele M]
-f4c5efa  SnapdragonCamera: Remove 'off' option for antibanding  [Sultanxda]
-ac5f1c2  SnapdragonCamera: Fix overly-aggressive auto rotation  [Sultanxda]
-7ec6063  SnapdragonCamera: Add option to control antibanding in camcorder  [Sultanxda]
-af4e63a  Snap: Actually select the highest quality video by default  [Christopher R. Palmer]
-f00815e  Snap: Remove touch AF/AEC option  [Steve Kondik]
-7620f15  Snap: Support for HTC's HDR mode  [Steve Kondik]
-3ceff2f  Snap: special handling of hdr-mode parameter for lge devices  [codeworkx]
-39ebaab  Move mApplicationContext to init()  [LuK1337]
-1f3ee78  Snap: Fix NPE when parameters.getSupportedVideoSizes() is null  [Michael Bestas]
-8c91410  Snap: Fall back to default quality instead of 352x288  [Michael Bestas]
-14258e5  Snap: Fix aapt warnings  [Lars Greiss]
-07d65f2  Snap: Remove CAF Chinese translations  [Michael Bestas]
-ba92d1e  CameraActivity: Handle NPE when film strip view is null  [LuK1337]
-e4013d1  Snap: restart preview when shutter-speed gets disabled  [codeworkx]
-d82300f  SnapdragonCamera: Fix incorrect viewfinder ratio for 13.1MP shots  [Sultanxda]
-6f15f57  Snap: add fallback for invalid video qualities  [codeworkx]
-fd99d90  Snap: add support for mw_continuous-picture focus mode  [codeworkx]
-9afb1db  Snap: add support for shutter speed  [codeworkx]
-1e8acf0  Snap: Add touch-to-focus timeout duration settings  [jt1134]
-069dc57  Snap: make openLegacy an option  [codeworkx]
-a18737d  add options to restart preview onPictureTaken  [codeworkx]
-5cd92c1  option to set manufacturer specific parameters on startup  [codeworkx]
-8fb383a  add support for luminance-condition parameter  [codeworkx]
-55e70ba  add support for non-standard iso keys and values  [codeworkx]
-9e34d89  add additional ISO values  [codeworkx]
-0874d00  Snap: Add ISO values for sony devices  [Michael Bestas]
-460b430  Snap: Fix filtering of unsupported camcorder color effects  [Michael Bestas]
-b50f5ad  SnapdragonCamera: Reset camera state after taking picture  [Sultanxda]
-07d60dc  Camera2: Add option to set max screen brightness  [Michael Bestas]
-da1b52f  Camera2: Headset shutter mode  [Dave Daynard]
-cc615be  Camera: Handle keys only while in app  [Michael Bestas]
-bb7687a  Camera: Cleanup hardware key handling  [Michael Bestas]
-4ba1a87  Camera2: tweak volume key zoom and cleanup  [Lars Greiss]
-afabe44  Camera: Powerkey shutter (2/2)  [Michael Bestas]
-9755729  Camera2: implement volume key zoom in video mode  [jt1134]
-3298682  Camera: Change volume hard key button to zoom function  [Su Liu]
-fe6e52d  Camera: separate settings for color effects  [jt1134]
-02087a3  Camera2: implement exposure compensation settings in video mode  [jt1134]
-3c16dc0  Camera2: Remove CAF video duration code  [Michael Bestas]
-bf5d998  Camera2: some aapt warnings cleanup  [Lars Greiss]
-a5d1d07  Camera2: Don't report incorrect supported picture formats  [Lars Greiss]
-49971bd  camera: Make some parameter lookups safer  [Steve Kondik]
-10f2e1a  Camera: Fix saturation, contrast, sharpness parameters  [Ethan Chen]
-a6f3b23  Camera2: More thorough compatibility fixes  [Ryuinferno]
-1d285d6  Camera: fix preview for landscape devices  [Pawit Pornkitprasan]
-9cbb4f9  Camera2: Preview needs to be stopped when changing resolution  [Pawit Pornkitprasan]
-30b25be  camera: Remove ICS hack to stop preview after takePicture  [Steve Kondik]
-b1d54fd  Camera2: enable antibanding by default  [Pawit Pornkitprasan]
-b1f5350  camera: Proper fix for the missing video-sizes issue  [Steve Kondik]
-f5a8ba2  camera: Check if video sizes are available  [Steve Kondik]
-bcbbdfc  Camera: Add red-eye flash mode support  [Michael Bestas]
-719f224  camera: Add all focus modes, scene modes, and color effects.  [Steve Kondik]
-8817434  camera: Remove the luma-adaptation seekbar  [Steve Kondik]
-09c8d95  camera: Cleanup and compatibility fixes  [Steve Kondik]
-8a8249a  camera: Add parameter debugging support  [Steve Kondik]
-3a0e269  SnapdragonCamera: Hide UI after error-checking video preferences  [Sultanxda]
-94be41e  SnapdragonCamera: Re-enable ZSL after exiting HDR mode  [Sultanxda]
-048e0f0  SnapdragonCamera: Initialize overlay before control-by-intent  [Sultanxda]
-eff25aa  Snap: update icon  [jrizzoli]
-ea0b9cf  Snap: Remove old icons  [Michael Bestas]
-4c5df14  Snap: Use AOSP app label  [Michael Bestas]
-5cb08ab  snap: Fix module name conflict  [Steve Kondik]
-aa533b4  Snap: Fix jni compiler warnings  [Michael Bestas]
-ec1e997  tests: fix class name  [Dan Pasanen]
-c9c9002  Rename SnapdragonCamera to Snap  [Michael Bestas]
-337cded  Revert "SnapdragonCamera: Add missing permissions"  [Arne Coucheron]
-7024eb8  Revert "SnapdragonCamera: Reduce number of countdown timer option"  [Gopal G Goberu]
-2415e8b  Revert "SnapdragonCamera: Forbid volume key can take picture"  [Michael Bestas]
-
- * packages/apps/Xtensions
-8f946f9  Data disabled icon switch[2/2]  [varund7726]
-
- * vendor/xtended
-1e76fe1  AmbientPlay: Introduce history manager [2/4]  [Henrique Silva]
-6a9f90f  build: Add dtbo task  [Luca Stefani]
-
-====================
-     2018-11-14    
-====================
-
- * frameworks/base
-20b78fb  Pulse: allow setting fading blocks opacity [1/3]  [varund7726]
-5e68a08  Stock navbar Pulse : allow to blacklist apps [1/2]  [ezio84]
-920feb1  Pulse: Add bar animation smoothing [1/3]  [Ritayan Chakraborty]
-7324e40  Add Pulse Lava Lamp start and end colors (1/3)  [out386]
-e7e51c5  Pulse: add back auto color based on albumart  [ezio84]
-313e76f  Navbar Pulse bringup  [bigrushdog]
-4938ac8  fw_base: move network indicator to the right  [Michele Bono]
-
- * packages/apps/Xtensions
-2fe303a  Add QS header styles [2/3]  [Anushek Prasal]
-375bcc1  Less boring heads up option [2/2]  [ezio84]
-43f3d11  Pulse: allow setting fading blocks opacity [3/3]  [varund7726]
-1493eff  Add Pulse blacklist option  [ezio84]
-31a2f5d  Pulse: Add bar animation smoothing [3/3]  [Ritayan Chakraborty]
-0d42418  Add Pulse Lava lamp start and end colors (3/3)  [out386]
-96d0181  Restore Pulse settings  [ezio84]
-
- * vendor/xtended
-5f0aa5d  Add BlackMagic Accent  [SuperDroidBond]
-23b63c6  Add QS header styles [3/3]  [Anushek Prasal]
-
-====================
-     2018-11-13    
-====================
+ * packages/apps/SmartNav
+24a9793  Adapt for our HW-Keys Utils  [SuperDroidBond]
 
  * vendor/xtended/DevicesOTA
-bb752be  change download url to sf (#14)  [AnuragRai]
-d50fc5c  New update for rolex. (#13)  [Ankan Ghosh]
-
-====================
-     2018-11-12    
-====================
-
- * frameworks/base
-b6f4f6f  Fix a Miss  [SuperDroidBond]
-f8f432c  base: SystemUI: fix height of old data type icons  [maxwen]
-178412c  SystemUI: fix visibility of mobile type icon  [maxwen]
-2958ba9  SystemUI: allow switch to pre P mobile icon style [1/2]  [Vachounet]
-7707bed  lockscreen: Add option to pass swipe-up-to-unlock (1/2)  [eray orçunus]
-c346026  Full nav gesture: home action on the whole bar and doubletap2sleep [1/2]  [ezio84]
-5e361a7  Nav full gesture: code improvements  [ezio84]
-38896a1  Change weather tile launch activity to Xtensions  [pimpmaneaton]
-34e12a8  core: Enable smart battery for everyone  [mydongistiny]
-
- * packages/apps/Settings
-a5726a5  lockscreen: Forward port option to pass swipe-up-to-unlock [2/2]  [eray orçunus]
-bb5e734  Full nav gesture: home action on the whole bar and doubletap2sleep [2/2]  [ezio84]
-
- * packages/apps/Xtensions
-6066cd3  [2/2] Xtensions: allow to switch back to pre P mobile type icon style  [Vachounet]
-
- * vendor/xtended/DevicesOTA
-5f73d80  Add tissot (#12)  [AnuragRai]
-
-====================
-     2018-11-11    
-====================
-
- * frameworks/base
-f86b6a0  Add Oreo QS tile styles [1/3]  [SKULSHADY]
-8125a86  QSTile: Add Squaremedo from BootLeggers [1/3]  [ElDainosor]
-
- * packages/apps/Xtensions
-244f6d0  Add Oreo QS tile styles [2/3]  [SKULSHADY]
-b38cd5e  QSTile: Add Squaremedo from BootLeggers [2/3]  [ElDainosor]
-
- * vendor/xtended
-f4711b3  Add Oreo QS tile styles [3/3]  [SKULSHADY]
-61f7072  QSTile: Add Squaremedo from BootLeggers [3/3]  [ElDainosor]
-0906c49  Fix QS Dotted Tile & Dual Tone Circle (No Trim)  [SuperDroidBond]
-
- * vendor/xtended/DevicesOTA
-c9788bd  Update Redmi Note 5 (Vince) for XP2.5 Release v6 (#10)  [Rajkale99]
-490cb9c  Update OP3/3T for XP2.5 Release v6  [SuperDroidBond]
+4156c41  Cheeseburger update  [Mukesh Singh]
+2d1b125  Dumpling updates  [mukesh22584]
 
