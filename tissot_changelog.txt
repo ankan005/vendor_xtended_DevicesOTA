@@ -1,4 +1,360 @@
 ====================
+     2018-12-08    
+====================
+
+ * frameworks/base
+6da710d  base: Keyguard: Hide check button when using PIN quick unlock  [carlosavignano]
+caa585e  PMS: Improve code stability and avoid vm reboot  [Terigele]
+efa76f5  PMS: No need to call permissionsState.getPermissions  [Terigele]
+
+ * packages/apps/Settings
+c4c9029  MSIM: Fix user set DDS sub in hotswap cases.  [Umashankar Godachi]
+
+ * vendor/xtended
+4cdc8f1  vendor: build Eleven, MusicFX & JamesDSP  [Julian Veit]
+8087e69  Call it XP4 Release v8  [SuperDroidBond]
+9b31f54  Add 23 fancy accent colors  [spezi77]
+
+====================
+     2018-12-07    
+====================
+
+ * frameworks/base
+3313a03  Lockscreen Visualizer: Check for keyguard fading away  [Pranav Vashi]
+1a1e408  frameworks: Add unlinked ringtone and notification volumes  [Adnan Begovic]
+25c3b68  PIE: Hide network type if wifi is enabled  [Pranav Vashi]
+1d661da  Fw_base - [SQUASH] PIE 3.0 (oreo->Pie)[1/3]  [Paul Henschel]
+8977ea7  Fw_base - SystemUI: filter service disabled broadcast for qs weather tile  [maxwen]
+b3cbd6a  Added toast when a screenshot is deleted  [Alex Cruz]
+c5f990e  ViewConfiguration: Set scroll friction to 0.012  [Alex Naidis]
+63e44b5  SystemUI: Change default animation scales to x0.8 [2/3]  [Adin Kwok]
+8fb53df  SystemUI: Change default animation scales to x0.8 (1/3)  [gtpitch]
+5466d79  SettingsProvider: lowered animations duration  [Maxime Poulain]
+9228e83  Grant Location Permissions to OmniJAWS  [Vaughn N]
+839ed01  Battery charge warning [1/2]  [Nicolas Dhouailly]
+e526f22  NetworkTraffic: decrease padding  [SuperDroidBond]
+d75670c  Networktraffic: Fix gravity  [Shubham Singh]
+427b789  FontService: fix null object reference  [soubhik-khan]
+760355f  LockscreenVisualizer: Use offload thread  [Pranav Vashi]
+653c800  Pulse: allow setting fading blocks opacity [1/3]  [varund7726]
+eba4bae  Stock navbar Pulse : allow to blacklist apps [1/2]  [ezio84]
+9369577  Pulse: Add bar animation smoothing [1/3]  [Ritayan Chakraborty]
+b28494c  Add Pulse Lava Lamp start and end colors (1/3)  [out386]
+902f7b3  Smartbar pixel animation: Ability to customize the dots [1/3]  [varund7726]
+965a7b9  Smarbar Pixel Navbar Animation Duration Settings [1/3]  [varund7726]
+efcb5ba  Fixes for lockscreen visualizer  [Pranav Vashi]
+99156a9  Increase LongPress Timeout  [SuperDroidBond]
+
+ * packages/apps/Settings
+d178329  Settings: Add switch for linked ring and media notification volumes  [Bruno Martins]
+bd75748  PIE [3/3]  [thecrazyskull]
+3ba5385  Battery charge warning [2/2]  [Nicolas Dhouailly]
+
+ * packages/apps/SmartNavSettings
+3fa651d  Smartbar pixel animation: Ability to customize the dots [3/3]  [varund7726]
+
+ * packages/apps/Xtensions
+70a0b25  PIE [2/3]  [thecrazyskull]
+e867763  Hide SB weather for now  [SuperDroidBond]
+
+====================
+     2018-12-06    
+====================
+
+ * packages/apps/DeskClock
+a9c6ad1  DeskClock: Add support of power off alarm feature  [Mao Jinlong]
+
+ * packages/apps/OmniDisplayManager
+9d21642  Adapt for Xtended  [SuperDroidBond]
+3146233  OmniDisplayManager: restore night mode when disabling reading mode  [maxwen]
+c427479  OmniDisplayManager: add firewalls around native lib usage  [maxwen]
+31b1356  OmniDisplayManager: add reading mode tile  [maxwen]
+df7af6a  OmniDisplayManager: tune me up baby  [maxwen]
+
+====================
+     2018-12-05    
+====================
+
+ * frameworks/av
+92320d7  mediascanner: Accept .opus file extension.  [Danny Baumann]
+
+ * frameworks/base
+fdb4720  SystemUI: Fix too big spacing between QS icons in landscape on sw600dp  [LuK1337]
+4741c66  core: touch response optimizations  [zfu]
+152f7c6  Support for appending "standalone" WHERE chunks  [Jeff Sharkey]
+ce3b0c4  Bind update() args as Object[] for performance  [Jeff Sharkey]
+a839dcd  Extend SQLiteQueryBuilder for update and delete  [Jeff Sharkey]
+fcaa828  Execute "strict" queries with extra parentheses  [Jeff Sharkey]
+c798f83  Revert SQLiteQueryBuilder for now  [Jeff Sharkey]
+39e6f8d  Execute "strict" queries with extra parentheses  [Jeff Sharkey]
+72bc564  Add support for appending standalone phrases  [Jeff Sharkey]
+3c3f52e  GROUP BY and HAVING aren't ready to be strict  [Jeff Sharkey]
+76cc072  Extend SQLiteQueryBuilder for update and delete  [Jeff Sharkey]
+51deefd  Revert "aapt: Default to 0 compression ratio"  [mydongistiny]
+e76c1a7  Revert "Frameworks/base: Compiled-classes support"  [Andreas Gampe]
+a3dda74  Fix ExifInterface for .heic when meta is at the end  [Chong Zhang]
+4ced92a  Select the proper request list size  [Guruprasad Gaonkar]
+1064971  SystemUI: Fix IllegalArgumentException when SystemUI do dumping  [Weijie Wang]
+ef5dde0  Avoid NPE in resumeTopActivityInnerLocked()  [Hang Lu]
+59aa081  Fix Framework Reboot due to invalid display  [Gopal Krishna Shukla]
+5bcf2ef  SystemUI: fix notification overlap with PIN screen  [xiaohuin]
+71b90cb  ResourceManager: Disable APK Assets cache  [Narayan Kamath]
+91b33cc  BoostFramework: Implement asynchronous processing of perflocks  [Alex Naidis]
+12569c6  fwb: disable Aggressive trim settings by default  [maxwen]
+495fd2f  Revert "Temp: Fix NetworkTraffic display"  [xyyx]
+
+ * packages/apps/Settings
+e073c61  Remove DT2S from Pie Gestures for now  [SuperDroidBond]
+
+ * packages/apps/SmartNav
+64caffc  Use offload thread (ExecutorService) to start pulsing  [ezio84]
+2e255a0  Smartbar pixel animation: Ability to customize the dots [2/3]  [Varun Date]
+9769cb1  Make Smartbar Pixel Animation Durations Customizable [2/3]  [Varun Date]
+6041127  Pulse: Add bar animation smoothing [2/3]  [Ritayan Chakraborty]
+e452032  Add Pulse Lava Lamp start and end colors (2/3)  [out386]
+e9fb0a5  Pulse: allow setting fading blocks opacity [2/3]  [Varun Date]
+
+ * packages/apps/SmartNavSettings
+231ea4c  Settings: Make Smartbar Pixel Animation Durations Customizable [3/3]  [varund7726]
+c25c0f3  Return Button Opacity for NavBar Pulse  [SuperDroidBond]
+4d53728  Add Pulse blacklist option  [ezio84]
+f5d652f  Pulse: allow setting fading blocks opacity [3/3]  [varund7726]
+d3c24bc  Pulse: Add bar animation smoothing [3/3]  [out386]
+cd5abaa  Add Pulse Lava lamp start and end colors (3/3)  [out386]
+
+ * packages/apps/Xtensions
+ca2439a  Fix Charging Symbol Summary  [SuperDroidBond]
+
+====================
+     2018-12-04    
+====================
+ * art
+b77a91d  Fixed Dex2oat failed to compile a boot image  [Gareth Kitchen]
+
+ * bionic
+6cb714f  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//bionic into HEAD  [SuperDroidBond]
+
+ * build/make
+85af835  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//build into HEAD  [SuperDroidBond]
+
+ * frameworks/base
+d37f69d  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//frameworks/base into HEAD  [SuperDroidBond]
+d2346e9  Revert "Be more strict about triggering notification lights"  [xyyx]
+fe2994b  Ignore vendor overlays that must be on system/overlay  [jhenrique09]
+00058eb  Fingerprint: Use FastJNI  [HolyAngel]
+
+ * frameworks/native
+064b915  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//frameworks/native into HEAD  [SuperDroidBond]
+
+ * manifest
+15ada62  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//manifest into HEAD  [SuperDroidBond]
+3e8b928  Track OmniDisplay Manager  [SuperDroidBond]
+
+ * packages/apps/Bluetooth
+4d3ee7f  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//packages/apps/Bluetooth into HEAD  [SuperDroidBond]
+
+ * packages/apps/Settings
+5ed460f  Settings: Hide notification light color preference if no multicolor led  [Vol Zhdanov]
+8d1ceb3  Revert "Settings: Allow to specify multicolor notification led support [2/2]"  [Vol Zhdanov]
+
+ * system/bt
+dc381ee  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//system/bt into HEAD  [SuperDroidBond]
+380a003  Fix BT Calls  [AmolAmrit]
+
+ * system/core
+c3dc7fc  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//system/core into HEAD  [SuperDroidBond]
+
+====================
+     2018-12-03    
+====================
+
+ * frameworks/base
+563f651  NetworkTraffic: Fix gravity  [xyyx]
+e9a0597  Avoid casting network traffic to StatusBarIconView to prevent crash  [SpiritCroc]
+2f1ec81  Add network traffic monitor properly to statusbar icons  [SpiritCroc]
+090583e  Revert "NetworkTraffic: Fix on lockscreen and with doze"  [SuperDroidBond]
+
+ * packages/apps/Settings
+99001e0  Add developer setting to set the default GPU renderer.  [Joe Maples]
+
+====================
+     2018-12-02    
+====================
+
+====================
+     2018-12-01    
+====================
+
+ * frameworks/base
+9a395f3  Wi-Fi Auto-connect support  [Yinling Cai]
+c34b9ba  SmartNav: Update Kill App action  [bigrushdog]
+ab47011  Fix QS BG Color  [SuperDroidBond]
+cd54690  Implement App circle sidebar [1/2]  [Yanuar Harry]
+0744af0  Bluetooth: Fix NPE when accesing Manufacturer Data of invalid ScanRecord  [Jakub Pawlowski]
+9f4b45a  hwui: stability: check mmap return value  [zhangkuili]
+ae86e71  Recents: add pinch-in gesture on tasks to Clear All  [ezio84]
+eb251a6  Recents: Allow closing empty view via tapping  [Michael W]
+0171339  PanelPorn 8.1: Power menu alpha and dim (1/2)  [LorDClockaN]
+
+ * packages/apps/Xtensions
+c90e11e  Implement App circle sidebar [2/2]  [Yanuar Harry]
+f6c0508  Add display colors menu if related package is present  [Vachounet]
+3f706fc  PanelPorn: Power menu alpha and dim (2/2)  [LorDClockaN]
+
+====================
+     2018-11-30    
+====================
+
+ * frameworks/base
+66fab12  base: make old qti telephony optional [1/2]  [Vol Zhdanov]
+a550f2d  Keep recent tasks for more time in memory  [ezio84]
+bc09002  base: Add special captive portal servers for chinese  [LiangXiang Shen]
+1f764e5  Add More Charging Symbols [1/2] Thanks to @mady51 for the idea  [SuperDroidBond]
+57aaa1c  AmbientPlay: Animate ambient indication into view  [Chris]
+d149d40  CustomDoze: fix custom gestures not working if default pulsing is disabled [1/2]  [ezio84]
+fda04d7  SystemUI: qs brightness slider enhancements [1/2]  [maxwen]
+0610b51  Full gesture navbar: add haptic feedback to back action  [ezio84]
+baee3aa  hwkeys: Fix sound search  [Anushek Prasal]
+deea924  Fix the Statusbar and QS panel layout  [Anushek Prasal]
+7fe942e  HWKeysUtils: Fix mismerge after https://github.com/Xtended-Pie/frameworks_base/commit/4337fbf6b504cc3bdfaa03ba27d2fc516180dbd4  [xyyx]
+87c076b  Pulse: add back auto color based on albumart  [ezio84]
+b4a51fa  Stock AOSP Navbar Pulse bringup  [bigrushdog]
+af07f18  Full nav gesture: Poor Hack to Get Everything working  [SuperDroidBond]
+cd161aa  Battery: Fix the Padding of PercentageView  [SuperDroidBond]
+103f3bc  Launch music player on headset connect: add BT compatibility [1/2]  [ezio84]
+b7c034b  Launch default music player on headset connect [1/2]  [PMS22]
+8056c98  Screenrecord: Adjust 'High' setting to 1080p  [Miguel Martinez]
+1fe7275  Xtended: Fix QS Header Style  [SKULSHADY]
+fbb3f69  Support the perflock request from system/priv apps whose domain are untrusted  [binzhang]
+aa69180  Add Game boost & modify launchboostv2 invocation.  [Bhargav Upperla]
+09b83b5  Disable swipe boost and preferred apps for certain cases  [Sudharshun Iyengar]
+cd13f64  Fling/Pre-fling Boost: Call perf boost from System Server context  [Sudharshun Iyengar]
+86cf535  BoostFramework: Clean up code  [Bhargav Upperla]
+8807d54  IOP : Adding support for UXPerf Class  [Abhimanyu Garg]
+1feb60c  BoostFramework: Move property checks to pass sepolicy requirements.  [Bhargav Upperla]
+ae4768c  IOP/UXE: This change is to enable the IOP and UXE  [Bhargav Upperla]
+2ed9b63  Precise new activity boost.  [Karthik Gopalan]
+41b19d5  Reorder boosts for quick ramp up  [Chitti Babu Theegala]
+14cd06d  Add perf hint for screen rotation animation  [Jun Wang]
+7700b55  Add perf hint for rotation latency  [Jun Wang]
+965b228  framework/base: add parallel verifyV1  [zljing]
+7c4b6cc  add perf_service into system_process.  [zfu]
+56054b8  BoostFramework: To Enhance performance.  [Varun Garg]
+
+ * frameworks/opt/telephony
+e8604af  PhoneFactory: make old qti telephony optional [1/2]  [Vol Zhdanov]
+acfa67c  TelephonyComponentFactory: Overload makeSubscriptionInfoUpdater  [TheScarastic]
+160b1a1  Make radio power off immediately after data cleanup is complete  [Mengjun Leng]
+bc30c52  Fix to release partial wakelock for SRVCC handover.  [Umashankar Godachi]
+0dd53ee  DcTracker: Change access modifier of isNvSubscription to protected  [Bruno Martins]
+963a011  Telephony: Enable NV based CDMA data call.  [Yashdev Singh]
+b4d7fbf  telephony: Query LTE thresholds from CarrierConfig  [Artem Borisov]
+8630f3c  telephony: Squashed support of dynamic signal strength thresholds  [Paul Keith]
+d6b130c  Implement signal strength hacks used on Huawei devices  [codeworkx]
+
+ * manifest
+0a2e4e2  Track GZOSP Vendor/Audio  [SuperDroidBond]
+9cb71cd  Initial checkin on Pie for SmartNav navigation suite [4/4]  [SuperDroidBond]
+
+ * packages/apps/CustomDoze
+f9369e7  CustomDoze: fix custom gestures not working if default pulsing is disabled [2/2]  [ezio84]
+
+ * packages/apps/Xtensions
+9f70c08  Add More Charging Symbols [2/2] Thanks to @mady51 for the idea  [SuperDroidBond]
+2baec60  qs brightness slider enhancements [2/2] add switch for brightness buttons  [maxwen]
+
+====================
+     2018-11-29    
+====================
+
+ * packages/apps/SmartNavSettings
+7c1d6cf  Pulse: add back color from album art preference  [bigrushdog]
+25950ef  Pulse: Allow Pulse for all bar modes  [bigrushdog]
+8cf39f9  Link Correctly Stock NavBar Settings  [SuperDroidBond]
+
+ * packages/apps/Xtensions
+a98fc1f  Launch music player on headset connect: add BT compatibility [2/2]  [ezio84]
+
+====================
+     2018-11-28    
+====================
+
+ * frameworks/base
+5fe7c5b  Rounded Corners: Set default value  [Anushek Prasal]
+229d6f2  [SQUASHED] Rounded Courners [1/2]  [Kshitij Gupta]
+e8b909e  Add kill button to notification guts [1/2]  [Daniel Koman]
+
+ * packages/apps/Snap
+1c60edd  Adapt to AOSP  [DennySPB]
+
+====================
+     2018-11-27    
+====================
+
+ * packages/apps/Xtensions
+ae487f0  [SQUASHED] Rounded Courners [2/2]  [Kshitij Gupta]
+
+====================
+     2018-11-26    
+====================
+
+ * frameworks/base
+0b15400  Prevent crash when multiple Screenshot request  [Shigeki Yokomichi]
+bec4e9c  Crash app on foreground service notification error  [Da Xing]
+99ddacf  Check the size of the ArrayList in ActivityManager.forceStopPackage()  [Guo Li]
+498a6cf  Preserve x18 while preloading SP-HALs in the zygote  [Peter Collingbourne]
+b2d3398  Fix NullpointException in NetworkPolicyManagerService  [Zhengyu Zhan (詹正禹)]
+f9210f9  Dynamic font fix for FDE devices  [maxwen]
+b7c76e9  Add progress for font apply [1/2]  [maxwen]
+72992d2  Fonts: patched a few need files for boot  [Camvar97]
+b0fee6f  Fonts: Update keyguard when font changes @SKULSHADY: Cleanup for our custom clock, date and carrier label font styles  [bigrushdog]
+
+ * packages/apps/Xtensions
+0168d76  Hide notch for non-notch devices  [SuperDroidBond]
+2fe4ec8  Add kill button to notification guts [2/2]  [SpiritCroc]
+
+====================
+     2018-11-25    
+====================
+
+ * frameworks/base
+c196eb6  bringup: Fontservice  [bigrushdog]
+4337fbf  Initial checkin on Pie for SmartNav navigation suite [1/4]  [bigrushdog]
+
+ * packages/apps/Dialer
+88f552e  Possible fix for white background (#2)  [Jan Švanda]
+a88a9ee  Dialer: fix crash on call end when showing post call action  [maxwen]
+7cc4534  Dialer: PoorManThemes: fix context menu in call history  [maxwen]
+
+ * packages/apps/Settings
+fa41e04  Add progress for font apply [2/2]  [maxwen]
+5cf3930  Add Font preference for font manager  [bigrushdog]
+3e12831  Initial checkin for SmartNav navigation suite [2/4]  [bigrushdog]
+
+ * packages/apps/SmartNav
+24a9793  Adapt for our HW-Keys Utils  [SuperDroidBond]
+
+ * packages/apps/SmartNavSettings
+68296b5  Move Nav Bar elements to new nav bar [2/2]  [SuperDroidBond]
+ffc67c4  Initial checkin for SmartNavSettings  *  [bigrushdog]
+
+ * packages/apps/Xtensions
+9853fc2  Move Nav Bar elements to new nav bar [1/2]  [SuperDroidBond]
+81c0fb1  Initial checkin on Pie for SmartNav navigation suite [3/4]  [bigrushdog]
+4c85506  [SQUASHED] Revert NavBar Pulse Options  [SuperDroidBond]
+
+ * system/sepolicy
+e59bc40  Implement sepolicy rules for font service in o-mr1  [Surge Raval]
+147fc12  sepolicy: Add rules for FontService  [bigrushdog]
+
+ * vendor/xtended
+8335646  Return DU Font Engine  [SuperDroidBond]
+
+ * vendor/xtended/DevicesOTA
+4789542  update for tissot (#17)  [AnuragRai]
+23e2b8b  Vince update to XP-3 v7 (#16)  [Rajkale99]
+
+====================
      2018-11-23    
 ====================
 
@@ -28,622 +384,3 @@ da54daa  CameraService: Fix openCamera denial for OP cam  [Pranav Vashi]
  * packages/apps/Settings
 10ec9cd  add more tester  [mukesh22584]
 4efbb7e  Now playing history: Fix BG of entry dialog in Dark UI  [rajadeja]
-
-====================
-     2018-11-22    
-====================
-
- * build/make
-7a0add2  [2/2] build: install overlays in system  [maxwen]
-
- * frameworks/base
-374a6d3  Lockscreen visualizer: fix SystemUI FC when using Pulse  [Ezio Lacandia Bijelkic]
-5bd8175  BatteryMeterView: remove percentage before updating style  [ezio84]
-befe554  beryllium has rounded corners too  [fir3walk]
-ae2c1e4  BatteryStyle: Fix my derpba ;)  [SuperDroidBond]
-870a1d8  base: update Launcher3 app permissions  [Ali B]
-7a33897  Fix notifications for some apps if Less notification sounds is enabled  [ezio84]
-cd06948  Full gestures nav: longpress to move keyboard cursors [1/2]  [ezio84]
-b29226f  Spam: Fix non-protected broadcast from supersu, qcril and fm  [xyyx]
-79a0b1f  Align VoLTE Icon with Other Elements  [SuperDroidBond]
-65cf315  base: Option to use volume keys to control ring volume anytime (1/2)  [Pawit Pornkitprasan]
-82a46d5  base: Volume dialog timeout (1/2)  [LorDClockaN]
-acc5985  Toggle to hide notch [1/2]  [Vachounet]
-aa2d0a0  Fix the Status Bar Layout. Align all custom icons  [SuperDroidBond]
-
- * manifest
-a05b801  Sync forked SnapCam from Syberia Thanks to @alexxxdev & @DennySPB  [SuperDroidBond]
-e42f8a8  Make Our Threads Awesome like Old Days  [SuperDroidBond]
-
- * packages/apps/Settings
-67314f8  Full gestures nav: longpress to move keyboard cursors [2/2]  [ezio84]
-5ba7c38  All About Xtended -: 1) Added Official Devices List 2) Clean up Credits Section 3) Add more testers of core team 4) Replace About Phone headers with our Logo  [SuperDroidBond]
-
- * vendor/xtended
-0afdc49  Time for XP3 Release v7  [SuperDroidBond]
-
-====================
-     2018-11-21    
-====================
-
- * frameworks/av
-059b440  stagefright: add changes related to high-framerates in CameraSource  [Paras Nagda]
-22dd6ed  camera: Allow to use boottime as timestamp reference  [maxwen]
-
- * packages/apps/DocumentsUI
-16fdd46  Fix duplicate permission info on Adoptable storage  [Takamasa Kuramitsu]
-fbdc671  Fix layout of dropdown_sort_widget  [Takamasa Kuramitsu]
-3ea4806  Fix the other app's scoped directory permissions are revoked  [Takamasa Kuramitsu]
-a61c85e  Fix crash when opening inspector screen of broken folder  [Takamasa Kuramitsu]
-60713bb  Drop the task which already stopped in restoreTask  [Yuntao.Xiao]
-c32abb4  DocumentsUI: Open /sdcard instead of Downloads by default  [mydongistiny]
-4ea8f4b  DocumentsUI: PoorManThemes: fix sort arrow icon color and menu  [maxwen]
-6822bd5  PoorManThemes: allow some theming in DocumentsUI  [Marko Man]
-
- * packages/apps/Xtensions
-981c42f  Option to use volume keys to control ring volume anytime (2/2)  [Pawit Pornkitprasan]
-08ae1d3  Volume dialog timeout (2/2)  [LorDClockaN]
-58be6a4  Toggle to hide notch [2/2]  [Vachounet]
-7f883c2  Separate LS UI from other LS elements  [SuperDroidBond]
-32b294e  Safe headset volume option (2 of 2)  [Lars Greiss]
-
-====================
-     2018-11-20    
-====================
-
- * device/oneplus/msm8998-common
-1a684e2  msm8998: enable sepolicy  [mukesh22584]
-c4a463d  msm8998: Update widevine for P  [Pranav Vashi]
-
- * frameworks/base
-41ab58a  Add the powersave hint to the circle battery  [camcory]
-
-====================
-     2018-11-19    
-====================
-
- * frameworks/base
-1e0e38a  Fw_base: Fix Keyguard dimiss callback on Slim actions  [villarleg]
-21b216e  Fw_base - adjust ImageHelper  [STELIX]
-1703756  Fw_base - Slim LS shortcuts: Fix missing icons after reboot  [SpiritCroc]
-d567297  Fw_base - Add double tap option to lockscreen shortcuts [1/2]  [Griffin Millender]
-49708fe  Fw_base - Lockscreen shortcuts improvements [1/2]  [rogersb11]
-eb52441  Fw_base - Add more lockscreen shortcut custom icons Part2  [westcripp]
-ca02a28  Fw_base - Add new 73 hd lockscreen shortcus icons  [westcripp]
-fcd0c1e  Fw_base - SystemUI: vector support for action icons  [Daniel Koman]
-aeb0102  Fw_base - Keyguard - Add user configurable shortcuts [1/2]  [Lars Greiss]
-6e78092  Fw_base - inital bringup of slim actions and helper classes  [Lars Greiss]
-47b5905  Fw_base - Add several Slim helper classes and constants back  [Lars Greiss]
-d100a9b  Fw_base - add shortcut action icons  [dankoman]
-bad0f77  Fw_base - rest of shortcut icons by Sven R.  [Sven R]
-3ac93df  Fw_base - moar shortcut icons by Sven R.  [Sven R]
-72065b9  Fw_base - icon materialization  [dankoman]
-d7dca13  Fw_base - add all slim shortcut image resources  [Lars Greiss]
-1aa0137  Fw_base - SlimSeekBarPreference refactor  [Randall Rushing]
-839d8b2  Fw_base - Clean up a wee bit  [dankoman]
-26d02a4  Fw_base - Set monitorbox text as string  [dankoman]
-5cf16f8  Fw_base - Forward port SlimSeekBarPreference  [Daniel Koman]
-ed28ebc  Fw_base - Safe headset volume option (1 of 2)  [Lars Greiss]
-8fb3396  Fw_base - Disable Immersive Messages [1/2]  [Jmz]
-d4ed8c8  base: Fix SB Clock showing up on reboot  [El Dainosor]
-6c36373  Revert "base: Attempt to fix Statusbar Clock showing on LS"  [SuperDroidBond]
-37a4e64  Fw_base: App picker Tile  [LorDClockaN]
-f236220  Fw_base - Get the reboot menus to follow power menu animations previously merged  [Alex Cruz]
-7fb980a  Fw_base - Rotation anim to Power and reboot menu [1/2]  [LorDClockaN]
-eeb781d  Fw_base - Breathing missedcall/sms/voicemail [1/5]  [garwedgess]
-
- * hardware/qcom/display
-3aac5ff  msm8084: Use generated kernel headers  [Arne Coucheron]
-ffa65db  msm8084: Add additional build flags to avoid errors  [gabrielgagz]
-bdec4e9  msm8084: Use libhwui.so instead of libskia.so  [Alexey Polyudov]
-9fa229c  msm8084: Include what we use.  [Dan Albert]
-84d89d6  hwc: msm8084: Set ioprio for vsync thread  [Steve Kondik]
-
- * packages/apps/Dialer
-4ac5124  Dialer - Breathing missedcall/sms/voicemail [2/5]  [garwedgess]
-
- * packages/apps/Xtensions
-de04b09  Settings - Add double tap option to lockscreen shortcuts [2/2]  [Griffin Millender]
-ee072be  Settings - DSLV: Resize system icons to match vector drawable size  [fusionjack]
-9244f4a  Settings - Lockscreen shortcuts improvements [2/2]  [rogersb11]
-ada169b  Settings - dslv: Remove add icon. We already have a FAB  [mydongistiny]
-d463f83  Settings - Add new lockscreen shortcus icons  [westcripp]
-5686b20  Settings - dslv: Bring in FAB for Lockscreen Shortcuts  [mydongistiny]
-d431983  Settings - Slim DSLV improvement  [XXMrHyde]
-eb44492  Settings - add user configurable lockscreen shortcuts [2/2]  [dankoman]
-3b696f7  Settings - Materialize DSLV  [Lars Greiss]
-8755e70  Xtensions - add dslv controller  [Lars Greiss]
-e4693b4  Xtensions - add central slim ActionListViewSettings class back...  [Lars Greiss]
-6141167  Disable Immersive Messages [2/2]  [Jmz]
-c6ce75f  Rotation anim to Power and reboot menu [1/2]  [LorDClockaN]
-a6da771  Breathing missedcall/sms/voicemail [5/5]  [garwedgess]
-
-====================
-     2018-11-18    
-====================
-
- * device/oneplus/cheeseburger
-72c77bd  cheeseburger: just let me pass CTS check  [Lup Gabriel]
-9753e9d  cheeseburger: Add hw keys overlay  [mukesh22584]
-c4e5cf2  cheeseburger: Xtended bringup  [mukesh22584]
-
- * frameworks/base
-84e8a56  Volume wake/skip track: Make it work independently  [Henrique Silva]
-db92929  Fix socket leaks in various android.net.Network methods  [Alex]
-0bf3fd7  Volume Rocker Wake [1/2]  [rascarlo]
-ad1e678  FWBase: Add 7 more power menu animations [1/2]  [westcripp]
-8a703af  QS tiles: add ambient play tile  [DennySPB]
-4058655  Power Menu animations [1/2]  [Alex Cruz]
-
- * packages/apps/Dialer
-00284b1  [1/2] Dialer: PoorMensTheme: fix call log popup menu colors  [maxwen]
-d4f7a2c  Dialer: PoorManThemes: define text color for number interactions  [Marko Man]
-27e0713  PoorManTheme: fix log cards bg  [Marko Man]
-
- * packages/apps/Messaging
-8b977dd  Messaging - Breathing missedcall/sms/voicemail [4/5]  [Bajee11]
-
- * packages/apps/OmniStyle
-dd71a8e  OmniStyle: leverage app overlays  [maxwen]
-
- * packages/apps/Xtensions
-7f266cb  Volume Rocker Wake [2/2]  [rascarlo]
-c7f746f  Add 7 more power menu animations [2/2]  [westcripp]
-
- * packages/services/Telephony
-4d42e03  services/Telephony - Breathing missedcall/sms/voicemail [3/5]  [garwedgess]
-
- * vendor/xtended
-007797c  [2/2] omni: PoorMensTheme: fix call log popup menu colors  [maxwen]
-
-====================
-     2018-11-17    
-====================
-
- * frameworks/base
-b93f727  Camera: allow camera to use power key as shutter  [Danesh M]
-
- * manifest
-8094d86  Keyguard Charging Animation Thanks to AOSCP ROM  [SuperDroidBond]
-
- * packages/apps/Launcher3
-c4b503e  Stock recents: cards rounded corners  [Ezio Lacandia Bijelkic]
-e13c4e2  Whitelist Google widgets  [ezio84]
-c187263  Hide only default hidden apps in the widget panel, not user ones  [ezio84]
-a1175b7  Hide some apps by default and fix FC when hiding all most used apps  [ezio84]
-7bc80d3  Skip unneded package manager calls when checking QSB availability  [ezio84]
-00dd02f  Set a toggle to show Search bar on first screen  [ElDainosor]
-36aaae9  Enable circle icon shape by default  [Chris]
-a339494  New Recents: add kill action to app shortcuts popup  [ezio84]
-02e5e5d  Remove the extra circle icon shape option  [Alex Cruz]
-
- * packages/apps/Xtensions
-aaa0774  Power Menu animations [2/2]  [Alex Cruz]
-
-====================
-     2018-11-16    
-====================
-
- * build/make
-43cd465  Ditch Snap of Omni & Build Snap from LOS  [SuperDroidBond]
-
- * device/oneplus/dumpling
-e062d46  dumpling: just let me pass CTS check  [Lup Gabriel]
-970ae68  dumpling: Official tag  [mukesh22584]
-c0198ef  dumpling: Xtended bringup  [mukesh22584]
-
- * device/qcom/sepolicy
-4999afe  Allow charger access to /mnt/vendor  [DennySPB]
-3a4674a  CNE: Restore rules After moving to data factory HAL CNE rules was removed  [DennySPB]
-
- * frameworks/av
-c723ebb  libstagefright: Allow HFR-60 in HAL-3 recording  [Manikanta Kanamarlapudi]
-74dbbe3  stagefrightrecorder: don't modify timeOffset in surface source case  [Uma Mehta]
-
- * frameworks/base
-27cf4f9  PrivacyGuard: fixes from Lineage  [DennySPB]
-f490b61  SystemUI: Animate the keyguard when charging  [Chris]
-39cd608  Support more Network modes for LTE-tile.  [drpradsms]
-3a5c40a  LteTile: multisim compatibility  [xyyx]
-b68cc55  SystemUI:Add LTE Tile @xyyx: reworked with slash  [Decad3nce]
-9eded42  appops: Switch to Privacy Guard for P (1/2)  [Steve Kondik]
-9092970  KeyStore: Check for daemon death and reconnect if needed  [David Zeuthen]
-f5c0e02  Increase edge gesture region  [Anushek Prasal]
-3b78f20  Implement animations for back edge gestures  [maxwen]
-bb0e9bd  Add NPE handling to the Edge Gesture Manager  [Valters Strods]
-704aba7  Add ability to use EdgeGestureService for system gestures  [Kyrylo Mikos]
-de3021e  Add EdgeGesture service  [Kyrylo Mikos]
-2fc6e47  Add edge gesture (1/2)  [Arasthel]
-
- * frameworks/native
-bf0b9d9  AppOpsManager: Update with the new ops  [Bruno Martins]
-
- * hardware/qcom/display
-cd39366  msm8996: gralloc1: Allow sign conversion errors for kernel headers  [Ethan Chen]
-
- * manifest
-9c4f79e  Track Wlan from our Repo  [SuperDroidBond]
-a1e8065  Track our cryptfs_hw  [SuperDroidBond]
-5abac85  AmbientPlay: Introduce history manager [1/4]  [Henrique Silva]
-24ebbbd  Trak Pulse from Bliss Forked Repo  [SuperDroidBond]
-
- * packages/apps/Settings
-3716ab3  Cleanup Android.mk  [SKULSHADY]
-3f78131  AmbientPlay: fix crash in history  [a.derendyaev]
-453546e  SettingsGateway: publish for ambient play tile  [DennySPB]
-36aefb7  Settings: Switch to Privacy Guard for P (2/2)  [Bruno Martins]
-8f538df  UserSettings: Fix new user can not switch to owner or other new user  [Qiang Bo]
-2f1e1a3  Make migrate option menu invisible when src volume is not mounted  [Takamasa Kuramitsu]
-134300d  Manage storage button is not showing in storage settings  [SeungHoon Han]
-
- * packages/apps/Xtensions
-3f0a6c1  Change link from appops to privacy guard  [mydongistiny]
-f57a471  Implement animations for back edge gestures [2/2]  [maxwen]
-e89df49  Add edge gestures (2/2)  [arghyac35]
-
- * packages/services/Telephony
-1bd13e9  ToggleLte: fix WCDMA only  [xyyx]
-4144fd2  ToggleLte: multisim compatibility  [xyyx]
-88fe17d  Restore previous network value after toggleLTE  [xyyx]
-5c6bd6b  Implement toggleLte Using logic based on Ryan Hope's commits  [Scott Warner]
-
- * system/sepolicy
-9f2c030  Allow charger access to /mnt/vendor  [DennySPB]
-85db2ad  Allow e2fs to format cache  [Luca Stefani]
-0307763  sepolicy: Add policy for edgegestureservice  [slothdabski]
-
- * vendor/qcom/opensource/cryptfs_hw
-9da13f9  cryptfs_hw: Featureize support for waiting on QSEE to start  [Michael Bestas]
-c2c9b8c  cryptfs_hw: Add compatibility for pre-O hw crypto  [Michael Bestas]
-e1695f1  cryptfs_hw: add missing logging tag  [steadfasterX]
-467d801  cryptfs_hw: Remove unused variable  [Michael Bestas]
-
-====================
-     2018-11-15    
-====================
-
- * build/make
-a6bba5e  Revert "Build: Make dex2oat boot image error abort explicit"  [Henrique Silva]
-
- * device/oneplus/msm8998-common
-1661c42  msm8998: removed mkdir, symlink on early-init. These changes are required to avoid avc denials while first boot up.  [Anuj Singhal]
-
- * frameworks/base
-8ed628b  Battery styles : Fix icon portrait level  [Nicolas Dhouailly]
-faff9a0  Fix QS customizer not reflecting rows/columns correctly  [Alex Cruz]
-4d08577  Statusbar battery level device filter: add a few more ones  [maxwen]
-7a0ed81  Statusbar bluetooth battery level: improvements  [ezio84]
-c86ae75  Option to Display Data Disabled Indicator Icon [1/2]  [varund7726]
-b2ec817  AmbientPlay: Introduce history manager [3/4]  [Henrique Silva]
-facff48  AmbientPlay: Move strings to fw/res  [Henrique Silva]
-b4ed930  AmbientPlay: Rework  [Henrique Silva]
-6f7e571  Now playing : Clean up old code and schedule now playing feature sensitive to Charging and Network Connection Type.  [Shreyansh Lodha]
-81ae910  Now Playing : Multiple Changes  [Shreyansh Lodha]
-37af9a9  RecoginitionObserverFactory : Simplify entire logic  [Shreyansh Lodha]
-1409e08  Now Playing : Change recording duration to 10s and remove un-used return statement  [Shreyansh Lodha]
-00495f2  Now Playing : Various Improvements  [Shreyansh Lodha]
-737f233  RecoginitionObserverFactory: Change Thread priority  [Shreyansh Lodha]
-a7d3f72  RecoginitionObserverFactory : Check if we have aquired resources before releasing it.  [Shreyansh Lodha]
-aaa3954  RecoginitionObserverFactory: Why worry about charging status  [Shreyansh Lodha]
-dfa87b0  Ambient Play: Various fixes. - Initialize int read to supress a warning. - Fix a NP which was in my logcat.  [spezi77]
-5f59e29  Ambient Play: Allow to configure the scan interval [1/2].  [spezi77]
-4da0c82  Ambient Play: Make it also work while charging. Why not?  [spezi77]
-7ae4591  Ambient Play: Hide AmbientIndication if Song and Artist are null.  [spezi77]
-2bf4bc9  Ambient Play: Workaround for Pie (allow cleartext traffic). Note: This is a quick hack, and doesn't comply with the current security standards.  [spezi77]
-5f4b586  Introduce Ambient Indication Interface  [Chris]
-
- * packages/apps/Settings
-526d790  AmbientPlay: Introduce history manager [4/4]  [Henrique Silva]
-89bbc54  Add preference for Ambient Play  [Chris Crump]
-
- * packages/apps/Xtensions
-8f946f9  Data disabled icon switch[2/2]  [varund7726]
-
- * vendor/xtended
-1e76fe1  AmbientPlay: Introduce history manager [2/4]  [Henrique Silva]
-
-====================
-     2018-11-14    
-====================
-
- * device/oneplus/msm8998-common
-00bd2e7  Merge pull request #8 from Krieg-Kernel/9.0-eas  [Mukesh Singh]
-924a724  Bring inline with krieg kernel  [apophis9283]
-
- * frameworks/base
-2ec35f8  Make status bar ticker play nice with center clock  [SpiritCroc]
-3e114c6  [DNM][HACK] Persist user brightness model  [Sam Mortimer]
-ee750d6  Add QS header styles [1/3]  [Anushek Prasal]
-e9e3163a  Make carrier label's visibility gone  [TheScarastic]
-706b129  Fix screen saver FC due to missing flag  [Alex Cruz]
-e1733ee  Less boring heads up option [1/2]  [ezio84]
-ef4fb3a  base: Attempt to fix Statusbar Clock showing on LS  [ElDainosor]
-20b78fb  Pulse: allow setting fading blocks opacity [1/3]  [varund7726]
-5e68a08  Stock navbar Pulse : allow to blacklist apps [1/2]  [ezio84]
-920feb1  Pulse: Add bar animation smoothing [1/3]  [Ritayan Chakraborty]
-7324e40  Add Pulse Lava Lamp start and end colors (1/3)  [out386]
-e7e51c5  Pulse: add back auto color based on albumart  [ezio84]
-313e76f  Navbar Pulse bringup  [bigrushdog]
-4938ac8  fw_base: move network indicator to the right  [Michele Bono]
-
- * packages/apps/Xtensions
-2fe303a  Add QS header styles [2/3]  [Anushek Prasal]
-375bcc1  Less boring heads up option [2/2]  [ezio84]
-
- * vendor/xtended
-6a9f90f  build: Add dtbo task  [Luca Stefani]
-5f0aa5d  Add BlackMagic Accent  [SuperDroidBond]
-23b63c6  Add QS header styles [3/3]  [Anushek Prasal]
-
-====================
-     2018-11-13    
-====================
-
- * packages/apps/Xtensions
-43f3d11  Pulse: allow setting fading blocks opacity [3/3]  [varund7726]
-1493eff  Add Pulse blacklist option  [ezio84]
-31a2f5d  Pulse: Add bar animation smoothing [3/3]  [Ritayan Chakraborty]
-0d42418  Add Pulse Lava lamp start and end colors (3/3)  [out386]
-96d0181  Restore Pulse settings  [ezio84]
-
- * vendor/oneplus
-c613e83  msm8998: Add move_widevine script  [Pranav Vashi]
-5521588  msm8998: Update DRM blobs  [Pranav Vashi]
-e29567c  msm8998: Update widevine blobs  [Pranav Vashi]
-4efb718  msm8998: Import perf stack from wahoo  [Pranav Vashi]
-413084a  msm8998: Update sound trigger libs  [Pranav Vashi]
-93ee271  msm8998: Update DRM blobs  [Pranav Vashi]
-52a9614  msm8998: Add missing gfx blobs  [Pranav Vashi]
-2c7df38  msm8998: Update audio libs  [Pranav Vashi]
-ad48d08  msm8998: Update adsp modules  [Pranav Vashi]
-d19bf41  msm8998: Update audio firmware  [Pranav Vashi]
-e3a09a6  msm8998: Update soundfx libs  [Pranav Vashi]
-448420e  msm8998: Replace perf stack  [Pranav Vashi]
-
-====================
-     2018-11-12    
-====================
-
- * frameworks/base
-b6f4f6f  Fix a Miss  [SuperDroidBond]
-f8f432c  base: SystemUI: fix height of old data type icons  [maxwen]
-178412c  SystemUI: fix visibility of mobile type icon  [maxwen]
-2958ba9  SystemUI: allow switch to pre P mobile icon style [1/2]  [Vachounet]
-
- * vendor/xtended/DevicesOTA
-bb752be  change download url to sf (#14)  [AnuragRai]
-d50fc5c  New update for rolex. (#13)  [Ankan Ghosh]
-5f73d80  Add tissot (#12)  [AnuragRai]
-
-* device/xiaomi/tissot/overlay/frameworks/base/core/res/res/values/config.xml
-drg4sds Fix Network Flactuations [Dark-Matter7232]
-
-====================
-     2018-11-11    
-====================
-
- * packages/apps/Xtensions
-b9f7522  Fix NetTraffic UpLink/Downlink disabled on first boot  [SuperDroidBond]
-
- * vendor/xtended
-222551f  Fix QS Dotted Tile  [SuperDroidBond]
-
- * vendor/xtended/DevicesOTA
-c9788bd  Update Redmi Note 5 (Vince) for XP2.5 Release v6 (#10)  [Rajkale99]
-490cb9c  Update OP3/3T for XP2.5 Release v6  [SuperDroidBond]
-
-====================
-     2018-11-10    
-====================
-
- * frameworks/av
-392d974  libcameraservice: add TARGET_CAMERA_NEEDS_CLIENT_INFO  [darkobas]
-7c609cc  av: camera: catch mad hals that mess up buffer time  [maxwen]
-
- * frameworks/base
-fc08d03  Make roaming indicator optional [1/2]  [Pranav Vashi]
-749bdec  ScreenOff skip track: add Spotify/kdeconn/... remote session compatibility  [ezio84]
-6f90291  QS tiles customizer: respect user tiles columns value  [ezio84]
-be6630b  [1/2] base: make aspect ratio hack configable on app level  [maxwen]
-b1819e9  Add an option to force pre-O apps to use full screen aspect ratio  [Jesse Chan]
-4f807e0  SystemUI: keyguard weather view - fix initial kick off after boot  [maxwen]
-420eee2  OnTheGoTile: Fix active inactive states  [Pranav Vashi]
-49574a5  NetworkTraffic: Fix on lockscreen and with doze  [mydongistiny]
-9335f9b  SystemUI: Fix NPE when creates wifi tracker  [mandy]
-5e5f9ab  Refusing to enter PIP mode when activity destroyed  [wangyougang]
-cad5ad5  Fix PIP media session listener for secondary users  [Kyeongkab.Nam]
-1855950  Fix the behavior of keyguard bouncer in a corner case  [Wang, ArvinX]
-1b3d350  VrManagerService: Solve the null pointer exception  [lvfenglin]
-2284a45  SystemUI: Fixes context for tiles without longClick  [Fabian Kozynski]
-c7fc539  ActivityManager: Fix display id JE issue  [Isaac Lee]
-7346ce6  Activity: Fix class not found exception  [Browse Zhang]
-a15ef71  am: Fix top activity resume with secure keyguard  [Oleksiy Avramchenko]
-17ae287  Fix app shortcuts string when changing language during first boot  [peter.zhang]
-148ac87  Revert "NavigationBarView: Avoid NPE before mPanelView is created"  [mydongistiny]
-ef1ddb1  do not remove system when provider publish timeout  [gaoshiqi]
-9f0b162  service: ResetListener in StorageManagerService  [Risan]
-4b13f51  system_server:process: Crash on Android user-switching  [Amano]
-bdb8c1a  QS: add right/left padding even if it's 0 for collapsed  statusbar  [ezio84]
-99ffeb6  Set statusbar round corners padding conditionally  [Alex Cruz]
-8fac534  UserManagerService: Use XTENDED_FINGERPRINT to signal upgrades  [Sam Mortimer]
-be2784f  LockSettingsService: Support for separate clear key api  [Shivaprasad Hongal]
-6fb87bc  Make sure secondary labels are also hidden with QS hide title  [SKULSHADY]
-8821fea  Fw_base - fix checkapi  [Simon Shields]
-f12ae1e  Fix StatusBar Brightness Control  [Danesh M]
-3bbc266  frameworks: base: Port password retention feature  [AnilKumar Chimata]
-07a40cc  data: sounds: cleanup ogg  [5x]
-52a961c  Phone ringtone setting for Multi SIM device  [Ting Yu]
-1013c02  DO NOT MERGE. Extend SQLiteQueryBuilder for update and delete.  [Jeff Sharkey]
-d15dfba  DO NOT MERGE. Execute "strict" queries with extra parentheses.  [Jeff Sharkey]
-de87873  QS: SystemUI: Add Smart Pixels tile  [adinkwok]
-4956c3b  ViewRootImpl: break out the loop when NPE caught  [aviraxp]
-6b808d8  Revert "ViewRootImpl: break out the loop when NPE caught"  [SuperDroidBond]
-1ee06a7  Fixes crash when getting panel before setting components  [Matthew Ng]
-66da1f9  Return Animation to default  [SuperDroidBond]
-8b771cc  Prevent NFE in SystemUI when parsing invalid int  [Edward Savage-Jones]
-9036407  CarrierLabel: Fix npe when loading settings  [mydongistiny]
-1f769f0  Fix UsbDeviceManager null object reference  [Eddie Hung]
-7a2ba57  KeyguardStateMonitor looses connection with keystore if keystore dies  [Janis Danisevskis]
-23d8d9f  Remove unused calling for better performance  [qiushi.han]
-
- * packages/apps/Settings
-72ab4e4  Phone ringtone setting for Multi SIM device  [Ting Yu]
-
- * packages/apps/Xtensions
-f415eaf  Make roaming indicator optional [2/2]  [Pranav Vashi]
-43ed5f6  Fix QS Info Header  [SuperDroidBond]
-83412ae  make aspect ration hack configable on app level [2/2]  [maxwen]
-
- * vendor/xtended
-c51ad06  Kang apns-conf from Lineage  [xyyx]
-8884acb  Trial Fix for SubsSignature package  [SuperDroidBond]
-98c1070  vendor: Fix build's XTENDED_FINGERPRINT  [Henrique Silva]
-
-====================
-     2018-11-09    
-====================
-
- * frameworks/base
-195e294  Fix current formating on lockscreen for devices, that report directly in Ampere. Shamelessly extracted from:   base: Lockscreen Charging info  (3/3)   by: xyyx <xyyx@mail.ru>  
-[Jens Lody]
-
- * hardware/interfaces
-33e9784  keymasterV4_0: Tags support for FBE wrapped key.  [Shivaprasad Hongal]
-
- * system/vold
-cbf6e54  vold: Move QCOM HW FDE inclusion under custom namespace  [Michael Bestas]
-55d98f7  vold: Wrapped key support for FBE  [Shivaprasad Hongal]
-99fe5fe  vold: Add Hardware FDE feature  [AnilKumar Chimata]
-807dcde  Switch pattern/PIN constants to match values in cryptfs.h  [Paul Crowley]
-f65f42c  secdiscard: should pin_file to avoid moving blocks in F2FS  [Jaegeuk Kim]
-18d68d2  vold: Accept Linux GPT partitions on external SD cards  [lambdadroid]
-2317eb8  vold: skip first disk change when converting MBR to GPT  [Scott Mertz]
-d0308d6  Fix the group permissions of the sdcard root.  [Jani Lusikka]
-dd1dfc1  vold ext4/f2fs: do not use dirsync if we're mounting adopted storage  [Sam Mortimer]
-a22f7b3  vold: Mount ext4/f2fs portable storage with sdcard_posix  [Jani Lusikka]
-9b2bf8b  vold: Honor mount options for ext4/f2fs partitions  [Tom Marshall]
-b445d97  vold: Support internal storage partitions  [Tom Marshall]
-d7dd979  vold: Fix fsck on public volumes  [Michael Bestas]
-5fb36b0  vold: add support for more filesystems for public storage  [Dan Pasanen]
-
- * vendor/xtended
-722782b  soong_config: Add flag for crypto waiting on QSEE to start  [Michael Bestas]
-0715a46  soong_config: Add flag for legacy HW FDE  [Michael Bestas]
-edb4f9c  soong_config: Add new flags for HW FDE  [AnilKumar Chimata]
-
- * vendor/xtended/DevicesOTA
-314a655  Add Mido Update XP-2.5 08/11/18 (#9)  [Sagar Rokade]
-
-====================
-     2018-11-08    
-====================
-
- * frameworks/base
-072180c  privapp-permissions: Add missed Launcher3 permissions  [xyyx]
-ac22e4d  Merge tag 'android-9.0.0_r16' into p  [SuperDroidBond]
-9c0352a  Remove padding commits  [xyyx]
-
- * frameworks/opt/net/ims
-cbbec8e  Merge tag 'android-9.0.0_r12'  [SuperDroidBond]
-
- * frameworks/opt/net/wifi
-6d2c681  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/frameworks/opt/net/wifi into HEAD  [Henrique Silva]
-
- * hardware/libhardware
-670787c  libhardware: Add new display types.  [Dileep Marchya]
-1ae3b0b  hardware: power: Remove POWER_HINT_AUDIO  [Zhao Wei Liew]
-
- * packages/services/BuiltInPrintService
-68c5976  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/packages/services/BuiltInPrintService into HEAD  [Prema Chand Alugu]
-
- * system/core
-c68e26e  metricslogger: fix ACTION_BATTERY_CAUSED_SHUTDOWN not matching proto  [Thierry Strudel]
-
- * vendor/xtended
-64cdef2  Increase Release & Xtended Version  [SuperDroidBond]
-
-====================
-     2018-11-07    
-====================
-
- * bionic
-80eeb57  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//bionic into HEAD  [Alex Cruz]
-
- * build/make
-e460c7e  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//build into HEAD  [SuperDroidBond]
-
- * external/perfetto
-5749b84  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/external/perfetto into HEAD  [Prema Chand Alugu]
-
- * frameworks/av
-f630fb4  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//frameworks/av into HEAD  [SuperDroidBond]
-
- * frameworks/base
-a20ee7b  BurnInProtection: Fix null object reference with timer  [mydongistiny]
-
- * frameworks/native
-3459e29  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//frameworks/native into HEAD  [Alex Cruz]
-
- * frameworks/opt/telephony
-bace32a  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//frameworks/opt/telephony into HEAD  [SuperDroidBond]
-
- * hardware/interfaces
-71c8266  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//hardware/interfaces into HEAD  [Alex Cruz]
-6ac5ff2  Merge tag 'android-9.0.0_r12' of https://android.googlesource.com/platform/hardware/interfaces into p9x  [Alex Cruz]
-
- * hardware/qcom/audio
-5b019f7  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/hardware/qcom/audio into HEAD  [Prema Chand Alugu]
-
- * hardware/qcom/bootctrl
-db0cfdc  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/hardware/qcom/bootctrl into HEAD  [Prema Chand Alugu]
-
- * hardware/qcom/display
-04c19d1  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/hardware/qcom/display into HEAD  [Prema Chand Alugu]
-
- * hardware/qcom/gps
-e3dacb2  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/hardware/qcom/gps into HEAD  [Prema Chand Alugu]
-
- * hardware/qcom/media
-f409829  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform/hardware/qcom/media into HEAD  [Prema Chand Alugu]
-
- * manifest
-1698873  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//manifest into HEAD  [SuperDroidBond]
-
- * packages/apps/Bluetooth
-d4f60e8  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//packages/apps/Bluetooth into HEAD  [SuperDroidBond]
-
- * packages/apps/Nfc
-0f9667c  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//packages/apps/Nfc into HEAD  [SuperDroidBond]
-
- * packages/apps/Settings
-e1c1b75  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//packages/apps/Settings into HEAD  [SuperDroidBond]
-
- * packages/providers/DownloadProvider
-cb94bab  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//packages/providers/DownloadProvider into HEAD  [SuperDroidBond]
-
- * packages/services/Telecomm
-121d613  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//packages/services/Telecomm into HEAD  [SuperDroidBond]
-
- * system/bt
-3bc3b3e  Merge tag 'android-9.0.0_r16' of https://android.googlesource.com/platform//system/bt into HEAD  [Alex Cruz]
-
-====================
-     2018-11-06    
-====================
-
- * frameworks/base
-a7b53c9  Status bar notification ticker [1/2]  [rogersb11]
-fc3698d  SystemUI: small optimization for notification icon numbers  [Roman Birg]
-6fdf78f  Status bar: Update notification count icons  [XXMrHyde]
-aacbfe4  SystemUI: Forward-port notification counters [1/2]  [Steve Kondik]
-e34f1a5  Add more qs tiles style [1/3]  [ElDainosor]
-
- * packages/apps/Xtensions
-7379954  [SQUASHED] Status bar notification ticker [2/2]  [SpiritCroc]
-3825c10  Strings : Clean Up  [SuperDroidBond]
-b47e23d  Forward-port notification counters [2/2]  [Steve Kondik]
-c7b7993  Add more qs tiles style [3/3]  [ElDainosor]
-
- * vendor/xtended
-d1f7c2e  Add more qs tiles style [2/3]  [ElDainosor]
-

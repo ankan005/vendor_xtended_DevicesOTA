@@ -108,9 +108,9 @@
          <tissot>
               <maintainer>AnuragRai (Dark-Matter7232)</maintainer> 
               <devicename>MI A1 (tissot)</devicename>
-              <filename>Xtended-tissot-20181125-XP3-OFFICIAL-Release-v7.zip</filename>
+              <filename>Xtended-tissot-20181208-XP4-OFFICIAL-Release-v8.zip</filename>
               <buildtype>Stable</buildtype>
-              <download>https://netix.dl.sourceforge.net/project/xtended/tissot/Xtended-tissot-20181125-XP3-OFFICIAL-Release-v7.zip</download>
+              <download>https://netix.dl.sourceforge.net/project/xtended/tissot/Xtended-tissot-20181208-XP4-OFFICIAL-Release-v8.zip</download>
               <changelog>https://raw.githubusercontent.com/Xtended-Pie/vendor_xtended_DevicesOTA/xp/tissot_changelog.txt</changelog>
               <recovery>Use Cosmic Dan twrp Recovery</recovery>
               <gapps>https://OpenGapps.org</gapps>
