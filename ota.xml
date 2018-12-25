@@ -131,7 +131,20 @@
             <gapps>https://OpenGapps.org</gapps>
             <forum>https://forum.xda-developers.com/g5-plus/development/rom-msm-xtended-t3851041</forum>
             <telegram>https://t.me/XtendedOfficial</telegram>			
-        </potter> 
+        </potter>
+		<sanders>
+			   <maintainer>SaiKrishna</maintainer>
+                           <devicename>Moto G5s Plus(sanders)</devicename>
+                           <filename>Xtended-sanders-20181225-XP4-OFFICIAL-Release-v8.5.zip</filename>
+ 	                   <buildtype>Stable</buildtype>
+            		   <paypal>https://www.paypal.me/superdroidbond</paypal>
+                           <download>https://netix.dl.sourceforge.net/project/xtended/files/sanders/Xtended-sanders-20181225-XP4-OFFICIAL-Release-v8.5.zip</download>
+                           <changelog>https://raw.githubusercontent.com/Xtended-Pie/vendor_xtended_DevicesOTA/xp/sanders_changelog.txt</changelog>
+	                   <recovery>https://drive.google.com/open?id=1Z2WClmjfJ-wep4ds4kdwFUkjQ6Oh-XLx</recovery>
+                           <gapps>https://OpenGapps.org</gapps>
+                           <forum>https://forum.xda-developers.com/moto-g5s-plus/development/rom-msm-xtended-pie-9-0-t3868296</forum>
+                           <telegram>https://t.me/XtendedOfficial</telegram>
+		</sanders> 
      </manufacturer>
 <!-- ASUS -->
      <manufacturer id="ASUS">
