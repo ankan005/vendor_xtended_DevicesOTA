@@ -1,532 +1,200 @@
 ====================
-     2018-12-09    
+     2018-12-24    
 ====================
 
 ====================
-     2018-12-08    
+     2018-12-23    
 ====================
 
 ====================
-     2018-12-07    
+     2018-12-22    
+====================
+
+====================
+     2018-12-21    
 ====================
 
  * frameworks/base
-3313a03  Lockscreen Visualizer: Check for keyguard fading away  [Pranav Vashi]
-1a1e408  frameworks: Add unlinked ringtone and notification volumes  [Adnan Begovic]
-25c3b68  PIE: Hide network type if wifi is enabled  [Pranav Vashi]
-1d661da  Fw_base - [SQUASH] PIE 3.0 (oreo->Pie)[1/3]  [Paul Henschel]
-
- * manifest
-e8403c7  Track Forked Eleven, MusicFX & jamesdsp  [SuperDroidBond]
-
- * packages/apps/Settings
-d178329  Settings: Add switch for linked ring and media notification volumes  [Bruno Martins]
-bd75748  PIE [3/3]  [thecrazyskull]
+73c802b  [SQUASHED] QS: Navigation Bar tile  [Alex Cruz]
+1b1507f  Fix Signature Spoofing  [SuperDroidBond]
+eb84fb8  base: FontService: Add a error for non-supported font packages  [ElDainosor]
+7c6feb4  base: add settings for device features  [maxwen]
+7633513  fwb: Implement alternative device key handler  [maxwen]
 
  * vendor/xtended
-4cdc8f1  vendor: build Eleven, MusicFX & JamesDSP  [Julian Veit]
-8087e69  Call it XP4 Release v8  [SuperDroidBond]
-9b31f54  Add 23 fancy accent colors  [spezi77]
+64b157e  We are moving to v8.5  [SuperDroidBond]
+
+ * vendor/xtended/DevicesOTA
+2485ff9  OnePlus 3/3T: Update for v8.5  [SuperDroidBond]
 
 ====================
-     2018-12-06    
+     2018-12-20    
 ====================
 
  * frameworks/base
-8977ea7  Fw_base - SystemUI: filter service disabled broadcast for qs weather tile  [maxwen]
-b3cbd6a  Added toast when a screenshot is deleted  [Alex Cruz]
-c5f990e  ViewConfiguration: Set scroll friction to 0.012  [Alex Naidis]
-63e44b5  SystemUI: Change default animation scales to x0.8 [2/3]  [Adin Kwok]
-8fb53df  SystemUI: Change default animation scales to x0.8 (1/3)  [gtpitch]
-5466d79  SettingsProvider: lowered animations duration  [Maxime Poulain]
-9228e83  Grant Location Permissions to OmniJAWS  [Vaughn N]
-839ed01  Battery charge warning [1/2]  [Nicolas Dhouailly]
-e526f22  NetworkTraffic: decrease padding  [SuperDroidBond]
-d75670c  Networktraffic: Fix gravity  [Shubham Singh]
-427b789  FontService: fix null object reference  [soubhik-khan]
-760355f  LockscreenVisualizer: Use offload thread  [Pranav Vashi]
-653c800  Pulse: allow setting fading blocks opacity [1/3]  [varund7726]
-eba4bae  Stock navbar Pulse : allow to blacklist apps [1/2]  [ezio84]
-9369577  Pulse: Add bar animation smoothing [1/3]  [Ritayan Chakraborty]
-b28494c  Add Pulse Lava Lamp start and end colors (1/3)  [out386]
-902f7b3  Smartbar pixel animation: Ability to customize the dots [1/3]  [varund7726]
-965a7b9  Smarbar Pixel Navbar Animation Duration Settings [1/3]  [varund7726]
-efcb5ba  Fixes for lockscreen visualizer  [Pranav Vashi]
-99156a9  Increase LongPress Timeout  [SuperDroidBond]
-
- * packages/apps/Settings
-3ba5385  Battery charge warning [2/2]  [Nicolas Dhouailly]
-
- * packages/apps/SmartNavSettings
-3fa651d  Smartbar pixel animation: Ability to customize the dots [3/3]  [varund7726]
+3262484  FontService: Update privapp-permissions-platform.xml  [spezi77]
+853e4a7  Switching audio panel position [1/2]  [a.derendyaev]
+31177d3  Add InkDrop QS Tile Style [1/3]  [El Dainosor]
+8c35d16  telephony: Make IMS method updateToState accessible  [Pranav Vashi]
+21871b3  KeyguardHostView: Auto face unlock v2 for pie  [Henrique Silva]
+6fbe03c  Update the screenState for keyguard while screen turning on  [Joseph Cheng]
+7b06e3c  Delete the check of mService when BluetoothHeadset doUnbind  [wangdawei]
+247551d  DreamBackend: Fix launching settings  [LuK1337]
+5985fdd  Make services with uid 1000 restart if their host process crashes  [Zheng Zhang]
+601d28f  ConnectionRecord: make SystemProcess Watchdog when clean app process  [Ethon_Hu]
+cd0f577  Change the listening logic of MtpStorageManager  [katao]
+0200c40  Fix motion event offset of DecorView is moved in the window  [st.ji]
+54ba79f  base: op navigation gesture tweaks [1/2]  [maxwen]
+2e35430  BoostFramework: Add debug to hide logcat spam on devices without QPerformance  [xyyx]
 
  * packages/apps/Xtensions
-70a0b25  PIE [2/3]  [thecrazyskull]
-e867763  Hide SB weather for now  [SuperDroidBond]
+c2051c4  Switching audio panel position [2/2]  [alexxxdev]
+d531a56  Add InkDrop QS Tile Style [2/3]  [ElDainosor]
+25e46c5  op navigation gesture tweaks [2/2]  [maxwen]
+
+ * vendor/xtended
+389f6ec  Add Ink QS Tile Style [3/3]  [ElDainosor]
 
 ====================
-     2018-12-05    
+     2018-12-19    
 ====================
 
- * packages/apps/OmniDisplayManager
-9d21642  Adapt for Xtended  [SuperDroidBond]
-3146233  OmniDisplayManager: restore night mode when disabling reading mode  [maxwen]
-c427479  OmniDisplayManager: add firewalls around native lib usage  [maxwen]
-31b1356  OmniDisplayManager: add reading mode tile  [maxwen]
-df7af6a  OmniDisplayManager: tune me up baby  [maxwen]
-
 ====================
-     2018-12-04    
+     2018-12-18    
 ====================
- * art
-b77a91d  Fixed Dex2oat failed to compile a boot image  [Gareth Kitchen]
-
- * bionic
-6cb714f  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//bionic into HEAD  [SuperDroidBond]
-
- * build/make
-85af835  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//build into HEAD  [SuperDroidBond]
 
  * frameworks/base
-fdb4720  SystemUI: Fix too big spacing between QS icons in landscape on sw600dp  [LuK1337]
-4741c66  core: touch response optimizations  [zfu]
-152f7c6  Support for appending "standalone" WHERE chunks  [Jeff Sharkey]
-ce3b0c4  Bind update() args as Object[] for performance  [Jeff Sharkey]
-a839dcd  Extend SQLiteQueryBuilder for update and delete  [Jeff Sharkey]
-fcaa828  Execute "strict" queries with extra parentheses  [Jeff Sharkey]
-c798f83  Revert SQLiteQueryBuilder for now  [Jeff Sharkey]
-39e6f8d  Execute "strict" queries with extra parentheses  [Jeff Sharkey]
-72bc564  Add support for appending standalone phrases  [Jeff Sharkey]
-3c3f52e  GROUP BY and HAVING aren't ready to be strict  [Jeff Sharkey]
-76cc072  Extend SQLiteQueryBuilder for update and delete  [Jeff Sharkey]
-51deefd  Revert "aapt: Default to 0 compression ratio"  [mydongistiny]
-e76c1a7  Revert "Frameworks/base: Compiled-classes support"  [Andreas Gampe]
-a3dda74  Fix ExifInterface for .heic when meta is at the end  [Chong Zhang]
-4ced92a  Select the proper request list size  [Guruprasad Gaonkar]
-1064971  SystemUI: Fix IllegalArgumentException when SystemUI do dumping  [Weijie Wang]
-ef5dde0  Avoid NPE in resumeTopActivityInnerLocked()  [Hang Lu]
-59aa081  Fix Framework Reboot due to invalid display  [Gopal Krishna Shukla]
-5bcf2ef  SystemUI: fix notification overlap with PIN screen  [xiaohuin]
-71b90cb  ResourceManager: Disable APK Assets cache  [Narayan Kamath]
-91b33cc  BoostFramework: Implement asynchronous processing of perflocks  [Alex Naidis]
-12569c6  fwb: disable Aggressive trim settings by default  [maxwen]
-495fd2f  Revert "Temp: Fix NetworkTraffic display"  [xyyx]
-d37f69d  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//frameworks/base into HEAD  [SuperDroidBond]
+86b393e  extended audio panel [1/2]  [a.derendyaev]
+da12a0f  Telephony: NPE observed in Settings when click on Search settings  [Ruthwar Ambeer]
+d20be07  Fix showing empty signal strength for TD-SCDMA  [Mengjun Leng]
+c139d7b  Fix property setting with failure  [Mengjun Leng]
+8704eef  frameworks/base: Add HDMI hotplug handling  [Prabhanjan Kandula]
+09de9d5  Check if EIMS when confirming network  [Tyler Wear]
+27e4e86  net: modify connecitvity rematch logic to support MSIM devices  [Pavan Kumar M]
+
+ * manifest
+cf3a99c  Add our DeskClock for Power-Off alarms  [SuperDroidBond]
+4b3c7bd  Remove Sound Recorder & Add LOS Screen & Sound Recorder  [SuperDroidBond]
+
+ * packages/apps/DeskClock
+10cedf2  DeskClock: Add support of power off alarm feature  [Mao Jinlong]
+
+ * packages/apps/Xtensions
+779cf0d  extended audio panel [2/2]  [a.derendyaev]
+e89a949  Batterylight: blend colors between full/empty [2/2]  [SpiritCroc]
+8893a6b  Add ColorBlendPreference from AICP  [SpiritCroc]
+b59ed6d  BatteryLight: Fast Charge & Fast Charge Led colors [2/2]  [maxwen]
+
+ * system/sepolicy
+56d6b18  sepolicy: Implement rules for font service in p-mr0  [Surge Raval]
+bebf5a9  sepolicy: rules for FontService  [Ivan Iskandar]
+b8aa3c0  sepolicy: exceptions for font engine assets  [Surge Raval]
+
+====================
+     2018-12-17    
+====================
+
+ * frameworks/base
+d4f9750  base: move nlp combo config to custom  [maxwen]
+92e1f2f  Default the network location provider to none  [Luca Stefani]
+2f85f99  combo issue when location reported by providers do not come with extras  [Kevin Tang]
+fb8a0b5  NLP Combo feature  [Dante Russo]
+fd25bfd  Battery light: blend colors between full/empty [1/2]  [SpiritCroc]
+627c927  BatteryLight: Full Charge Only, Fast Charge & Fast Charge Led colors [1/2]  [maxwen]
+9059954  base: fix mediascanner access permissions to external storage  [Ali B]
+
+ * vendor/xtended
+281d0f3  Add 3 New Fonts from Da Fonts 1) Aovel Sans Rounded 2) Cabo Rounded 3) Valentine Love All these are free for personal use  [SuperDroidBond]
+ec0878c  Build Recorder  [SuperDroidBond]
+
+====================
+     2018-12-16    
+====================
+
+ * build/soong
+9410005  Gralloc2: Allow invalid usage bits  [Kshitij Gupta]
 
  * frameworks/native
-064b915  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//frameworks/native into HEAD  [SuperDroidBond]
-
- * manifest
-0d1fc84  Track Wlan from our GZOSP again  [SuperDroidBond]
-15ada62  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//manifest into HEAD  [SuperDroidBond]
-3e8b928  Track OmniDisplay Manager  [SuperDroidBond]
-
- * packages/apps/Bluetooth
-4d3ee7f  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//packages/apps/Bluetooth into HEAD  [SuperDroidBond]
+d5a5385  gralloc2: Extend the list of valid gralloc bits  [Stefan Berger]
 
  * packages/apps/Settings
-e073c61  Remove DT2S from Pie Gestures for now  [SuperDroidBond]
+744313b  Kang Build Date Info from ArrowOS  [ganeshi4u]
+
+====================
+     2018-12-15    
+====================
+
+====================
+     2018-12-14    
+====================
+
+ * packages/apps/OmniStyle
+3721b73  Update paddings (#1)  [Jan Švanda]
+
+====================
+     2018-12-13    
+====================
+
+ * frameworks/base
+bb84a26  CamcorderProfile: Add 1440p camcorder profile  [Sultanxda]
+
+====================
+     2018-12-12    
+====================
+
+ * frameworks/av
+c0cc490  libmedia: Add 1440p camcorder quality  [Sultanxda]
+
+ * frameworks/base
+0c308b0  Camera: Extend face detection  [Shuzhen Wang]
+cbd8586  FingerprintService: add overlay to prevent cleanup of unused fingerprints  [codeworkx]
+4ff30a0  BoostFramework: silence exception about class not found  [DennySPB]
+de54eec  Modify game detection logic  [Gopal Iyer]
+332a4cc  Add perfGetFeedback api support from framework  [Chitti Babu Theegala]
+
+ * packages/apps/Xtensions
+e26d1a5  Bring Back our NavBar Settings.  [SuperDroidBond]
+
+ * vendor/xtended/DevicesOTA
+41ef4b6  update vince (#22)  [Rajkale99]
+
+====================
+     2018-12-11    
+====================
+
+ * frameworks/base
+8e1eac0  Re-Enable Burn-In Controllers for NavBar  [SuperDroidBond]
+2866c81  Clean up back animation view for edge gesture  [Pranav Vashi]
+66e7fe8  Fix Pie NavBar Full Gestures.  [SuperDroidBond]
+
+ * packages/apps/Settings
+cebd61a  Battery: show battery temp on power summary  [DennySPB]
+f0c823a  Settings: Use correct icon for ring volume  [Michael Bestas]
+acc7108  Fix FC after link notifiation option merge  [DennySPB]
+cf006dc  Settings: fix layout of dashboard drawables  [maxwen]
+b445cd2  Settings: DashBoardLayout [1/2]  [maxwen]
+029d691  show4GForLTE Fix  [Alex Cruz]
+3320232  MSIM: Fix user set DDS sub in hotswap cases.  [Umashankar Godachi]
+b0aeffe  Settings: Add switch for linked ring and media notification volumes  [Bruno Martins]
+7618253  PIE [3/3]  [thecrazyskull]
+f1f1ee6  Battery charge warning [2/2]  [Nicolas Dhouailly]
 
  * packages/apps/SmartNav
-64caffc  Use offload thread (ExecutorService) to start pulsing  [ezio84]
-2e255a0  Smartbar pixel animation: Ability to customize the dots [2/3]  [Varun Date]
-9769cb1  Make Smartbar Pixel Animation Durations Customizable [2/3]  [Varun Date]
-6041127  Pulse: Add bar animation smoothing [2/3]  [Ritayan Chakraborty]
-e452032  Add Pulse Lava Lamp start and end colors (2/3)  [out386]
-e9fb0a5  Pulse: allow setting fading blocks opacity [2/3]  [Varun Date]
+6c5a6e4  Navigator: Add Burn-In Controls Shift to public methods  [SuperDroidBond]
+c6aa9e2  Navigator: Add Gesture nav to public methods  [Josh Fox (XlxFoXxlX)]
 
  * packages/apps/SmartNavSettings
-231ea4c  Settings: Make Smartbar Pixel Animation Durations Customizable [3/3]  [varund7726]
-c25c0f3  Return Button Opacity for NavBar Pulse  [SuperDroidBond]
-4d53728  Add Pulse blacklist option  [ezio84]
-f5d652f  Pulse: allow setting fading blocks opacity [3/3]  [varund7726]
-d3c24bc  Pulse: Add bar animation smoothing [3/3]  [out386]
-cd5abaa  Add Pulse Lava lamp start and end colors (3/3)  [out386]
+fa16432  Add back Our NavBar settings  [Shubham Singh]
+26b304c  Smartbar pixel animation: Ability to customize the dots [3/3]  [varund7726]
+d3b51c6  Settings: Make Smartbar Pixel Animation Durations Customizable [3/3]  [varund7726]
+03f0630  Return Button Opacity for NavBar Pulse  [SuperDroidBond]
+a6d19ea  Add Pulse blacklist option  [ezio84]
+59cce10  Pulse: allow setting fading blocks opacity [3/3]  [varund7726]
+fd8c8d0  Pulse: Add bar animation smoothing [3/3]  [out386]
+4665cef  Add Pulse Lava lamp start and end colors (3/3)  [out386]
+7209833  Pulse: add back color from album art preference  [bigrushdog]
+4225768  Pulse: Allow Pulse for all bar modes  [bigrushdog]
 
- * packages/apps/Xtensions
-ca2439a  Fix Charging Symbol Summary  [SuperDroidBond]
-
- * system/bt
-dc381ee  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//system/bt into HEAD  [SuperDroidBond]
-
- * system/core
-c3dc7fc  Merge tag 'android-9.0.0_r21' of https://android.googlesource.com/platform//system/core into HEAD  [SuperDroidBond]
-
-====================
-     2018-12-03    
-====================
-
- * frameworks/base
-d2346e9  Revert "Be more strict about triggering notification lights"  [xyyx]
-fe2994b  Ignore vendor overlays that must be on system/overlay  [jhenrique09]
-00058eb  Fingerprint: Use FastJNI  [HolyAngel]
-563f651  NetworkTraffic: Fix gravity  [xyyx]
-e9a0597  Avoid casting network traffic to StatusBarIconView to prevent crash  [SpiritCroc]
-2f1ec81  Add network traffic monitor properly to statusbar icons  [SpiritCroc]
-090583e  Revert "NetworkTraffic: Fix on lockscreen and with doze"  [SuperDroidBond]
-
- * packages/apps/Settings
-5ed460f  Settings: Hide notification light color preference if no multicolor led  [Vol Zhdanov]
-8d1ceb3  Revert "Settings: Allow to specify multicolor notification led support [2/2]"  [Vol Zhdanov]
-
- * system/bt
-380a003  Fix BT Calls  [AmolAmrit]
-
-====================
-     2018-12-02    
-====================
-
- * packages/apps/Settings
-99001e0  Add developer setting to set the default GPU renderer.  [Joe Maples]
-
-====================
-     2018-12-01    
-====================
-
- * frameworks/base
-9a395f3  Wi-Fi Auto-connect support  [Yinling Cai]
-c34b9ba  SmartNav: Update Kill App action  [bigrushdog]
-ab47011  Fix QS BG Color  [SuperDroidBond]
-cd54690  Implement App circle sidebar [1/2]  [Yanuar Harry]
-0744af0  Bluetooth: Fix NPE when accesing Manufacturer Data of invalid ScanRecord  [Jakub Pawlowski]
-9f4b45a  hwui: stability: check mmap return value  [zhangkuili]
-ae86e71  Recents: add pinch-in gesture on tasks to Clear All  [ezio84]
-eb251a6  Recents: Allow closing empty view via tapping  [Michael W]
-0171339  PanelPorn 8.1: Power menu alpha and dim (1/2)  [LorDClockaN]
-
- * packages/apps/Xtensions
-c90e11e  Implement App circle sidebar [2/2]  [Yanuar Harry]
-f6c0508  Add display colors menu if related package is present  [Vachounet]
-3f706fc  PanelPorn: Power menu alpha and dim (2/2)  [LorDClockaN]
-
-====================
-     2018-11-30    
-====================
-
- * frameworks/base
-66fab12  base: make old qti telephony optional [1/2]  [Vol Zhdanov]
-
- * frameworks/opt/telephony
-e8604af  PhoneFactory: make old qti telephony optional [1/2]  [Vol Zhdanov]
-acfa67c  TelephonyComponentFactory: Overload makeSubscriptionInfoUpdater  [TheScarastic]
-160b1a1  Make radio power off immediately after data cleanup is complete  [Mengjun Leng]
-bc30c52  Fix to release partial wakelock for SRVCC handover.  [Umashankar Godachi]
-0dd53ee  DcTracker: Change access modifier of isNvSubscription to protected  [Bruno Martins]
-963a011  Telephony: Enable NV based CDMA data call.  [Yashdev Singh]
-
-====================
-     2018-11-29    
-====================
-
- * frameworks/base
-a550f2d  Keep recent tasks for more time in memory  [ezio84]
-bc09002  base: Add special captive portal servers for chinese  [LiangXiang Shen]
-1f764e5  Add More Charging Symbols [1/2] Thanks to @mady51 for the idea  [SuperDroidBond]
-57aaa1c  AmbientPlay: Animate ambient indication into view  [Chris]
-d149d40  CustomDoze: fix custom gestures not working if default pulsing is disabled [1/2]  [ezio84]
-fda04d7  SystemUI: qs brightness slider enhancements [1/2]  [maxwen]
-0610b51  Full gesture navbar: add haptic feedback to back action  [ezio84]
-baee3aa  hwkeys: Fix sound search  [Anushek Prasal]
-deea924  Fix the Statusbar and QS panel layout  [Anushek Prasal]
-7fe942e  HWKeysUtils: Fix mismerge after https://github.com/Xtended-Pie/frameworks_base/commit/4337fbf6b504cc3bdfaa03ba27d2fc516180dbd4  [xyyx]
-87c076b  Pulse: add back auto color based on albumart  [ezio84]
-b4a51fa  Stock AOSP Navbar Pulse bringup  [bigrushdog]
-af07f18  Full nav gesture: Poor Hack to Get Everything working  [SuperDroidBond]
-cd161aa  Battery: Fix the Padding of PercentageView  [SuperDroidBond]
-103f3bc  Launch music player on headset connect: add BT compatibility [1/2]  [ezio84]
-b7c034b  Launch default music player on headset connect [1/2]  [PMS22]
-8056c98  Screenrecord: Adjust 'High' setting to 1080p  [Miguel Martinez]
-1fe7275  Xtended: Fix QS Header Style  [SKULSHADY]
-fbb3f69  Support the perflock request from system/priv apps whose domain are untrusted  [binzhang]
-aa69180  Add Game boost & modify launchboostv2 invocation.  [Bhargav Upperla]
-09b83b5  Disable swipe boost and preferred apps for certain cases  [Sudharshun Iyengar]
-cd13f64  Fling/Pre-fling Boost: Call perf boost from System Server context  [Sudharshun Iyengar]
-86cf535  BoostFramework: Clean up code  [Bhargav Upperla]
-8807d54  IOP : Adding support for UXPerf Class  [Abhimanyu Garg]
-1feb60c  BoostFramework: Move property checks to pass sepolicy requirements.  [Bhargav Upperla]
-ae4768c  IOP/UXE: This change is to enable the IOP and UXE  [Bhargav Upperla]
-2ed9b63  Precise new activity boost.  [Karthik Gopalan]
-41b19d5  Reorder boosts for quick ramp up  [Chitti Babu Theegala]
-14cd06d  Add perf hint for screen rotation animation  [Jun Wang]
-7700b55  Add perf hint for rotation latency  [Jun Wang]
-965b228  framework/base: add parallel verifyV1  [zljing]
-7c4b6cc  add perf_service into system_process.  [zfu]
-56054b8  BoostFramework: To Enhance performance.  [Varun Garg]
-
- * frameworks/opt/telephony
-b4d7fbf  telephony: Query LTE thresholds from CarrierConfig  [Artem Borisov]
-8630f3c  telephony: Squashed support of dynamic signal strength thresholds  [Paul Keith]
-d6b130c  Implement signal strength hacks used on Huawei devices  [codeworkx]
-
- * manifest
-0a2e4e2  Track GZOSP Vendor/Audio  [SuperDroidBond]
-9cb71cd  Initial checkin on Pie for SmartNav navigation suite [4/4]  [SuperDroidBond]
-
- * packages/apps/CustomDoze
-f9369e7  CustomDoze: fix custom gestures not working if default pulsing is disabled [2/2]  [ezio84]
-
- * packages/apps/SmartNavSettings
-7c1d6cf  Pulse: add back color from album art preference  [bigrushdog]
-25950ef  Pulse: Allow Pulse for all bar modes  [bigrushdog]
-
- * packages/apps/Xtensions
-9f70c08  Add More Charging Symbols [2/2] Thanks to @mady51 for the idea  [SuperDroidBond]
-2baec60  qs brightness slider enhancements [2/2] add switch for brightness buttons  [maxwen]
-
-====================
-     2018-11-28    
-====================
-
- * frameworks/base
-5fe7c5b  Rounded Corners: Set default value  [Anushek Prasal]
-229d6f2  [SQUASHED] Rounded Courners [1/2]  [Kshitij Gupta]
-
- * packages/apps/SmartNavSettings
-8cf39f9  Link Correctly Stock NavBar Settings  [SuperDroidBond]
-
- * packages/apps/Xtensions
-a98fc1f  Launch music player on headset connect: add BT compatibility [2/2]  [ezio84]
-
-====================
-     2018-11-27    
-====================
-
- * frameworks/base
-e8b909e  Add kill button to notification guts [1/2]  [Daniel Koman]
-
- * packages/apps/Snap
-1c60edd  Adapt to AOSP  [DennySPB]
-
-====================
-     2018-11-26    
-====================
-
- * frameworks/opt/jamesdsp
-cedd63c  JamesDSP: Install the module into soundfx directory  [Christos Papageorgiou (root-expert)]
-f11f454  JameaDSP: Make it a vendor module.  [Christos Papageorgiou (root-expert)]
-5cd9bdb  JamesDSP: Declare two functions as static.  [Christos Papageorgiou (root-expert)]
-64c5c56  JamesDSP: Initialize uninitialized variables.  [Christos Papageorgiou (root-expert)]
-78d8342  JamesDSP: Reorder constructor objects.  [Christos Papageorgiou (root-expert)]
-8638f88  JamesDSP: Suppress unused parameter warning.  [Christos Papageorgiou (root-expert)]
-bb06201  JamesDSP: Android.mk cleanup.  [Christos Papageorgiou (root-expert)]
-a5219a7  JamesDSP: Remove C++ and C flag from the makefile  [Christos Papageorgiou (root-expert)]
-9f7a5c6  JamesDSP: Move jni folder to root.  [Christos Papageorgiou (root-expert)]
-2a2823d  JamesDSP: Remove unused/useless files.  [Christos Papageorgiou (root-expert)]
-a231c78  JamesDSP: Remove unused folders.  [Christos Papageorgiou (root-expert)]
-cc6a5be  Change FFT library to commercial friendly implementation  [James Fung]
-d2e0435  Russian translation (strings)  [Ivan Kutepov]
-2567b1c  Russian translation (arrays)  [Ivan Kutepov]
-5695c8f  DDC support arbitrary sample rate by analytical spectrum analyser and reverse calculation of peaking equation  [James Fung]
-bc4f907  Readme  [James Fung]
-4bd4d0b  Add image to readme  [James Fung]
-3ca533f  Add circuit diagram of typical 12AX7 amplifier  [James Fung]
-6552f0e  Better looking  [James Fung]
-245c2d0  More credit  [James Fung]
-e629920  Readme  [James Fung]
-d067e8e  Readme  [James Fung]
-c9c8e55  Readme  [James Fung]
-3b5edff  Readme  [James Fung]
-df468cf  Readme  [James Fung]
-9600756  Readme  [James Fung]
-b676af8  Contributor update  [James Fung]
-6728c30  Renew FFT library  [James Fung]
-9899c90  Add VDC(IIR SOS) and designing utility  [James Fung]
-93d3d70  Readme  [James Fung]
-3313c37  Delete blobs  [James Fung]
-4adb16b  Fix most bit depth issue(Include HTC phone)  [James Fung]
-0c5ba2f  Update readme following up  [James Fung]
-1e0121b  Convolver: direct IR volume control  [James Fung]
-678da41  Fix potential crashes when using string to equalizer string  [James Fung]
-231a050  Simple fix  [James Fung]
-58ba0f6  Sturcture map update  [James Fung]
-3acf0b5  Readme  [James Fung]
-63a765b  Replace tanh() with limiter  [James Fung]
-dabf01f  Remove unrelated files  [James Fung]
-49004ec  Add 64 bit Processing  [James Fung]
-e4ecc34  Spatialization impulse response released  [James Fung]
-bbeb891  README  [James Fung]
-794c2b5  Fix most weird crashes caused by threaded audioflinger  [James Fung]
-8b293ad  Quick fix of apocalyptic crash of threaded audioflinger  [James Fung]
-bd39a5f  Fixed DSP buffer length for Android 8.0 support  [James Fung]
-dcbf639  Readme  [James Fung]
-1d17ab5  Readme  [James Fung]
-f996a6c  Reduce memory consumption  [James Fung]
-879cb63  Currently Android 8.0 is not supported  [James Fung]
-121f721  Upgrade convolver buffer transfer to float32  [James Fung]
-6b3fd4f  Update picture  [James Fung]
-528b473  SmoothEq  [James Fung]
-c9ee807  README  [James Fung]
-f8ad881  README  [James Fung]
-797ae55  15 bands spline interpolated Eq and Improved coefficient update convolver  [James Fung]
-58dbd02  README  [James Fung]
-fa925f3  README  [James Fung]
-78665d9  README  [James Fung]
-1d87fd3  Slightly less accurate tube model  [James Fung]
-104971c  Re-enable tube simulation optimise and Convolver SSE support  [James Fung]
-3c0e418  Minor improvements  [James Fung]
-2280949  Add BS2B effect and BUG fix  [James Fung]
-613d0a1  README  [James Fung]
-a6f7050  README  [James Fung]
-4d5dee3  Bug fix and Performance improve  [James Fung]
-f17f735  Convolver take a step forward to efficiency  [James Fung]
-2522d08  Improve frequency response of equalizer and improve tube simulation CPU usage  [James Fung]
-3854a10  Revert "Improve frequency respobse of equalizer and simprove tube simulation performance"  [James Fung]
-ffda863  Improve frequency respobse of equalizer and simprove tube simulation performance  [James Fung]
-0f74aee  Multithread the full stereo convolver and tube simulation  [James Fung]
-65766a5  remove unused stuff  [james34602]
-b1e2979  Set theme jekyll-theme-leap-day  [James Fung]
-bd43d85  Readme update  [james34602]
-c7c610c  Tweak tube modelling parameters  [james34602]
-5466730  Tweak tube amp preset  [james34602]
-cb2497f  Add analog amplifier modelling  [james34602]
-b5ee4bf  2017/7/1 Release  [james34602]
-72bd808  Revert "2017/7/1 Release"  [james34602]
-66471a9  2017/7/1 Release  [james34602]
-42296bc  BUG FIX  [james34602]
-9a5d74d  Introduce IR resampler, FFTW multithreading, More control on IR volume  [james34602]
-5e486ca  Improve UI performance  [James Fung]
-ee4b3d0  Remove unused files  [James Fung]
-eb7fd70  Micro-Optimisation  [James Fung]
-5fe867d  Convolver fix  [James Fung]
-da9443f  Recovery log  [James Fung]
-36da3e3  Add files via upload  [James Fung]
-6ec5cfc  bug fix  [James Fung]
-77af581  Set theme jekyll-theme-slate  [James Fung]
-ace3203  Set theme jekyll-theme-cayman  [James Fung]
-48f38cd  Set theme jekyll-theme-slate  [James Fung]
-a8a2181  Screenshot added  [James Fung]
-f4eaa13  1. Add theme changing mechanism. 2. improve code appearance  [James Fung]
-43b6a9e  Screenshot preview  [James Fung]
-8e19ce6  Add screenshot  [James Fung]
-5c6cffa  Readme  [James Fung]
-9fc0292  Improve memory management  [James Fung]
-0d2e87e  Screenshot  [James Fung]
-42ae5a7  Add screenshot  [James Fung]
-d57be52  ReadMe  [James Fung]
-e6c07a5  ReadMe  [James Fung]
-24d6572  ReadMe  [James Fung]
-a32547b  Convolver fix  [James Fung]
-e4288f9  This ensure eclipse build success  [James Fung]
-fbb3780  Introduce convolver  [James Fung]
-1f55aac  Readme!  [James Fung]
-0d00a7a  Structure map update  [James Fung]
-d9a60ee  More install guide  [James Fung]
-c4bfc5d  Big update  [James Fung]
-0be5426  Update README.md  [James Fung]
-38c8a71  Update README.md  [James Fung]
-9383d3a  Update README.md  [James Fung]
-e979f7b  New reverb engine...  [James Fung]
-f1bf4c4  Test library missing file fix. You will get unexpected volume be caution!!  [James Fung]
-861bf83  Notice  [James Fung]
-2e89d27  Notice  [James Fung]
-f38f796  Readme!  [James Fung]
-9e66cb1  Remove dither to provide more dynamic range and re-add test  *  [James Fung]
-b328f70  FFT test (Java part) should not included, because my main C++ code have not been public  [James Fung]
-2547f35  Re-add high passed triangular probability density function dithering  [James Fung]
-514ae47  This all do the job  [James Fung]
-4af68a6  Shrink all unnecessary feature, confirm this single  * work with all 3 latest version of Android  [James Fung]
-4af47b7  README  [James Fung]
-42fa830  Improve frequency response  [James Fung]
-e923a4f  Use new linear interpolation to draw frequency response, Nougat build test...  [James Fung]
-ac11090  Use less memory at Bass boost perhaps  [James Fung]
-3e5a332  Update README.md  [James Fung]
-2a9570a  Update README.md  [James Fung]
-2213a32  SVG graph update  [James Fung]
-2ef2952  Much flater response  [James Fung]
-00e76e8  Remove unused code  [James Fung]
-f1c7a8d  Remove unused code and remove 1 order from different bands  [James Fung]
-5470af9  update compiler to Clang and adapt the code changes  [James Fung]
-112a064  Remove interpolation  [James Fung]
-8b0afd6  Do even more reduce 2 orders on 9 and 10 band  [James Fung]
-1e3771a  Update README.md  [James Fung]
-5ad28e2  Update README.md  [James Fung]
-a55bc66  Reduce to 12 band for CPU sake  [James Fung]
-63cbc10  Reduce CPU usage by 5-10%  [James Fung]
-61d6aa2  x86 Android run success  [James Fung]
-cfc1eaa  Equalizer band 1 fix and remove others unused features  [James Fung]
-c1aa327  Add proguard flags and remove depreciated  *  [James Fung]
-0b0524b  Pure stereo widen  [James Fung]
-9f9e1f6  Bug fix and equalizer improvement  [James Fung]
-7e3f968  Better?  [James Fung]
-354c9a9  Added log file for each sample processing time  [James Fung]
-151c330  Prompt user permission grant on Android 6.0  [James Fung]
-97b9cf1  Update README.md  [James Fung]
-84e660f  Update README.md  [James Fung]
-609b26a  Update README.md  [James Fung]
-1b86268  Update README.md  [James Fung]
-2107cbe  Update README.md  [James Fung]
-b8eec8c  Update README.md  [James Fung]
-7fe84d6  Change band 12 back to Band Shelf filter  [James Fung]
-b9fc7e0  Remove unused header from AOSP audio framework  [James Fung]
-79afa1c  ...  [James Fung]
-e6ba687  Equalizer bandwidth ultra fix  [James Fung]
-36f62bb  Download link only available on Github release  [James Fung]
-c94a68e  Audio engine structure map refresh  [James Fung]
-4eaee81  Update zh-TW, ru translations and icons  [James Fung]
-45817f2  Improve algorithm on band 13  [James Fung]
-1fa5e40  Update README.md  [James Fung]
-8a2831b  Milestone1 release  [James Fung]
-d9810b8  Show structure map  [James Fung]
-aaac009  14 Band Hybrid equalizer for Lollipop and Marshmallow  [James Fung]
-0c37186  New IIR filter used on Bass Boost, construct 24dB/Oct filter  [James Fung]
-f5da383  New IIR Filters update!  [James Fung]
-1aca7f4  Add new version of effect engine that don't use math.h  [James Fung]
-b818635  That's really simple  [James Fung]
-43929e0  Not thing changed...  [James Fung]
-2896f15  Update README.md  [James Fung]
-c4c86f5  Update README.md  [James Fung]
-5c85e5e  Update README.md  [James Fung]
-1f9ae57  Update README.md  [James Fung]
-706110c  DSP Bass Boost changes  [James Fung]
-75b4aaa  Make this clean  [James Fung]
-5232c4d  Old things delete  [James Fung]
-723e481  Download link update  [James Fung]
-3aff107  Download link update  [James Fung]
-e5507d2  text...  [James Fung]
-b468626  Android 6.0 support  [James Fung]
-828318d  Will not support KitKat again  [James Fung]
-f41931f  text...  [James Fung]
-6dc4363  Upgrade Filter designer  [James Fung]
-2e153e4  KitKat Fix  [James Fung]
-e4c11c8  Band frequency update + Improve stereo widener  [James Fung]
-19064e8  Band frequency update + Improve stereo widener  [James Fung]
-b653361  8 bands update  [James Fung]
-d3b132a  Update README.md  [James Fung]
-d85fb49  Preset saving feature  [James Fung]
-bec3fec  Update README.md  [James Fung]
-42c79c0  Small Update  [James Fung]
-ea51bad  Update README.md  [James Fung]
-e216aa1  Support KitKat Again and remove unuse feature  [James Fung]
-683dc5b  Update README.md  [James Fung]
-492de99  Update donwload link with latest version  [James Fung]
-211ef78  Information update  [James Fung]
-79da8fe  Update  [James Fung]
-02bbbe0  Data Type fix  [James Fung]
-71a3da4  Add Pre-amp with Amplifier removed  [James Fung]
-984c788  DSP Milestone  [James Fung]
-6b221f8  Amplifier added with minor adjustment  [James Fung]
-a75c8a0  Big Update  [James Fung]
-05101a6  Update README.md  [James Fung]
-5c80e40  Update README.md  [James Fung]
-158260f  Update README.md  [James Fung]
-cb03966  Update README.md  [James Fung]
-1b54b38  Add MP3 quality reduction  [James Fung]
-94b2647  Update README.md  [James Fung]
-225602f  Update README.md  [James Fung]
-f86461c  Make it work!  [James Fung]
-6573ab8  Disable ODEX to ensure clean apk out  [James Fung]
-dd9dac8  Supporting both KitKat and Lollipop  [James Fung]
-6a65d50  Add Low pass Filter type and echo decay  [James Fung]
-cb31786  Create README.md  [James Fung]
-d3a24a4  Delete README.md  [James Fung]
-0ded37f  Update README.md  [James Fung]
-20616c2  Update README.md  [James Fung]
-1c06140  Update README.md  [James Fung]
-d0e7777  Update README.md  [James Fung]
-c67ff50  Create README.md  [James Fung]
-8d668f4  James DSP Manager  [James Fung]
-764330e  :neckbeard: Added .gitattributes & .gitignore files  [James Fung]
-
- * packages/apps/Xtensions
-ae487f0  [SQUASHED] Rounded Courners [2/2]  [Kshitij Gupta]
+ * vendor/xtended/DevicesOTA
+8268a3c  xp4 update (#21)  [Ankan Ghosh]
 
